@@ -22,7 +22,7 @@ python extract_streams.py --abios /path/to/abios --commit 6da3a64
 - **Compact JSON.** `json.dumps({"action": a, **params}, sort_keys=True, separators=(",", ":"))`, one line per message, no setup.
 - **English lossless.** abios `render_english_lossless`, one line per message, no setup.
 
-**Source.** The abios checkout on this machine was at `31d90a3`, not `6da3a64`. I exported `6da3a64` with `git archive` into a separate directory and did not touch the checkout. `data/streams.json` records the commit (`abios_commit_seen: 6da3a64`).
+**Source.** The abios checkout on this machine was at `31d90a3`, not `6da3a64`. The study used a `git archive` export of `6da3a64` in a separate directory. The checkout was not changed. `data/streams.json` records the commit (`abios_commit_seen: 6da3a64`).
 
 **Sanity check.** `measure.py` asserts the published o200k totals before it writes anything. All six match.
 
@@ -34,7 +34,7 @@ python extract_streams.py --abios /path/to/abios --commit 6da3a64
 
 **Tokenizers.** No special tokens are added. HF tokenizers are pinned to a commit. `measure.py` stops if a downloaded `tokenizer.json` does not match the pinned sha256, and records the full hashes in `results/results.json`. For tiktoken, the hash column is the BPE file hash that tiktoken itself checks.
 
-| name | source | revision | tokenizer.json sha256 (prefix) | vocab |
+| name | source | revision | file sha256 (prefix) | vocab |
 | --- | --- | --- | --- | ---: |
 | o200k_base | tiktoken 0.9.0 | built in; BPE file sha256 checked by tiktoken | 446a9538cb6c348e | 200019 |
 | cl100k_base | tiktoken 0.9.0 | built in; BPE file sha256 checked by tiktoken | 223921b76ee99bde | 100277 |
@@ -52,7 +52,7 @@ Llama 3 uses an ungated mirror of the official tokenizer. `google/gemma-3-1b-it`
 
 **Counterfactual.** This is an estimate of a vocabulary change, not a trained tokenizer. Messages are cut into pieces. Some pieces count as one token and the rest are tokenized on their own with the stock tokenizer. Setup stays stock. The variants:
 
-- **A.** The format tag, each lexicon word, each field separator, each newline and each `#n` (n < 1000) count as one token. This is the literal brief.
+- **A.** The format tag, each lexicon word, each field separator, each newline and each `#n` (n < 1000) count as one token. This is the definition the study was asked to test, taken literally.
 - **B.** The format tag, each lexicon word and each ` #n` (with its leading space) count as one token. Other ` field` pieces keep their space and use stock tokens.
 - **C.** B, plus each run of structural quotes, escapes and JSON brackets counts as one token.
 
