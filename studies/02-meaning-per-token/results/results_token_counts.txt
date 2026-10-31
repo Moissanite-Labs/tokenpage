@@ -1,0 +1,7 @@
+| format | qwen2.5 tok | o200k tok | cl100k tok | H/qwen tok (bits/token if fully decodable) | H/o200k tok |
+|---|---|---|---|---|---|
+| english | 28.4 | 28.1 | 28.4 | 0.405 | 0.409 |
+| json | 34.9 | 37.2 | 34.9 | 0.329 | 0.309 |
+| abios_refs | 36.6 | 36.5 | 36.6 | 0.314 | 0.315 |
+| chinese | 29.8 | 34.5 | 46.7 | 0.385 | 0.333 |
+| glyph_g1 | 11.8 | 15.7 | 14.0 | 0.977 | 0.733 |
