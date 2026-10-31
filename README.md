@@ -17,6 +17,10 @@ A DOS code page was the table that mapped bytes to characters. A tokenizer is th
 
 See [CHARTER.md](CHARTER.md) for scope, questions and success criteria.
 
+## Studies
+
+- [01: where tokens go in ABIOS traffic](studies/01-tokenizer-waste/README.md): seven public tokenizers on the ABIOS bench tasks, with a waste breakdown and a counterfactual vocabulary estimate.
+
 ## Related
 
 - [abios](https://github.com/Moissanite-Labs/abios): the message protocol this work extends.
