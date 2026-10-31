@@ -32,12 +32,12 @@ python extract_streams.py --abios /path/to/abios --commit 6da3a64
 | lifecycle_40 | 1983 / 1983 | 5570 / 5570 |
 | lifecycle_200 | 7791 / 7791 | 28498 / 28498 |
 
-**Tokenizers.** No special tokens are added. HF tokenizers are pinned to a commit, and the sha256 of each `tokenizer.json` is recorded in `results/results.json`.
+**Tokenizers.** No special tokens are added. HF tokenizers are pinned to a commit. `measure.py` stops if a downloaded `tokenizer.json` does not match the pinned sha256, and records the full hashes in `results/results.json`. For tiktoken, the hash column is the BPE file hash that tiktoken itself checks.
 
 | name | source | revision | tokenizer.json sha256 (prefix) | vocab |
 | --- | --- | --- | --- | ---: |
-| o200k_base | tiktoken 0.9.0 | built in | n/a | 200019 |
-| cl100k_base | tiktoken 0.9.0 | built in | n/a | 100277 |
+| o200k_base | tiktoken 0.9.0 | built in; BPE file sha256 checked by tiktoken | 446a9538cb6c348e | 200019 |
+| cl100k_base | tiktoken 0.9.0 | built in; BPE file sha256 checked by tiktoken | 223921b76ee99bde | 100277 |
 | llama3 | NousResearch/Meta-Llama-3.1-8B-Instruct | d10aef7999a2b5ba950ab3974312feeedbfe0b77 | 79e3e522635f3171 | 128256 |
 | qwen3 | Qwen/Qwen3-8B | b968826d9c46dd6066d109eabc6255188de91218 | aeb13307a71acd8f | 151669 |
 | mistral_nemo | mistralai/Mistral-Nemo-Instruct-2407 | 04d8a90549d23fc6bd7f642064003592df51e9b3 | e11c71726323d33d | 131072 |
@@ -74,7 +74,7 @@ Tokens for the whole task. ABIOS includes setup.
 | gemma3 | 834 / 808 / 765 | 2114 / 6240 / 5976 | 8194 / 31744 / 30424 | 0.258 |
 | deepseek_v3 | 831 / 802 / 737 | 2096 / 6218 / 5821 | 8148 / 31630 / 29645 | 0.258 |
 
-**Crossover.** On `lifecycle_11`, ABIOS never beats JSON or English for any tokenizer. On `lifecycle_40` and `lifecycle_200`, ABIOS beats both from message 12 on, for every tokenizer. Message 12 is where the benchmark starts repeating earlier payloads, so refs (`#n`) start replacing long values. The crossover point says as much about the fixture as about the encoding.
+**Crossover.** On `lifecycle_11`, ABIOS never beats JSON or English for any tokenizer. On `lifecycle_40` and `lifecycle_200`, ABIOS beats both from message 12 on, for every tokenizer. The first `#n` ref appears in message 9, and the first exact repeat of a whole line is message 15. By message 12 the shorter ABIOS lines have paid back the setup. The crossover point depends on the fixture as much as on the encoding.
 
 On `lifecycle_11`, ABIOS messages alone cost 236 tokens (o200k) against 738 for JSON. Setup costs 525 and decides the result.
 
@@ -89,7 +89,7 @@ On `lifecycle_11`, ABIOS messages alone cost 236 tokens (o200k) against 738 for 
 | field separator (space) | 1715 | 9.6% / 2.29 | 9.4% / 2.29 | 7.4% / 2.29 | 9.5% / 2.22 |
 | quotes and backslash escapes | 990 | 7.9% / 1.62 | 7.7% / 1.62 | 6.1% / 1.61 | 7.9% / 1.54 |
 | content refs #n | 548 | 5.3% / 1.33 | 5.1% / 1.33 | 4.1% / 1.33 | 5.0% / 1.33 |
-| numbers | 540 | 5.2% / 1.33 | 6.8% / 1.00 | 5.3% / 1.00 | 5.0% / 1.33 |
+| numbers (` 3.14`) | 540 | 5.2% / 1.33 | 6.8% / 1.00 | 5.3% / 1.00 | 5.0% / 1.33 |
 | enum values | 1905 | 4.2% / 5.90 | 4.0% / 5.90 | 3.4% / 5.55 | 4.2% / 5.55 |
 | JSON structure inside a field | 720 | 4.0% / 2.31 | 3.9% / 2.31 | 3.1% / 2.30 | 5.0% / 1.76 |
 | lexicon command word | 870 | 2.6% / 4.24 | 2.6% / 4.24 | 2.1% / 4.14 | 2.6% / 4.14 |
@@ -107,10 +107,11 @@ On `lifecycle_11`, ABIOS messages alone cost 236 tokens (o200k) against 738 for 
 | class | chars | o200k_base | qwen3 | mistral_nemo | deepseek_v3 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | hex ids / digests | 26000 | 48.4% / 1.89 | 47.8% / 1.89 | 53.2% / 1.42 | 50.9% / 1.61 |
-| payload prose | 29695 | 24.1% / 4.33 | 25.1% / 4.10 | 21.9% / 3.94 | 23.0% / 4.08 |
+| payload prose | 29155 | 22.7% / 4.52 | 23.3% / 4.35 | 20.3% / 4.16 | 21.8% / 4.24 |
 | keys (with quotes and colon) | 19095 | 14.4% / 4.65 | 14.1% / 4.69 | 13.2% / 4.20 | 14.1% / 4.28 |
 | punctuation and value quotes | 8260 | 9.7% / 2.99 | 9.5% / 3.02 | 8.5% / 2.82 | 9.1% / 2.86 |
 | enum values | 4390 | 3.2% / 4.80 | 3.2% / 4.77 | 3.1% / 4.12 | 2.6% / 5.35 |
+| numbers (`"3.14"`) | 540 | 1.4% / 1.33 | 1.9% / 1.00 | 1.6% / 1.00 | 1.3% / 1.33 |
 | line separator | 199 | 0.2% / 3.00 | 0.2% / 3.00 | 0.2% / 3.00 | 0.2% / 3.00 |
 
 ### Top 20 recurring units by excess tokens (ABIOS, lifecycle_200)
@@ -162,7 +163,7 @@ Tokens for one string tokenized alone.
 
 ### Counterfactual vocabulary (estimate, not a trained result)
 
-Totals include stock setup. "Saved vs stock" is against the real ABIOS total.
+Totals include stock setup. "Saved vs stock" is against the real ABIOS total. Only ABIOS gets a counterfactual. JSON gets no matching change (for example, single-token keys), so these numbers do not say how the ABIOS/JSON gap would move if both encodings got new tokens.
 
 | tokenizer | 200: stock | A saved | B saved | C saved | B saved vs segmented | C saved vs segmented | 11: B saved | 11: C saved |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -199,11 +200,11 @@ The fixtures use low-entropy hex: revisions are 40 × `a`, digests 64 × `b`, id
 1. **Hex ids are the largest cost in JSON and the clearest tokenizer gap.** They are 48–53% of JSON tokens on `lifecycle_200`. Random 32-char hex costs 17–18 tokens in o200k, cl100k, Llama 3 and DeepSeek V3, and 27–28 in Qwen3, Mistral Nemo and Gemma 3, which split digits one by one. The fixture ids (`a1` × 16) cost 32 tokens in every tokenizer, one per character, which is worse than random hex.
 2. **Setup decides short sessions.** On `lifecycle_11`, setup is 525 of 761 o200k tokens. The ids block alone is about 183 tokens at 1.32 chars per token. ABIOS messages are 236 tokens against 738 for JSON, but ABIOS still loses by 23. With random hex in Qwen3, ABIOS wins by 3 (869 vs 872). In o200k it loses by 48 (769 vs 721).
 3. **Quoted JSON lists inside fields cost more than their content.** Quotes, escapes and JSON brackets are 11.9% of ABIOS tokens on `lifecycle_200` in o200k (7.9% + 4.0%), at 1.5–2.3 chars per token. ` "[\"CI not executed in transcript.\"]"` costs 10–11 tokens for 5 words. The closing run `\"]" "` costs 3.5 tokens and occurs 135 times.
-4. **Numbers and refs pay a digit tax.** ` 3.14` costs 4 tokens (5 in Qwen3, Nemo, Gemma) and occurs 130 times, about 5–7% of ABIOS tokens. ` #1` costs 2 tokens everywhere. ` #12` and above cost 3–4 tokens in Qwen3, Nemo and Gemma, and 2 in the rest. This fixture only reaches `#6`, so longer sessions would pay more in those three.
+4. **Numbers and refs pay a digit tax.** The only numbers here are the `tool_version` values. ` 3.14` costs 4 tokens (5 in Qwen3, Nemo, Gemma) and occurs 130 times, about 5–7% of ABIOS tokens. ` #1` costs 2 tokens everywhere. ` #12` and above cost 3–4 tokens in Qwen3, Nemo and Gemma, and 2 in the rest. This fixture only reaches `#6`, so longer sessions would pay more in those three.
 5. **Lexicon command words are already cheap.** They are 2.1–2.6% of ABIOS tokens on `lifecycle_200`, at about 4.2 chars per token. Making each one a single token saves 0 tokens in five tokenizers and 5 in Mistral Nemo and DeepSeek V3. The format tag `E` is a separate token in every case, so `Etest` is 2 tokens. A fused tag+command token would save one token per line. That is 200 on `lifecycle_200`, 2.6% of the o200k total, but it was not part of the counterfactual.
 6. **Counterfactual savings are small.** Treating lexicon words and refs as single tokens (B) saves 244–274 tokens on `lifecycle_200`, 2.5–3.3% of the total. Adding one token per structural run (C) saves 494–664, 5.0–8.1%. On `lifecycle_11` both save between −5 and +2 tokens. Isolating separators (A) costs tokens in every case.
 7. **Fixture hex flatters ABIOS on long sessions.** With random hex, the ABIOS/JSON ratio on `lifecycle_200` goes from 0.26–0.29 to 0.32–0.34. The 40-char revision is under the 48-byte ref threshold, so it is written in full on about 150 lines. Random hex makes each copy cost 19 tokens instead of 7 in o200k.
-8. **Llama 3.1 and cl100k give identical counts on every stream.** Llama 3's vocabulary extends cl100k, and its added tokens never fired on this ASCII traffic.
+8. **Llama 3.1 and cl100k give identical counts on every stream.** Llama 3's vocabulary extends cl100k. On this ASCII traffic the extra tokens change no count.
 
 ## Limits
 
@@ -211,6 +212,8 @@ The fixtures use low-entropy hex: revisions are 40 × `a`, digests 64 × `b`, id
 - Fractional attribution splits a token evenly over its characters. Class shares for separators and quotes depend on that choice. The counterfactual does not use it.
 - The counterfactual counts tokens only. It ignores that a model would need training to use new tokens, and the cuts between pieces add their own cost, which is why both "vs stock" and "vs segmented" are shown.
 - The "ideal" token counts in the units table are a simple rule, not an information measure.
+- Class boundaries are judgment calls. `tool` (`python`) counts as prose, not enum. Version strings such as `3.14` count as numbers in both encodings. Hex counts as an id only at 16 or more chars.
+- The counterfactual changes only the ABIOS message stream. Setup and JSON stay stock.
 - Gemma and Llama come from ungated mirrors. Their tokenizer.json hashes are recorded but were not compared with the gated originals.
 - Chat templates and special tokens are left out. A real request adds those on top.
 - The abios source is commit `6da3a64`, exported with `git archive`. The local abios checkout was at `31d90a3` and was not changed.

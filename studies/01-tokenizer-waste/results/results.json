@@ -1464,10 +1464,10 @@
    "tokenizer": "o200k_base",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 432,
-   "tokens": 95.75,
-   "share": 0.1297,
-   "chars_per_token": 4.512
+   "chars": 428,
+   "tokens": 92.75,
+   "share": 0.1257,
+   "chars_per_token": 4.615
   },
   {
    "task": "lifecycle_11",
@@ -1501,6 +1501,16 @@
   },
   {
    "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.0041,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
    "tokenizer": "cl100k_base",
    "encoding": "abios_refs",
    "class": "setup_ids",
@@ -1704,10 +1714,10 @@
    "tokenizer": "cl100k_base",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 432,
-   "tokens": 97.75,
-   "share": 0.1326,
-   "chars_per_token": 4.419
+   "chars": 428,
+   "tokens": 94.75,
+   "share": 0.1286,
+   "chars_per_token": 4.517
   },
   {
    "task": "lifecycle_11",
@@ -1738,6 +1748,16 @@
    "tokens": 3.33,
    "share": 0.0045,
    "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.0041,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_11",
@@ -1944,10 +1964,10 @@
    "tokenizer": "llama3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 432,
-   "tokens": 97.75,
-   "share": 0.1326,
-   "chars_per_token": 4.419
+   "chars": 428,
+   "tokens": 94.75,
+   "share": 0.1286,
+   "chars_per_token": 4.517
   },
   {
    "task": "lifecycle_11",
@@ -1978,6 +1998,16 @@
    "tokens": 3.33,
    "share": 0.0045,
    "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.0041,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_11",
@@ -2184,10 +2214,10 @@
    "tokenizer": "qwen3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 432,
-   "tokens": 98.75,
-   "share": 0.1338,
-   "chars_per_token": 4.375
+   "chars": 428,
+   "tokens": 94.75,
+   "share": 0.1284,
+   "chars_per_token": 4.517
   },
   {
    "task": "lifecycle_11",
@@ -2208,6 +2238,16 @@
    "tokens": 42.0,
    "share": 0.0569,
    "chars_per_token": 5.69
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 4,
+   "tokens": 4.0,
+   "share": 0.0054,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_11",
@@ -2424,10 +2464,10 @@
    "tokenizer": "mistral_nemo",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 432,
-   "tokens": 108.5,
-   "share": 0.1279,
-   "chars_per_token": 3.982
+   "chars": 428,
+   "tokens": 104.5,
+   "share": 0.1232,
+   "chars_per_token": 4.096
   },
   {
    "task": "lifecycle_11",
@@ -2448,6 +2488,16 @@
    "tokens": 47.0,
    "share": 0.0554,
    "chars_per_token": 5.085
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 4,
+   "tokens": 4.0,
+   "share": 0.0047,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_11",
@@ -2664,10 +2714,10 @@
    "tokenizer": "gemma3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 432,
-   "tokens": 102.25,
-   "share": 0.1265,
-   "chars_per_token": 4.225
+   "chars": 428,
+   "tokens": 98.25,
+   "share": 0.1216,
+   "chars_per_token": 4.356
   },
   {
    "task": "lifecycle_11",
@@ -2697,6 +2747,16 @@
    "chars": 10,
    "tokens": 10.0,
    "share": 0.0124,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 4,
+   "tokens": 4.0,
+   "share": 0.005,
    "chars_per_token": 1.0
   },
   {
@@ -2904,10 +2964,10 @@
    "tokenizer": "deepseek_v3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 432,
-   "tokens": 110.5,
-   "share": 0.1378,
-   "chars_per_token": 3.91
+   "chars": 428,
+   "tokens": 107.5,
+   "share": 0.134,
+   "chars_per_token": 3.981
   },
   {
    "task": "lifecycle_11",
@@ -2938,6 +2998,16 @@
    "tokens": 3.33,
    "share": 0.0042,
    "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.0037,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_40",
@@ -3134,10 +3204,10 @@
    "tokenizer": "o200k_base",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 5723,
-   "tokens": 1247.5,
-   "share": 0.224,
-   "chars_per_token": 4.588
+   "chars": 5615,
+   "tokens": 1166.5,
+   "share": 0.2094,
+   "chars_per_token": 4.814
   },
   {
    "task": "lifecycle_40",
@@ -3173,6 +3243,16 @@
    "task": "lifecycle_40",
    "tokenizer": "o200k_base",
    "encoding": "json_compact",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0145,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
    "class": "line_sep",
    "chars": 39,
    "tokens": 13.0,
@@ -3374,10 +3454,10 @@
    "tokenizer": "cl100k_base",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 5723,
-   "tokens": 1314.5,
-   "share": 0.2334,
-   "chars_per_token": 4.354
+   "chars": 5615,
+   "tokens": 1233.5,
+   "share": 0.219,
+   "chars_per_token": 4.552
   },
   {
    "task": "lifecycle_40",
@@ -3408,6 +3488,16 @@
    "tokens": 184.0,
    "share": 0.0327,
    "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0144,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_40",
@@ -3614,10 +3704,10 @@
    "tokenizer": "llama3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 5723,
-   "tokens": 1314.5,
-   "share": 0.2334,
-   "chars_per_token": 4.354
+   "chars": 5615,
+   "tokens": 1233.5,
+   "share": 0.219,
+   "chars_per_token": 4.552
   },
   {
    "task": "lifecycle_40",
@@ -3648,6 +3738,16 @@
    "tokens": 184.0,
    "share": 0.0327,
    "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0144,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_40",
@@ -3854,10 +3954,10 @@
    "tokenizer": "qwen3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 5723,
-   "tokens": 1341.5,
-   "share": 0.2371,
-   "chars_per_token": 4.266
+   "chars": 5615,
+   "tokens": 1233.5,
+   "share": 0.218,
+   "chars_per_token": 4.552
   },
   {
    "task": "lifecycle_40",
@@ -3888,6 +3988,16 @@
    "tokens": 184.0,
    "share": 0.0325,
    "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 108,
+   "tokens": 108.0,
+   "share": 0.0191,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_40",
@@ -4094,10 +4204,10 @@
    "tokenizer": "mistral_nemo",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 5723,
-   "tokens": 1400.5,
-   "share": 0.2061,
-   "chars_per_token": 4.086
+   "chars": 5615,
+   "tokens": 1292.5,
+   "share": 0.1902,
+   "chars_per_token": 4.344
   },
   {
    "task": "lifecycle_40",
@@ -4128,6 +4238,16 @@
    "tokens": 213.0,
    "share": 0.0313,
    "chars_per_token": 4.122
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 108,
+   "tokens": 108.0,
+   "share": 0.0159,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_40",
@@ -4334,10 +4454,10 @@
    "tokenizer": "gemma3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 5723,
-   "tokens": 1294.75,
-   "share": 0.2075,
-   "chars_per_token": 4.42
+   "chars": 5615,
+   "tokens": 1186.75,
+   "share": 0.1902,
+   "chars_per_token": 4.731
   },
   {
    "task": "lifecycle_40",
@@ -4368,6 +4488,16 @@
    "tokens": 200.0,
    "share": 0.0321,
    "chars_per_token": 4.39
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 108,
+   "tokens": 108.0,
+   "share": 0.0173,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_40",
@@ -4574,10 +4704,10 @@
    "tokenizer": "deepseek_v3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 5723,
-   "tokens": 1349.5,
-   "share": 0.217,
-   "chars_per_token": 4.241
+   "chars": 5615,
+   "tokens": 1268.5,
+   "share": 0.204,
+   "chars_per_token": 4.426
   },
   {
    "task": "lifecycle_40",
@@ -4608,6 +4738,16 @@
    "tokens": 164.0,
    "share": 0.0264,
    "chars_per_token": 5.354
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.013,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_40",
@@ -4814,10 +4954,10 @@
    "tokenizer": "o200k_base",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 29695,
-   "tokens": 6858.5,
-   "share": 0.2407,
-   "chars_per_token": 4.33
+   "chars": 29155,
+   "tokens": 6453.5,
+   "share": 0.2265,
+   "chars_per_token": 4.518
   },
   {
    "task": "lifecycle_200",
@@ -4853,6 +4993,16 @@
    "task": "lifecycle_200",
    "tokenizer": "o200k_base",
    "encoding": "json_compact",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.0142,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
    "class": "line_sep",
    "chars": 199,
    "tokens": 66.33,
@@ -5054,10 +5204,10 @@
    "tokenizer": "cl100k_base",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 29695,
-   "tokens": 7112.5,
-   "share": 0.2478,
-   "chars_per_token": 4.175
+   "chars": 29155,
+   "tokens": 6707.5,
+   "share": 0.2337,
+   "chars_per_token": 4.347
   },
   {
    "task": "lifecycle_200",
@@ -5088,6 +5238,16 @@
    "tokens": 920.0,
    "share": 0.0321,
    "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.0141,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_200",
@@ -5294,10 +5454,10 @@
    "tokenizer": "llama3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 29695,
-   "tokens": 7112.5,
-   "share": 0.2478,
-   "chars_per_token": 4.175
+   "chars": 29155,
+   "tokens": 6707.5,
+   "share": 0.2337,
+   "chars_per_token": 4.347
   },
   {
    "task": "lifecycle_200",
@@ -5328,6 +5488,16 @@
    "tokens": 920.0,
    "share": 0.0321,
    "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.0141,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_200",
@@ -5534,10 +5704,10 @@
    "tokenizer": "qwen3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 29695,
-   "tokens": 7247.5,
-   "share": 0.2513,
-   "chars_per_token": 4.097
+   "chars": 29155,
+   "tokens": 6707.5,
+   "share": 0.2326,
+   "chars_per_token": 4.347
   },
   {
    "task": "lifecycle_200",
@@ -5568,6 +5738,16 @@
    "tokens": 920.0,
    "share": 0.0319,
    "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 540,
+   "tokens": 540.0,
+   "share": 0.0187,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_200",
@@ -5774,10 +5954,10 @@
    "tokenizer": "mistral_nemo",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 29695,
-   "tokens": 7542.5,
-   "share": 0.2185,
-   "chars_per_token": 3.937
+   "chars": 29155,
+   "tokens": 7002.5,
+   "share": 0.2029,
+   "chars_per_token": 4.164
   },
   {
    "task": "lifecycle_200",
@@ -5808,6 +5988,16 @@
    "tokens": 1065.0,
    "share": 0.0309,
    "chars_per_token": 4.122
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 540,
+   "tokens": 540.0,
+   "share": 0.0156,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_200",
@@ -6014,10 +6204,10 @@
    "tokenizer": "gemma3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 29695,
-   "tokens": 7013.75,
-   "share": 0.2209,
-   "chars_per_token": 4.234
+   "chars": 29155,
+   "tokens": 6473.75,
+   "share": 0.2039,
+   "chars_per_token": 4.504
   },
   {
    "task": "lifecycle_200",
@@ -6048,6 +6238,16 @@
    "tokens": 1000.0,
    "share": 0.0315,
    "chars_per_token": 4.39
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 540,
+   "tokens": 540.0,
+   "share": 0.017,
+   "chars_per_token": 1.0
   },
   {
    "task": "lifecycle_200",
@@ -6254,10 +6454,10 @@
    "tokenizer": "deepseek_v3",
    "encoding": "json_compact",
    "class": "payload_prose",
-   "chars": 29695,
-   "tokens": 7287.5,
-   "share": 0.2304,
-   "chars_per_token": 4.075
+   "chars": 29155,
+   "tokens": 6882.5,
+   "share": 0.2176,
+   "chars_per_token": 4.236
   },
   {
    "task": "lifecycle_200",
@@ -6288,6 +6488,16 @@
    "tokens": 820.0,
    "share": 0.0259,
    "chars_per_token": 5.354
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.0128,
+   "chars_per_token": 1.333
   },
   {
    "task": "lifecycle_200",

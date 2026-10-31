@@ -22,15 +22,22 @@ HERE = Path(__file__).resolve().parent
 STREAMS = HERE / "data" / "streams.json"
 OUT = HERE / "results"
 
-# name -> (kind, source, revision). HF revisions are pinned commit SHAs.
+# name -> (kind, source, revision, sha256). HF revisions are pinned commit
+# SHAs and the sha256 is of tokenizer.json at that commit. tiktoken checks its
+# own BPE file hashes (cl100k 223921b7..., o200k 446a9538...).
 TOKENIZERS = {
-    "o200k_base": ("tiktoken", "o200k_base", None),
-    "cl100k_base": ("tiktoken", "cl100k_base", None),
-    "llama3": ("hf", "NousResearch/Meta-Llama-3.1-8B-Instruct", "d10aef7999a2b5ba950ab3974312feeedbfe0b77"),
-    "qwen3": ("hf", "Qwen/Qwen3-8B", "b968826d9c46dd6066d109eabc6255188de91218"),
-    "mistral_nemo": ("hf", "mistralai/Mistral-Nemo-Instruct-2407", "04d8a90549d23fc6bd7f642064003592df51e9b3"),
-    "gemma3": ("hf", "unsloth/gemma-3-1b-it", "5b11413a10db4e486ef16a20101fd028f8f2499c"),
-    "deepseek_v3": ("hf", "deepseek-ai/DeepSeek-V3", "e815299b0bcbac849fa540c768ef21845365c9eb"),
+    "o200k_base": ("tiktoken", "o200k_base", None, None),
+    "cl100k_base": ("tiktoken", "cl100k_base", None, None),
+    "llama3": ("hf", "NousResearch/Meta-Llama-3.1-8B-Instruct", "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+               "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4"),
+    "qwen3": ("hf", "Qwen/Qwen3-8B", "b968826d9c46dd6066d109eabc6255188de91218",
+              "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"),
+    "mistral_nemo": ("hf", "mistralai/Mistral-Nemo-Instruct-2407", "04d8a90549d23fc6bd7f642064003592df51e9b3",
+                     "e11c71726323d33da7b8d6f6f269f1988931c0a52b7122bcdd8c05042974e0db"),
+    "gemma3": ("hf", "unsloth/gemma-3-1b-it", "5b11413a10db4e486ef16a20101fd028f8f2499c",
+               "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795"),
+    "deepseek_v3": ("hf", "deepseek-ai/DeepSeek-V3", "e815299b0bcbac849fa540c768ef21845365c9eb",
+                    "621ac2e32d0dba658404412318818aaa8ce8cda492e59830109d8da6b517fb41"),
 }
 
 # Known o200k_base totals from abios docs/abios-bench.md at 6da3a64
@@ -45,7 +52,7 @@ ENCODINGS = ("abios_refs", "json_compact", "english_lossless")
 ENUM_FIELDS = {"kind", "status", "decision", "priority", "capabilities", "action"}
 HANDLES = {"p", "t", "a", "h", "f"}
 REF_RE = re.compile(r"^#\d+$")
-HEX_RE = re.compile(r"^[0-9a-f]{8,}$")
+HEX_RE = re.compile(r"^[0-9a-f]{16,}$")  # same rule for ABIOS and JSON
 NUM_RE = re.compile(r"^-?\d+(\.\d+)*$")
 WORD_RE = re.compile(r"\w+")
 
@@ -53,7 +60,7 @@ WORD_RE = re.compile(r"\w+")
 # ---------------------------------------------------------------- tokenizers
 class Tok:
     def __init__(self, name: str):
-        kind, source, rev = TOKENIZERS[name]
+        kind, source, rev, want_sha = TOKENIZERS[name]
         self.name, self.kind, self.source, self.revision = name, kind, source, rev
         if kind == "tiktoken":
             import tiktoken
@@ -68,6 +75,8 @@ class Tok:
 
             path = hf_hub_download(source, "tokenizer.json", revision=rev)
             self.file_sha256 = hashlib.sha256(Path(path).read_bytes()).hexdigest()
+            if self.file_sha256 != want_sha:
+                raise SystemExit(f"{name}: tokenizer.json sha256 {self.file_sha256} != pinned {want_sha}")
             self._enc = Tokenizer.from_file(path)
             self.vocab_size = self._enc.get_vocab_size()
             self.lib = f"tokenizers {version('tokenizers')}"
@@ -225,7 +234,7 @@ def parse_abios_line(line: str, tag: str, word_to_cmd: dict, schema: dict):
                 kind = "quoted_json"
             else:
                 base = _bare_class(content, field) if content else "quote_escape"
-                if base in ("number", "session_handle", "content_ref"):
+                if base in ("session_handle", "content_ref"):
                     base = "payload_prose"
                 ccls = [base] * len(raw)
                 kind = "quoted_prose" if base == "payload_prose" else base
@@ -288,8 +297,10 @@ def classify_json_line(line: str, base: int = 0):
                 key = next((s[2] for s in reversed(stack) if s[0] == "{"), "")
                 if key in ENUM_FIELDS:
                     vc = "enum_value"
-                elif HEX_RE.match(text) and len(text) >= 16:
+                elif HEX_RE.match(text):
                     vc = "hex_id"
+                elif NUM_RE.match(text):
+                    vc = "number"  # same class ABIOS gives a bare 3.14
                 else:
                     vc = "payload_prose"
                 cls[i] = cls[j] = "punct"
