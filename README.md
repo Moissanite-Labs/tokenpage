@@ -14,6 +14,8 @@ A DOS code page was the table that mapped bytes to characters. A tokenizer is th
 - Experiments on open-weight models: reserved protocol tokens, merges tuned for structured data, session-adaptive vocabularies.
 - Reproducible benchmarks, with the model, tokenizer, date, accuracy, tokens, latency and cost of every run.
 - Proposals written for model labs, each backed by results from this repo.
+- Cross-language density: how much of the character savings of dense languages such as Chinese survives each tokenizer, and what would keep it.
+- A symbolic agent language, where one symbol is one common idea, with a harness translator to and from human language. Tested as a hypothesis.
 
 See [CHARTER.md](CHARTER.md) for scope, questions and success criteria.
 
