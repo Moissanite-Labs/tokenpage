@@ -79,14 +79,14 @@ Risks:
 - Translator error. Mistakes in either direction compound across turns and agents. Accuracy must be measured per turn and per session, not only per message.
 - New tokens need training data and fine-tuning. Savings that vanish after accuracy recovery count as a negative result.
 
-## Future work, home TBD
+## Training and cognition: see scry
 
-Training a model without English, or without any single human language, so it reasons natively in a symbolic language. The idea is that reasoning outside one language's structures could change or improve abstraction. Evidence for linguistic relativity in humans is mixed, so this would have to be measured, for example with reasoning benchmarks on symbolic-trained and English-trained small models at equal compute. This repo covers only the vocabulary and translation side.
+Training and cognition work lives in [scry](https://github.com/Moissanite-Labs/scry). That includes training a model without English, or without any single human language, so it reasons natively in a symbolic language, and post-training the small translator model from Track B. The idea is that reasoning outside one language's structures could change or improve abstraction. Evidence for linguistic relativity in humans is mixed, so this would have to be measured, for example with reasoning benchmarks on symbolic-trained and English-trained small models at equal compute. This repo covers only the vocabulary and translation side.
 
 ## Out of scope
 
 - Training a frontier model.
-- Training models without human language, and reasoning benchmarks for them (see Future work).
+- Training models without human language, and reasoning benchmarks for them (see scry).
 - Changing ABIOS itself. Findings that affect the protocol go to the abios repo as issues.
 
 ## Working rules
