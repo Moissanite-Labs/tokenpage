@@ -1,0 +1,5 @@
+english dep=0: 26.3 dep=1: 30.8
+json dep=0: 34.4 dep=1: 35.5
+abios_refs dep=0: 21.4 dep=1: 54.5
+chinese dep=0: 28.5 dep=1: 31.3
+glyph_g1 dep=0: 10.9 dep=1: 12.8
