@@ -1,0 +1,14 @@
+probe,text,o200k_base,cl100k_base,llama3,qwen3,mistral_nemo,gemma3,deepseek_v3
+ref #1 (with leading space), #1,2,2,2,2,2,2,2
+ref #12, #12,2,2,2,3,3,3,2
+ref #123, #123,2,2,2,4,4,4,2
+ref #999, #999,2,2,2,4,4,4,2
+handle ' t', t,1,1,1,1,1,1,1
+fixture revision (40 x 'a'), aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,7,7,7,7,20,7,7
+fixture digest (64 x 'b'), bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,17,17,17,17,33,32,32
+fixture id (16 x 'a1'), a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1,32,32,32,32,32,32,32
+random sha1 hex (40), f5418ceab129a40982ebb69bd751d857e687bb17,19,19,19,34,34,34,19
+random sha256 hex (64), 897d90b46d09ad1abd597c12d9a5262e69802ae90a4212dee2badac2fe012fd0,36,36,36,54,56,54,37
+random uuid4-style hex (32), 22174ea59825167aac8ac93bc2dc7c96,17,17,17,27,28,27,18
+"JSON-in-quotes opener ' ""[\""'"," ""[\""",2,2,2,2,2,3,3
+"JSON-in-quotes closer '\""]""'","\""]""",2,2,2,2,3,2,3

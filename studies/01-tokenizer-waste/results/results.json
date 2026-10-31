@@ -1,0 +1,8531 @@
+{
+ "study": "01-tokenizer-waste",
+ "streams_sha256": "c25d7ed9e2f0ad30cd800dbac8e592ace424dfca2a7b47e8d434382c9a9b40ce",
+ "abios_commit": "6da3a64",
+ "tokenizers": {
+  "o200k_base": {
+   "library": "tiktoken 0.9.0",
+   "source": "o200k_base",
+   "revision": null,
+   "tokenizer_json_sha256": null,
+   "vocab_size": 200019
+  },
+  "cl100k_base": {
+   "library": "tiktoken 0.9.0",
+   "source": "cl100k_base",
+   "revision": null,
+   "tokenizer_json_sha256": null,
+   "vocab_size": 100277
+  },
+  "llama3": {
+   "library": "tokenizers 0.23.3",
+   "source": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+   "revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+   "tokenizer_json_sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+   "vocab_size": 128256
+  },
+  "qwen3": {
+   "library": "tokenizers 0.23.3",
+   "source": "Qwen/Qwen3-8B",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "tokenizer_json_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+   "vocab_size": 151669
+  },
+  "mistral_nemo": {
+   "library": "tokenizers 0.23.3",
+   "source": "mistralai/Mistral-Nemo-Instruct-2407",
+   "revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+   "tokenizer_json_sha256": "e11c71726323d33da7b8d6f6f269f1988931c0a52b7122bcdd8c05042974e0db",
+   "vocab_size": 131072
+  },
+  "gemma3": {
+   "library": "tokenizers 0.23.3",
+   "source": "unsloth/gemma-3-1b-it",
+   "revision": "5b11413a10db4e486ef16a20101fd028f8f2499c",
+   "tokenizer_json_sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+   "vocab_size": 262145
+  },
+  "deepseek_v3": {
+   "library": "tokenizers 0.23.3",
+   "source": "deepseek-ai/DeepSeek-V3",
+   "revision": "e815299b0bcbac849fa540c768ef21845365c9eb",
+   "tokenizer_json_sha256": "621ac2e32d0dba658404412318818aaa8ce8cda492e59830109d8da6b517fb41",
+   "vocab_size": 128815
+  }
+ },
+ "sanity_o200k": [
+  {
+   "task": "lifecycle_11",
+   "encoding": "abios_refs",
+   "expected": 761,
+   "measured": 761,
+   "match": true
+  },
+  {
+   "task": "lifecycle_11",
+   "encoding": "json_compact",
+   "expected": 738,
+   "measured": 738,
+   "match": true
+  },
+  {
+   "task": "lifecycle_40",
+   "encoding": "abios_refs",
+   "expected": 1983,
+   "measured": 1983,
+   "match": true
+  },
+  {
+   "task": "lifecycle_40",
+   "encoding": "json_compact",
+   "expected": 5570,
+   "measured": 5570,
+   "match": true
+  },
+  {
+   "task": "lifecycle_200",
+   "encoding": "abios_refs",
+   "expected": 7791,
+   "measured": 7791,
+   "match": true
+  },
+  {
+   "task": "lifecycle_200",
+   "encoding": "json_compact",
+   "expected": 28498,
+   "measured": 28498,
+   "match": true
+  }
+ ],
+ "offset_coverage": [
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "chars": 1665,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "chars": 908,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "chars": 2054,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "chars": 1665,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "chars": 908,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "chars": 2054,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "chars": 1665,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "chars": 908,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "chars": 2054,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "chars": 1665,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "chars": 908,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "chars": 2054,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "chars": 1665,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "chars": 908,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "chars": 2054,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "chars": 1665,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "chars": 908,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "chars": 2054,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "chars": 1665,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "chars": 908,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "chars": 2054,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "chars": 5335,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "chars": 17311,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "chars": 5335,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "chars": 17311,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "chars": 5335,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "chars": 17311,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "chars": 5335,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "chars": 17311,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "chars": 5335,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "chars": 17311,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "chars": 5335,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "chars": 17311,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "chars": 5335,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "chars": 17311,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "chars": 26511,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "chars": 87639,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "chars": 26511,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "chars": 87639,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "chars": 26511,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "chars": 87639,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "chars": 26511,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "chars": 87639,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "chars": 26511,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "chars": 87639,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "chars": 26511,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "chars": 87639,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "chars": 1683,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "chars": 26511,
+   "uncovered_chars": 0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "chars": 87639,
+   "uncovered_chars": 0
+  }
+ ],
+ "totals": [
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "setup": 525,
+   "messages": 236,
+   "total": 761
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 738,
+   "total": 738
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 686,
+   "total": 686
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "setup": 514,
+   "messages": 238,
+   "total": 752
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 737,
+   "total": 737
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 688,
+   "total": 688
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "setup": 514,
+   "messages": 238,
+   "total": 752
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 737,
+   "total": 737
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 688,
+   "total": 688
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "setup": 519,
+   "messages": 239,
+   "total": 758
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 738,
+   "total": 738
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 689,
+   "total": 689
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "setup": 566,
+   "messages": 304,
+   "total": 870
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 848,
+   "total": 848
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 780,
+   "total": 780
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "setup": 571,
+   "messages": 263,
+   "total": 834
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 808,
+   "total": 808
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 765,
+   "total": 765
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "setup": 562,
+   "messages": 269,
+   "total": 831
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 802,
+   "total": 802
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 737,
+   "total": 737
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "setup": 527,
+   "messages": 1456,
+   "total": 1983
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 5570,
+   "total": 5570
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 5242,
+   "total": 5242
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "setup": 516,
+   "messages": 1471,
+   "total": 1987
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 5632,
+   "total": 5632
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 5284,
+   "total": 5284
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "setup": 516,
+   "messages": 1471,
+   "total": 1987
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 5632,
+   "total": 5632
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 5284,
+   "total": 5284
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "setup": 523,
+   "messages": 1498,
+   "total": 2021
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 5659,
+   "total": 5659
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 5311,
+   "total": 5311
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "setup": 570,
+   "messages": 1919,
+   "total": 2489
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 6795,
+   "total": 6795
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 6317,
+   "total": 6317
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "setup": 575,
+   "messages": 1539,
+   "total": 2114
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 6240,
+   "total": 6240
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 5976,
+   "total": 5976
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "setup": 564,
+   "messages": 1532,
+   "total": 2096
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 6218,
+   "total": 6218
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 5821,
+   "total": 5821
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "setup": 527,
+   "messages": 7264,
+   "total": 7791
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 28498,
+   "total": 28498
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 26754,
+   "total": 26754
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "setup": 516,
+   "messages": 7339,
+   "total": 7855
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 28700,
+   "total": 28700
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 26960,
+   "total": 26960
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "setup": 516,
+   "messages": 7339,
+   "total": 7855
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 28700,
+   "total": 28700
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 26960,
+   "total": 26960
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "setup": 523,
+   "messages": 7474,
+   "total": 7997
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 28835,
+   "total": 28835
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 27095,
+   "total": 27095
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "setup": 570,
+   "messages": 9515,
+   "total": 10085
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 34515,
+   "total": 34515
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 32125,
+   "total": 32125
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "setup": 575,
+   "messages": 7619,
+   "total": 8194
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 31744,
+   "total": 31744
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 30424,
+   "total": 30424
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "setup": 564,
+   "messages": 7584,
+   "total": 8148
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "setup": 0,
+   "messages": 31630,
+   "total": 31630
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "english_lossless",
+   "setup": 0,
+   "messages": 29645,
+   "total": 29645
+  }
+ ],
+ "crossover": [
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "abios_total": 761,
+   "json_total": 738,
+   "english_total": 686,
+   "abios_vs_json_ratio": 1.0312,
+   "crossover_vs_json_msgs": null,
+   "crossover_vs_english_msgs": null
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "abios_total": 752,
+   "json_total": 737,
+   "english_total": 688,
+   "abios_vs_json_ratio": 1.0204,
+   "crossover_vs_json_msgs": null,
+   "crossover_vs_english_msgs": null
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "abios_total": 752,
+   "json_total": 737,
+   "english_total": 688,
+   "abios_vs_json_ratio": 1.0204,
+   "crossover_vs_json_msgs": null,
+   "crossover_vs_english_msgs": null
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "abios_total": 758,
+   "json_total": 738,
+   "english_total": 689,
+   "abios_vs_json_ratio": 1.0271,
+   "crossover_vs_json_msgs": null,
+   "crossover_vs_english_msgs": null
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "abios_total": 870,
+   "json_total": 848,
+   "english_total": 780,
+   "abios_vs_json_ratio": 1.0259,
+   "crossover_vs_json_msgs": null,
+   "crossover_vs_english_msgs": null
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "abios_total": 834,
+   "json_total": 808,
+   "english_total": 765,
+   "abios_vs_json_ratio": 1.0322,
+   "crossover_vs_json_msgs": null,
+   "crossover_vs_english_msgs": null
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "abios_total": 831,
+   "json_total": 802,
+   "english_total": 737,
+   "abios_vs_json_ratio": 1.0362,
+   "crossover_vs_json_msgs": null,
+   "crossover_vs_english_msgs": null
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "abios_total": 1983,
+   "json_total": 5570,
+   "english_total": 5242,
+   "abios_vs_json_ratio": 0.356,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "abios_total": 1987,
+   "json_total": 5632,
+   "english_total": 5284,
+   "abios_vs_json_ratio": 0.3528,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "abios_total": 1987,
+   "json_total": 5632,
+   "english_total": 5284,
+   "abios_vs_json_ratio": 0.3528,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "abios_total": 2021,
+   "json_total": 5659,
+   "english_total": 5311,
+   "abios_vs_json_ratio": 0.3571,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "abios_total": 2489,
+   "json_total": 6795,
+   "english_total": 6317,
+   "abios_vs_json_ratio": 0.3663,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "abios_total": 2114,
+   "json_total": 6240,
+   "english_total": 5976,
+   "abios_vs_json_ratio": 0.3388,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "abios_total": 2096,
+   "json_total": 6218,
+   "english_total": 5821,
+   "abios_vs_json_ratio": 0.3371,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "abios_total": 7791,
+   "json_total": 28498,
+   "english_total": 26754,
+   "abios_vs_json_ratio": 0.2734,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "abios_total": 7855,
+   "json_total": 28700,
+   "english_total": 26960,
+   "abios_vs_json_ratio": 0.2737,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "abios_total": 7855,
+   "json_total": 28700,
+   "english_total": 26960,
+   "abios_vs_json_ratio": 0.2737,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "abios_total": 7997,
+   "json_total": 28835,
+   "english_total": 27095,
+   "abios_vs_json_ratio": 0.2773,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "abios_total": 10085,
+   "json_total": 34515,
+   "english_total": 32125,
+   "abios_vs_json_ratio": 0.2922,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "abios_total": 8194,
+   "json_total": 31744,
+   "english_total": 30424,
+   "abios_vs_json_ratio": 0.2581,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "abios_total": 8148,
+   "json_total": 31630,
+   "english_total": 29645,
+   "abios_vs_json_ratio": 0.2576,
+   "crossover_vs_json_msgs": 12,
+   "crossover_vs_english_msgs": 12
+  }
+ ],
+ "classes": [
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.2405,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 136.0,
+   "share": 0.1787,
+   "chars_per_token": 4.478
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 444,
+   "tokens": 109.0,
+   "share": 0.1432,
+   "chars_per_token": 4.073
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 428,
+   "tokens": 93.86,
+   "share": 0.1233,
+   "chars_per_token": 4.56
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 75.0,
+   "share": 0.0986,
+   "chars_per_token": 4.387
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 184,
+   "tokens": 36.0,
+   "share": 0.0473,
+   "chars_per_token": 5.111
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 36,
+   "tokens": 19.4,
+   "share": 0.0255,
+   "chars_per_token": 1.856
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 45,
+   "tokens": 19.21,
+   "share": 0.0252,
+   "chars_per_token": 2.342
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 17.0,
+   "share": 0.0223,
+   "chars_per_token": 1.941
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 93,
+   "tokens": 16.1,
+   "share": 0.0212,
+   "chars_per_token": 5.778
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 51,
+   "tokens": 12.0,
+   "share": 0.0158,
+   "chars_per_token": 4.25
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 33,
+   "tokens": 11.93,
+   "share": 0.0157,
+   "chars_per_token": 2.765
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 11,
+   "tokens": 10.0,
+   "share": 0.0131,
+   "chars_per_token": 1.1
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 7.5,
+   "share": 0.0099,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 11,
+   "tokens": 5.5,
+   "share": 0.0072,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0066,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.0039,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 2,
+   "tokens": 1.5,
+   "share": 0.002,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 600,
+   "tokens": 399.0,
+   "share": 0.5407,
+   "chars_per_token": 1.504
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 515,
+   "tokens": 112.5,
+   "share": 0.1524,
+   "chars_per_token": 4.578
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 432,
+   "tokens": 95.75,
+   "share": 0.1297,
+   "chars_per_token": 4.512
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 258,
+   "tokens": 86.42,
+   "share": 0.1171,
+   "chars_per_token": 2.986
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 239,
+   "tokens": 41.0,
+   "share": 0.0556,
+   "chars_per_token": 5.829
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 3.33,
+   "share": 0.0045,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.2434,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.1702,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 444,
+   "tokens": 107.0,
+   "share": 0.1423,
+   "chars_per_token": 4.15
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 428,
+   "tokens": 95.86,
+   "share": 0.1275,
+   "chars_per_token": 4.465
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0984,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 184,
+   "tokens": 36.0,
+   "share": 0.0479,
+   "chars_per_token": 5.111
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 36,
+   "tokens": 19.4,
+   "share": 0.0258,
+   "chars_per_token": 1.856
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 45,
+   "tokens": 19.21,
+   "share": 0.0255,
+   "chars_per_token": 2.342
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 17.0,
+   "share": 0.0226,
+   "chars_per_token": 1.941
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 93,
+   "tokens": 16.1,
+   "share": 0.0214,
+   "chars_per_token": 5.778
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 51,
+   "tokens": 12.0,
+   "share": 0.016,
+   "chars_per_token": 4.25
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 33,
+   "tokens": 11.93,
+   "share": 0.0159,
+   "chars_per_token": 2.765
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 11,
+   "tokens": 10.0,
+   "share": 0.0133,
+   "chars_per_token": 1.1
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 7.5,
+   "share": 0.01,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 11,
+   "tokens": 5.5,
+   "share": 0.0073,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0066,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.004,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 2,
+   "tokens": 1.5,
+   "share": 0.002,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 600,
+   "tokens": 399.0,
+   "share": 0.5414,
+   "chars_per_token": 1.504
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 515,
+   "tokens": 109.17,
+   "share": 0.1481,
+   "chars_per_token": 4.718
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 432,
+   "tokens": 97.75,
+   "share": 0.1326,
+   "chars_per_token": 4.419
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 258,
+   "tokens": 85.75,
+   "share": 0.1164,
+   "chars_per_token": 3.009
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 239,
+   "tokens": 42.0,
+   "share": 0.057,
+   "chars_per_token": 5.69
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 3.33,
+   "share": 0.0045,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.2434,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.1702,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 444,
+   "tokens": 107.0,
+   "share": 0.1423,
+   "chars_per_token": 4.15
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 428,
+   "tokens": 95.86,
+   "share": 0.1275,
+   "chars_per_token": 4.465
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0984,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 184,
+   "tokens": 36.0,
+   "share": 0.0479,
+   "chars_per_token": 5.111
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 36,
+   "tokens": 19.4,
+   "share": 0.0258,
+   "chars_per_token": 1.856
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 45,
+   "tokens": 19.21,
+   "share": 0.0255,
+   "chars_per_token": 2.342
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 17.0,
+   "share": 0.0226,
+   "chars_per_token": 1.941
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 93,
+   "tokens": 16.1,
+   "share": 0.0214,
+   "chars_per_token": 5.778
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 51,
+   "tokens": 12.0,
+   "share": 0.016,
+   "chars_per_token": 4.25
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 33,
+   "tokens": 11.93,
+   "share": 0.0159,
+   "chars_per_token": 2.765
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 11,
+   "tokens": 10.0,
+   "share": 0.0133,
+   "chars_per_token": 1.1
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 7.5,
+   "share": 0.01,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 11,
+   "tokens": 5.5,
+   "share": 0.0073,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0066,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.004,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 2,
+   "tokens": 1.5,
+   "share": 0.002,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 600,
+   "tokens": 399.0,
+   "share": 0.5414,
+   "chars_per_token": 1.504
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 515,
+   "tokens": 109.17,
+   "share": 0.1481,
+   "chars_per_token": 4.718
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 432,
+   "tokens": 97.75,
+   "share": 0.1326,
+   "chars_per_token": 4.419
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 258,
+   "tokens": 85.75,
+   "share": 0.1164,
+   "chars_per_token": 3.009
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 239,
+   "tokens": 42.0,
+   "share": 0.057,
+   "chars_per_token": 5.69
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 3.33,
+   "share": 0.0045,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.2414,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.1689,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 444,
+   "tokens": 107.0,
+   "share": 0.1412,
+   "chars_per_token": 4.15
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 428,
+   "tokens": 95.86,
+   "share": 0.1265,
+   "chars_per_token": 4.465
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0976,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 184,
+   "tokens": 36.0,
+   "share": 0.0475,
+   "chars_per_token": 5.111
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.029,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 36,
+   "tokens": 19.4,
+   "share": 0.0256,
+   "chars_per_token": 1.856
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 45,
+   "tokens": 19.21,
+   "share": 0.0253,
+   "chars_per_token": 2.342
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 93,
+   "tokens": 16.1,
+   "share": 0.0212,
+   "chars_per_token": 5.778
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 51,
+   "tokens": 12.0,
+   "share": 0.0158,
+   "chars_per_token": 4.25
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 33,
+   "tokens": 11.93,
+   "share": 0.0157,
+   "chars_per_token": 2.765
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 11,
+   "tokens": 10.0,
+   "share": 0.0132,
+   "chars_per_token": 1.1
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 7.5,
+   "share": 0.0099,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 11,
+   "tokens": 5.5,
+   "share": 0.0073,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0066,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 4,
+   "tokens": 4.0,
+   "share": 0.0053,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 2,
+   "tokens": 1.5,
+   "share": 0.002,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 600,
+   "tokens": 399.0,
+   "share": 0.5407,
+   "chars_per_token": 1.504
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 515,
+   "tokens": 109.17,
+   "share": 0.1479,
+   "chars_per_token": 4.718
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 432,
+   "tokens": 98.75,
+   "share": 0.1338,
+   "chars_per_token": 4.375
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 258,
+   "tokens": 85.75,
+   "share": 0.1162,
+   "chars_per_token": 3.009
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 239,
+   "tokens": 42.0,
+   "share": 0.0569,
+   "chars_per_token": 5.69
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 3.33,
+   "share": 0.0045,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.2103,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 155.0,
+   "share": 0.1782,
+   "chars_per_token": 3.929
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 444,
+   "tokens": 116.0,
+   "share": 0.1333,
+   "chars_per_token": 3.828
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 428,
+   "tokens": 101.86,
+   "share": 0.1171,
+   "chars_per_token": 4.202
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 184,
+   "tokens": 91.0,
+   "share": 0.1046,
+   "chars_per_token": 2.022
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 85.0,
+   "share": 0.0977,
+   "chars_per_token": 3.871
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0253,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 36,
+   "tokens": 20.07,
+   "share": 0.0231,
+   "chars_per_token": 1.794
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 45,
+   "tokens": 19.21,
+   "share": 0.0221,
+   "chars_per_token": 2.342
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 93,
+   "tokens": 18.1,
+   "share": 0.0208,
+   "chars_per_token": 5.139
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 51,
+   "tokens": 13.0,
+   "share": 0.0149,
+   "chars_per_token": 3.923
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 33,
+   "tokens": 12.27,
+   "share": 0.0141,
+   "chars_per_token": 2.69
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 11,
+   "tokens": 10.0,
+   "share": 0.0115,
+   "chars_per_token": 1.1
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 7.5,
+   "share": 0.0086,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 11,
+   "tokens": 5.5,
+   "share": 0.0063,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0057,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 4,
+   "tokens": 4.0,
+   "share": 0.0046,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 2,
+   "tokens": 1.5,
+   "share": 0.0017,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 600,
+   "tokens": 476.0,
+   "share": 0.5613,
+   "chars_per_token": 1.261
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 515,
+   "tokens": 122.33,
+   "share": 0.1443,
+   "chars_per_token": 4.21
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 432,
+   "tokens": 108.5,
+   "share": 0.1279,
+   "chars_per_token": 3.982
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 258,
+   "tokens": 90.83,
+   "share": 0.1071,
+   "chars_per_token": 2.84
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 239,
+   "tokens": 47.0,
+   "share": 0.0554,
+   "chars_per_token": 5.085
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 3.33,
+   "share": 0.0039,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 190.0,
+   "share": 0.2278,
+   "chars_per_token": 1.268
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 148.0,
+   "share": 0.1775,
+   "chars_per_token": 4.115
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 444,
+   "tokens": 122.0,
+   "share": 0.1463,
+   "chars_per_token": 3.639
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 428,
+   "tokens": 95.86,
+   "share": 0.1149,
+   "chars_per_token": 4.465
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 84.0,
+   "share": 0.1007,
+   "chars_per_token": 3.917
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 184,
+   "tokens": 51.0,
+   "share": 0.0612,
+   "chars_per_token": 3.608
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 36,
+   "tokens": 22.23,
+   "share": 0.0267,
+   "chars_per_token": 1.619
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0264,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 45,
+   "tokens": 19.55,
+   "share": 0.0234,
+   "chars_per_token": 2.302
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 93,
+   "tokens": 18.1,
+   "share": 0.0217,
+   "chars_per_token": 5.139
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 33,
+   "tokens": 13.27,
+   "share": 0.0159,
+   "chars_per_token": 2.487
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 51,
+   "tokens": 12.0,
+   "share": 0.0144,
+   "chars_per_token": 4.25
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 11,
+   "tokens": 10.0,
+   "share": 0.012,
+   "chars_per_token": 1.1
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 10.0,
+   "share": 0.012,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 11,
+   "tokens": 5.5,
+   "share": 0.0066,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 4,
+   "tokens": 4.0,
+   "share": 0.0048,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 2,
+   "tokens": 1.5,
+   "share": 0.0018,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 600,
+   "tokens": 431.0,
+   "share": 0.5334,
+   "chars_per_token": 1.392
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 515,
+   "tokens": 122.78,
+   "share": 0.152,
+   "chars_per_token": 4.194
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 432,
+   "tokens": 102.25,
+   "share": 0.1265,
+   "chars_per_token": 4.225
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 258,
+   "tokens": 88.97,
+   "share": 0.1101,
+   "chars_per_token": 2.9
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 239,
+   "tokens": 53.0,
+   "share": 0.0656,
+   "chars_per_token": 4.509
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 10.0,
+   "share": 0.0124,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.2202,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 154.0,
+   "share": 0.1853,
+   "chars_per_token": 3.955
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 444,
+   "tokens": 116.0,
+   "share": 0.1396,
+   "chars_per_token": 3.828
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 428,
+   "tokens": 104.86,
+   "share": 0.1262,
+   "chars_per_token": 4.082
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 87.0,
+   "share": 0.1047,
+   "chars_per_token": 3.782
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 184,
+   "tokens": 51.0,
+   "share": 0.0614,
+   "chars_per_token": 3.608
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 36,
+   "tokens": 20.83,
+   "share": 0.0251,
+   "chars_per_token": 1.728
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 45,
+   "tokens": 19.55,
+   "share": 0.0235,
+   "chars_per_token": 2.302
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 93,
+   "tokens": 18.1,
+   "share": 0.0218,
+   "chars_per_token": 5.139
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 17.0,
+   "share": 0.0205,
+   "chars_per_token": 1.941
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 33,
+   "tokens": 14.17,
+   "share": 0.017,
+   "chars_per_token": 2.329
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 51,
+   "tokens": 13.0,
+   "share": 0.0156,
+   "chars_per_token": 3.923
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 11,
+   "tokens": 10.0,
+   "share": 0.012,
+   "chars_per_token": 1.1
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 7.5,
+   "share": 0.009,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 11,
+   "tokens": 5.5,
+   "share": 0.0066,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 4,
+   "tokens": 3.0,
+   "share": 0.0036,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 2,
+   "tokens": 1.5,
+   "share": 0.0018,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 600,
+   "tokens": 431.0,
+   "share": 0.5374,
+   "chars_per_token": 1.392
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 515,
+   "tokens": 121.67,
+   "share": 0.1517,
+   "chars_per_token": 4.233
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 432,
+   "tokens": 110.5,
+   "share": 0.1378,
+   "chars_per_token": 3.91
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 258,
+   "tokens": 90.5,
+   "share": 0.1128,
+   "chars_per_token": 2.851
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 239,
+   "tokens": 45.0,
+   "share": 0.0561,
+   "chars_per_token": 5.311
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 10,
+   "tokens": 3.33,
+   "share": 0.0042,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 2469,
+   "tokens": 533.64,
+   "share": 0.2691,
+   "chars_per_token": 4.627
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 1264,
+   "tokens": 211.5,
+   "share": 0.1067,
+   "chars_per_token": 5.976
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0923,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 343,
+   "tokens": 149.93,
+   "share": 0.0756,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 136.0,
+   "share": 0.0686,
+   "chars_per_token": 4.478
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 198,
+   "tokens": 122.57,
+   "share": 0.0618,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 113.0,
+   "share": 0.057,
+   "chars_per_token": 4.088
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0408,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0408,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 75.0,
+   "share": 0.0378,
+   "chars_per_token": 4.387
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 381,
+   "tokens": 64.6,
+   "share": 0.0326,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 144,
+   "tokens": 62.27,
+   "share": 0.0314,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 174,
+   "tokens": 41.0,
+   "share": 0.0207,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 40,
+   "tokens": 39.0,
+   "share": 0.0197,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 36.0,
+   "share": 0.0182,
+   "chars_per_token": 1.083
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 67,
+   "tokens": 33.5,
+   "share": 0.0169,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0076,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0025,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 5200,
+   "tokens": 2758.0,
+   "share": 0.4952,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 5723,
+   "tokens": 1247.5,
+   "share": 0.224,
+   "chars_per_token": 4.588
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 3819,
+   "tokens": 819.5,
+   "share": 0.1471,
+   "chars_per_token": 4.66
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 1652,
+   "tokens": 549.0,
+   "share": 0.0986,
+   "chars_per_token": 3.009
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 878,
+   "tokens": 183.0,
+   "share": 0.0329,
+   "chars_per_token": 4.798
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 13.0,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 2469,
+   "tokens": 548.64,
+   "share": 0.2761,
+   "chars_per_token": 4.5
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 1264,
+   "tokens": 211.5,
+   "share": 0.1064,
+   "chars_per_token": 5.976
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0921,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 343,
+   "tokens": 149.93,
+   "share": 0.0755,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.0644,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 198,
+   "tokens": 122.57,
+   "share": 0.0617,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 111.0,
+   "share": 0.0559,
+   "chars_per_token": 4.162
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0408,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0408,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0372,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 381,
+   "tokens": 64.6,
+   "share": 0.0325,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 144,
+   "tokens": 62.27,
+   "share": 0.0313,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 174,
+   "tokens": 41.0,
+   "share": 0.0206,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 40,
+   "tokens": 39.0,
+   "share": 0.0196,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 36.0,
+   "share": 0.0181,
+   "chars_per_token": 1.083
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 67,
+   "tokens": 33.5,
+   "share": 0.0169,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0075,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0025,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 5200,
+   "tokens": 2758.0,
+   "share": 0.4897,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 5723,
+   "tokens": 1314.5,
+   "share": 0.2334,
+   "chars_per_token": 4.354
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 3819,
+   "tokens": 814.42,
+   "share": 0.1446,
+   "chars_per_token": 4.689
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 1652,
+   "tokens": 548.08,
+   "share": 0.0973,
+   "chars_per_token": 3.014
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 878,
+   "tokens": 184.0,
+   "share": 0.0327,
+   "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 13.0,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 2469,
+   "tokens": 548.64,
+   "share": 0.2761,
+   "chars_per_token": 4.5
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 1264,
+   "tokens": 211.5,
+   "share": 0.1064,
+   "chars_per_token": 5.976
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0921,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 343,
+   "tokens": 149.93,
+   "share": 0.0755,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.0644,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 198,
+   "tokens": 122.57,
+   "share": 0.0617,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 111.0,
+   "share": 0.0559,
+   "chars_per_token": 4.162
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0408,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0408,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0372,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 381,
+   "tokens": 64.6,
+   "share": 0.0325,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 144,
+   "tokens": 62.27,
+   "share": 0.0313,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 174,
+   "tokens": 41.0,
+   "share": 0.0206,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 40,
+   "tokens": 39.0,
+   "share": 0.0196,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 36.0,
+   "share": 0.0181,
+   "chars_per_token": 1.083
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 67,
+   "tokens": 33.5,
+   "share": 0.0169,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0075,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0025,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 5200,
+   "tokens": 2758.0,
+   "share": 0.4897,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 5723,
+   "tokens": 1314.5,
+   "share": 0.2334,
+   "chars_per_token": 4.354
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 3819,
+   "tokens": 814.42,
+   "share": 0.1446,
+   "chars_per_token": 4.689
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 1652,
+   "tokens": 548.08,
+   "share": 0.0973,
+   "chars_per_token": 3.014
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 878,
+   "tokens": 184.0,
+   "share": 0.0327,
+   "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 13.0,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 2469,
+   "tokens": 548.64,
+   "share": 0.2715,
+   "chars_per_token": 4.5
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 1264,
+   "tokens": 211.5,
+   "share": 0.1047,
+   "chars_per_token": 5.976
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0905,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 343,
+   "tokens": 149.93,
+   "share": 0.0742,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.0633,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 198,
+   "tokens": 122.57,
+   "share": 0.0606,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 111.0,
+   "share": 0.0549,
+   "chars_per_token": 4.162
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 108,
+   "tokens": 108.0,
+   "share": 0.0534,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0401,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0366,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 381,
+   "tokens": 64.6,
+   "share": 0.032,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 144,
+   "tokens": 62.27,
+   "share": 0.0308,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 174,
+   "tokens": 41.0,
+   "share": 0.0203,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 40,
+   "tokens": 39.0,
+   "share": 0.0193,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 36.0,
+   "share": 0.0178,
+   "chars_per_token": 1.083
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 67,
+   "tokens": 33.5,
+   "share": 0.0166,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0109,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0025,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 5200,
+   "tokens": 2758.0,
+   "share": 0.4874,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 5723,
+   "tokens": 1341.5,
+   "share": 0.2371,
+   "chars_per_token": 4.266
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 3819,
+   "tokens": 814.42,
+   "share": 0.1439,
+   "chars_per_token": 4.689
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 1652,
+   "tokens": 548.08,
+   "share": 0.0969,
+   "chars_per_token": 3.014
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 878,
+   "tokens": 184.0,
+   "share": 0.0325,
+   "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 13.0,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 1264,
+   "tokens": 617.5,
+   "share": 0.2481,
+   "chars_per_token": 2.047
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 2469,
+   "tokens": 557.64,
+   "share": 0.224,
+   "chars_per_token": 4.428
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0735,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 155.0,
+   "share": 0.0623,
+   "chars_per_token": 3.929
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 343,
+   "tokens": 149.93,
+   "share": 0.0602,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 198,
+   "tokens": 123.23,
+   "share": 0.0495,
+   "chars_per_token": 1.607
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 120.0,
+   "share": 0.0482,
+   "chars_per_token": 3.85
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 108,
+   "tokens": 108.0,
+   "share": 0.0434,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 85.0,
+   "share": 0.0342,
+   "chars_per_token": 3.871
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0325,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 381,
+   "tokens": 68.6,
+   "share": 0.0276,
+   "chars_per_token": 5.554
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 144,
+   "tokens": 62.6,
+   "share": 0.0252,
+   "chars_per_token": 2.3
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 174,
+   "tokens": 42.0,
+   "share": 0.0169,
+   "chars_per_token": 4.143
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 40,
+   "tokens": 39.0,
+   "share": 0.0157,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 36.0,
+   "share": 0.0145,
+   "chars_per_token": 1.083
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 67,
+   "tokens": 33.5,
+   "share": 0.0135,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0088,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.002,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 5200,
+   "tokens": 3672.0,
+   "share": 0.5404,
+   "chars_per_token": 1.416
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 5723,
+   "tokens": 1400.5,
+   "share": 0.2061,
+   "chars_per_token": 4.086
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 3819,
+   "tokens": 909.67,
+   "share": 0.1339,
+   "chars_per_token": 4.198
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 1652,
+   "tokens": 586.83,
+   "share": 0.0864,
+   "chars_per_token": 2.815
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 878,
+   "tokens": 213.0,
+   "share": 0.0313,
+   "chars_per_token": 4.122
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 13.0,
+   "share": 0.0019,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 2469,
+   "tokens": 536.64,
+   "share": 0.2539,
+   "chars_per_token": 4.601
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 1264,
+   "tokens": 226.5,
+   "share": 0.1071,
+   "chars_per_token": 5.581
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 190.0,
+   "share": 0.0899,
+   "chars_per_token": 1.268
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 343,
+   "tokens": 154.59,
+   "share": 0.0731,
+   "chars_per_token": 2.219
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 148.0,
+   "share": 0.07,
+   "chars_per_token": 4.115
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 198,
+   "tokens": 130.23,
+   "share": 0.0616,
+   "chars_per_token": 1.52
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 126.0,
+   "share": 0.0596,
+   "chars_per_token": 3.667
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 108,
+   "tokens": 108.0,
+   "share": 0.0511,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 84.0,
+   "share": 0.0397,
+   "chars_per_token": 3.917
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0383,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 144,
+   "tokens": 80.93,
+   "share": 0.0383,
+   "chars_per_token": 1.779
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 381,
+   "tokens": 68.6,
+   "share": 0.0324,
+   "chars_per_token": 5.554
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 174,
+   "tokens": 41.0,
+   "share": 0.0194,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 40,
+   "tokens": 39.0,
+   "share": 0.0184,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 39.0,
+   "share": 0.0184,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 67,
+   "tokens": 33.5,
+   "share": 0.0158,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0104,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0024,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 5200,
+   "tokens": 3222.0,
+   "share": 0.5163,
+   "chars_per_token": 1.614
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 5723,
+   "tokens": 1294.75,
+   "share": 0.2075,
+   "chars_per_token": 4.42
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 3819,
+   "tokens": 929.62,
+   "share": 0.149,
+   "chars_per_token": 4.108
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 1652,
+   "tokens": 554.63,
+   "share": 0.0889,
+   "chars_per_token": 2.979
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 878,
+   "tokens": 200.0,
+   "share": 0.0321,
+   "chars_per_token": 4.39
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 39.0,
+   "share": 0.0063,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 2469,
+   "tokens": 559.64,
+   "share": 0.267,
+   "chars_per_token": 4.412
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 1264,
+   "tokens": 226.5,
+   "share": 0.1081,
+   "chars_per_token": 5.581
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0873,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 343,
+   "tokens": 154.59,
+   "share": 0.0738,
+   "chars_per_token": 2.219
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 154.0,
+   "share": 0.0735,
+   "chars_per_token": 3.955
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 198,
+   "tokens": 128.33,
+   "share": 0.0612,
+   "chars_per_token": 1.543
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 120.0,
+   "share": 0.0573,
+   "chars_per_token": 3.85
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 87.0,
+   "share": 0.0415,
+   "chars_per_token": 3.782
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 144,
+   "tokens": 81.83,
+   "share": 0.039,
+   "chars_per_token": 1.76
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0386,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 108,
+   "tokens": 81.0,
+   "share": 0.0386,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 381,
+   "tokens": 68.6,
+   "share": 0.0327,
+   "chars_per_token": 5.554
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 174,
+   "tokens": 42.0,
+   "share": 0.02,
+   "chars_per_token": 4.143
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 40,
+   "tokens": 39.0,
+   "share": 0.0186,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 36.0,
+   "share": 0.0172,
+   "chars_per_token": 1.083
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 67,
+   "tokens": 33.5,
+   "share": 0.016,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0072,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0024,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 5200,
+   "tokens": 3222.0,
+   "share": 0.5182,
+   "chars_per_token": 1.614
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 5723,
+   "tokens": 1349.5,
+   "share": 0.217,
+   "chars_per_token": 4.241
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 3819,
+   "tokens": 891.67,
+   "share": 0.1434,
+   "chars_per_token": 4.283
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 1652,
+   "tokens": 577.83,
+   "share": 0.0929,
+   "chars_per_token": 2.859
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 878,
+   "tokens": 164.0,
+   "share": 0.0264,
+   "chars_per_token": 5.354
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 39,
+   "tokens": 13.0,
+   "share": 0.0021,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 12425,
+   "tokens": 2708.21,
+   "share": 0.3476,
+   "chars_per_token": 4.588
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 6064,
+   "tokens": 991.5,
+   "share": 0.1273,
+   "chars_per_token": 6.116
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 1715,
+   "tokens": 749.63,
+   "share": 0.0962,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 990,
+   "tokens": 612.83,
+   "share": 0.0787,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 548,
+   "tokens": 411.0,
+   "share": 0.0528,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.052,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 1905,
+   "tokens": 322.99,
+   "share": 0.0415,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 720,
+   "tokens": 311.33,
+   "share": 0.04,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 870,
+   "tokens": 205.0,
+   "share": 0.0263,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 200,
+   "tokens": 195.0,
+   "share": 0.025,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 184.0,
+   "share": 0.0236,
+   "chars_per_token": 1.082
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0235,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 335,
+   "tokens": 167.5,
+   "share": 0.0215,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 136.0,
+   "share": 0.0175,
+   "chars_per_token": 4.478
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 113.0,
+   "share": 0.0145,
+   "chars_per_token": 4.088
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 75.0,
+   "share": 0.0096,
+   "chars_per_token": 4.387
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0019,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 26000,
+   "tokens": 13790.0,
+   "share": 0.4839,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 29695,
+   "tokens": 6858.5,
+   "share": 0.2407,
+   "chars_per_token": 4.33
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 19095,
+   "tokens": 4106.5,
+   "share": 0.1441,
+   "chars_per_token": 4.65
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 8260,
+   "tokens": 2761.67,
+   "share": 0.0969,
+   "chars_per_token": 2.991
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 4390,
+   "tokens": 915.0,
+   "share": 0.0321,
+   "chars_per_token": 4.798
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 66.33,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 12425,
+   "tokens": 2783.21,
+   "share": 0.3543,
+   "chars_per_token": 4.464
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 6064,
+   "tokens": 991.5,
+   "share": 0.1262,
+   "chars_per_token": 6.116
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 1715,
+   "tokens": 749.63,
+   "share": 0.0954,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 990,
+   "tokens": 612.83,
+   "share": 0.078,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 548,
+   "tokens": 411.0,
+   "share": 0.0523,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.0516,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 1905,
+   "tokens": 322.99,
+   "share": 0.0411,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 720,
+   "tokens": 311.33,
+   "share": 0.0396,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 870,
+   "tokens": 205.0,
+   "share": 0.0261,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 200,
+   "tokens": 195.0,
+   "share": 0.0248,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 184.0,
+   "share": 0.0234,
+   "chars_per_token": 1.082
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0233,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 335,
+   "tokens": 167.5,
+   "share": 0.0213,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.0163,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 111.0,
+   "share": 0.0141,
+   "chars_per_token": 4.162
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0094,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0019,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 26000,
+   "tokens": 13790.0,
+   "share": 0.4805,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 29695,
+   "tokens": 7112.5,
+   "share": 0.2478,
+   "chars_per_token": 4.175
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 19095,
+   "tokens": 4072.08,
+   "share": 0.1419,
+   "chars_per_token": 4.689
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 8260,
+   "tokens": 2739.08,
+   "share": 0.0954,
+   "chars_per_token": 3.016
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 4390,
+   "tokens": 920.0,
+   "share": 0.0321,
+   "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 66.33,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 12425,
+   "tokens": 2783.21,
+   "share": 0.3543,
+   "chars_per_token": 4.464
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 6064,
+   "tokens": 991.5,
+   "share": 0.1262,
+   "chars_per_token": 6.116
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 1715,
+   "tokens": 749.63,
+   "share": 0.0954,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 990,
+   "tokens": 612.83,
+   "share": 0.078,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 548,
+   "tokens": 411.0,
+   "share": 0.0523,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.0516,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 1905,
+   "tokens": 322.99,
+   "share": 0.0411,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 720,
+   "tokens": 311.33,
+   "share": 0.0396,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 870,
+   "tokens": 205.0,
+   "share": 0.0261,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 200,
+   "tokens": 195.0,
+   "share": 0.0248,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 184.0,
+   "share": 0.0234,
+   "chars_per_token": 1.082
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0233,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 335,
+   "tokens": 167.5,
+   "share": 0.0213,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.0163,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 111.0,
+   "share": 0.0141,
+   "chars_per_token": 4.162
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0094,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0019,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 26000,
+   "tokens": 13790.0,
+   "share": 0.4805,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 29695,
+   "tokens": 7112.5,
+   "share": 0.2478,
+   "chars_per_token": 4.175
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 19095,
+   "tokens": 4072.08,
+   "share": 0.1419,
+   "chars_per_token": 4.689
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 8260,
+   "tokens": 2739.08,
+   "share": 0.0954,
+   "chars_per_token": 3.016
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 4390,
+   "tokens": 920.0,
+   "share": 0.0321,
+   "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 66.33,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 12425,
+   "tokens": 2783.21,
+   "share": 0.348,
+   "chars_per_token": 4.464
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 6064,
+   "tokens": 991.5,
+   "share": 0.124,
+   "chars_per_token": 6.116
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 1715,
+   "tokens": 749.63,
+   "share": 0.0937,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 990,
+   "tokens": 612.83,
+   "share": 0.0766,
+   "chars_per_token": 1.615
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 540,
+   "tokens": 540.0,
+   "share": 0.0675,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 548,
+   "tokens": 411.0,
+   "share": 0.0514,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 1905,
+   "tokens": 322.99,
+   "share": 0.0404,
+   "chars_per_token": 5.898
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 720,
+   "tokens": 311.33,
+   "share": 0.0389,
+   "chars_per_token": 2.313
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 870,
+   "tokens": 205.0,
+   "share": 0.0256,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 200,
+   "tokens": 195.0,
+   "share": 0.0244,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 184.0,
+   "share": 0.023,
+   "chars_per_token": 1.082
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0229,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 335,
+   "tokens": 167.5,
+   "share": 0.0209,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 128.0,
+   "share": 0.016,
+   "chars_per_token": 4.758
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 111.0,
+   "share": 0.0139,
+   "chars_per_token": 4.162
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 74.0,
+   "share": 0.0093,
+   "chars_per_token": 4.446
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0028,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 26000,
+   "tokens": 13790.0,
+   "share": 0.4782,
+   "chars_per_token": 1.885
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 29695,
+   "tokens": 7247.5,
+   "share": 0.2513,
+   "chars_per_token": 4.097
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 19095,
+   "tokens": 4072.08,
+   "share": 0.1412,
+   "chars_per_token": 4.689
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 8260,
+   "tokens": 2739.08,
+   "share": 0.095,
+   "chars_per_token": 3.016
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 4390,
+   "tokens": 920.0,
+   "share": 0.0319,
+   "chars_per_token": 4.772
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 66.33,
+   "share": 0.0023,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 6064,
+   "tokens": 2957.5,
+   "share": 0.2933,
+   "chars_per_token": 2.05
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 12425,
+   "tokens": 2828.21,
+   "share": 0.2804,
+   "chars_per_token": 4.393
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 1715,
+   "tokens": 749.63,
+   "share": 0.0743,
+   "chars_per_token": 2.288
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 990,
+   "tokens": 616.17,
+   "share": 0.0611,
+   "chars_per_token": 1.607
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 540,
+   "tokens": 540.0,
+   "share": 0.0535,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 548,
+   "tokens": 411.0,
+   "share": 0.0408,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 1905,
+   "tokens": 342.99,
+   "share": 0.034,
+   "chars_per_token": 5.554
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 720,
+   "tokens": 313.0,
+   "share": 0.031,
+   "chars_per_token": 2.3
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 870,
+   "tokens": 210.0,
+   "share": 0.0208,
+   "chars_per_token": 4.143
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 200,
+   "tokens": 195.0,
+   "share": 0.0193,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 184.0,
+   "share": 0.0182,
+   "chars_per_token": 1.082
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0181,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 335,
+   "tokens": 167.5,
+   "share": 0.0166,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 155.0,
+   "share": 0.0154,
+   "chars_per_token": 3.929
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 120.0,
+   "share": 0.0119,
+   "chars_per_token": 3.85
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 85.0,
+   "share": 0.0084,
+   "chars_per_token": 3.871
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0022,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0005,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 26000,
+   "tokens": 18360.0,
+   "share": 0.5319,
+   "chars_per_token": 1.416
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 29695,
+   "tokens": 7542.5,
+   "share": 0.2185,
+   "chars_per_token": 3.937
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 19095,
+   "tokens": 4548.33,
+   "share": 0.1318,
+   "chars_per_token": 4.198
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 8260,
+   "tokens": 2932.83,
+   "share": 0.085,
+   "chars_per_token": 2.816
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 4390,
+   "tokens": 1065.0,
+   "share": 0.0309,
+   "chars_per_token": 4.122
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 66.33,
+   "share": 0.0019,
+   "chars_per_token": 3.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 12425,
+   "tokens": 2723.21,
+   "share": 0.3323,
+   "chars_per_token": 4.563
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 6064,
+   "tokens": 1006.5,
+   "share": 0.1228,
+   "chars_per_token": 6.025
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 1715,
+   "tokens": 772.96,
+   "share": 0.0943,
+   "chars_per_token": 2.219
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 990,
+   "tokens": 651.17,
+   "share": 0.0795,
+   "chars_per_token": 1.52
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 540,
+   "tokens": 540.0,
+   "share": 0.0659,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 548,
+   "tokens": 411.0,
+   "share": 0.0502,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 720,
+   "tokens": 404.67,
+   "share": 0.0494,
+   "chars_per_token": 1.779
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 1905,
+   "tokens": 342.99,
+   "share": 0.0419,
+   "chars_per_token": 5.554
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 870,
+   "tokens": 205.0,
+   "share": 0.025,
+   "chars_per_token": 4.244
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 199.0,
+   "share": 0.0243,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 200,
+   "tokens": 195.0,
+   "share": 0.0238,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 190.0,
+   "share": 0.0232,
+   "chars_per_token": 1.268
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 335,
+   "tokens": 167.5,
+   "share": 0.0204,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 148.0,
+   "share": 0.0181,
+   "chars_per_token": 4.115
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 126.0,
+   "share": 0.0154,
+   "chars_per_token": 3.667
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 84.0,
+   "share": 0.0103,
+   "chars_per_token": 3.917
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 22.0,
+   "share": 0.0027,
+   "chars_per_token": 1.5
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 26000,
+   "tokens": 16110.0,
+   "share": 0.5075,
+   "chars_per_token": 1.614
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 29695,
+   "tokens": 7013.75,
+   "share": 0.2209,
+   "chars_per_token": 4.234
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 19095,
+   "tokens": 4648.08,
+   "share": 0.1464,
+   "chars_per_token": 4.108
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 8260,
+   "tokens": 2773.17,
+   "share": 0.0874,
+   "chars_per_token": 2.979
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 4390,
+   "tokens": 1000.0,
+   "share": 0.0315,
+   "chars_per_token": 4.39
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 199.0,
+   "share": 0.0063,
+   "chars_per_token": 1.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "payload_prose",
+   "chars": 12425,
+   "tokens": 2838.21,
+   "share": 0.3483,
+   "chars_per_token": 4.378
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "hex_id",
+   "chars": 6064,
+   "tokens": 1006.5,
+   "share": 0.1235,
+   "chars_per_token": 6.025
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "field_sep",
+   "chars": 1715,
+   "tokens": 772.96,
+   "share": 0.0949,
+   "chars_per_token": 2.219
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "quote_escape",
+   "chars": 990,
+   "tokens": 641.67,
+   "share": 0.0788,
+   "chars_per_token": 1.543
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "content_ref",
+   "chars": 548,
+   "tokens": 411.0,
+   "share": 0.0504,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "json_struct",
+   "chars": 720,
+   "tokens": 409.17,
+   "share": 0.0502,
+   "chars_per_token": 1.76
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "number",
+   "chars": 540,
+   "tokens": 405.0,
+   "share": 0.0497,
+   "chars_per_token": 1.333
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "enum_value",
+   "chars": 1905,
+   "tokens": 342.99,
+   "share": 0.0421,
+   "chars_per_token": 5.554
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "cmd_word",
+   "chars": 870,
+   "tokens": 210.0,
+   "share": 0.0258,
+   "chars_per_token": 4.143
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "tag",
+   "chars": 200,
+   "tokens": 195.0,
+   "share": 0.0239,
+   "chars_per_token": 1.026
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 184.0,
+   "share": 0.0226,
+   "chars_per_token": 1.082
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_ids",
+   "chars": 241,
+   "tokens": 183.0,
+   "share": 0.0225,
+   "chars_per_token": 1.317
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "session_handle",
+   "chars": 335,
+   "tokens": 167.5,
+   "share": 0.0206,
+   "chars_per_token": 2.0
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_schema",
+   "chars": 609,
+   "tokens": 154.0,
+   "share": 0.0189,
+   "chars_per_token": 3.955
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_lexicon",
+   "chars": 462,
+   "tokens": 120.0,
+   "share": 0.0147,
+   "chars_per_token": 3.85
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_defaults",
+   "chars": 329,
+   "tokens": 87.0,
+   "share": 0.0107,
+   "chars_per_token": 3.782
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_ack",
+   "chars": 33,
+   "tokens": 15.0,
+   "share": 0.0018,
+   "chars_per_token": 2.2
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "class": "setup_headers",
+   "chars": 9,
+   "tokens": 5.0,
+   "share": 0.0006,
+   "chars_per_token": 1.8
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "hex_id",
+   "chars": 26000,
+   "tokens": 16110.0,
+   "share": 0.5093,
+   "chars_per_token": 1.614
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "payload_prose",
+   "chars": 29695,
+   "tokens": 7287.5,
+   "share": 0.2304,
+   "chars_per_token": 4.075
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "key",
+   "chars": 19095,
+   "tokens": 4458.33,
+   "share": 0.141,
+   "chars_per_token": 4.283
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "punct",
+   "chars": 8260,
+   "tokens": 2887.83,
+   "share": 0.0913,
+   "chars_per_token": 2.86
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "enum_value",
+   "chars": 4390,
+   "tokens": 820.0,
+   "share": 0.0259,
+   "chars_per_token": 5.354
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "class": "line_sep",
+   "chars": 199,
+   "tokens": 66.33,
+   "share": 0.0021,
+   "chars_per_token": 3.0
+  }
+ ],
+ "counterfactual": [
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "variant": "A",
+   "setup": 525,
+   "messages_stock": 236,
+   "messages_segmented_stock": 276,
+   "messages_cf": 275,
+   "total_stock": 761,
+   "total_cf": 800,
+   "saving_vs_stock_tokens": -39,
+   "saving_vs_stock_pct_of_total": -5.12,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.084
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "variant": "B",
+   "setup": 525,
+   "messages_stock": 236,
+   "messages_segmented_stock": 241,
+   "messages_cf": 240,
+   "total_stock": 761,
+   "total_cf": 765,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0366
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "variant": "C",
+   "setup": 525,
+   "messages_stock": 236,
+   "messages_segmented_stock": 246,
+   "messages_cf": 241,
+   "total_stock": 761,
+   "total_cf": 766,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": 5,
+   "cf_total_vs_json_ratio": 1.0379
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "variant": "B_lexicon_only",
+   "setup": 525,
+   "messages_stock": 236,
+   "messages_segmented_stock": null,
+   "messages_cf": 241,
+   "total_stock": 761,
+   "total_cf": 766,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0379
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "variant": "B_refs_only",
+   "setup": 525,
+   "messages_stock": 236,
+   "messages_segmented_stock": null,
+   "messages_cf": 240,
+   "total_stock": 761,
+   "total_cf": 765,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0366
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "variant": "A",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": 278,
+   "messages_cf": 277,
+   "total_stock": 752,
+   "total_cf": 791,
+   "saving_vs_stock_tokens": -39,
+   "saving_vs_stock_pct_of_total": -5.19,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0733
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "variant": "B",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": 243,
+   "messages_cf": 242,
+   "total_stock": 752,
+   "total_cf": 756,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0258
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "variant": "C",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": 248,
+   "messages_cf": 243,
+   "total_stock": 752,
+   "total_cf": 757,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": 5,
+   "cf_total_vs_json_ratio": 1.0271
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "variant": "B_lexicon_only",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": null,
+   "messages_cf": 243,
+   "total_stock": 752,
+   "total_cf": 757,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0271
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "variant": "B_refs_only",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": null,
+   "messages_cf": 242,
+   "total_stock": 752,
+   "total_cf": 756,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0258
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "variant": "A",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": 278,
+   "messages_cf": 277,
+   "total_stock": 752,
+   "total_cf": 791,
+   "saving_vs_stock_tokens": -39,
+   "saving_vs_stock_pct_of_total": -5.19,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0733
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "variant": "B",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": 243,
+   "messages_cf": 242,
+   "total_stock": 752,
+   "total_cf": 756,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0258
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "variant": "C",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": 248,
+   "messages_cf": 243,
+   "total_stock": 752,
+   "total_cf": 757,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": 5,
+   "cf_total_vs_json_ratio": 1.0271
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "variant": "B_lexicon_only",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": null,
+   "messages_cf": 243,
+   "total_stock": 752,
+   "total_cf": 757,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0271
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "variant": "B_refs_only",
+   "setup": 514,
+   "messages_stock": 238,
+   "messages_segmented_stock": null,
+   "messages_cf": 242,
+   "total_stock": 752,
+   "total_cf": 756,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0258
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "variant": "A",
+   "setup": 519,
+   "messages_stock": 239,
+   "messages_segmented_stock": 279,
+   "messages_cf": 278,
+   "total_stock": 758,
+   "total_cf": 797,
+   "saving_vs_stock_tokens": -39,
+   "saving_vs_stock_pct_of_total": -5.15,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0799
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "variant": "B",
+   "setup": 519,
+   "messages_stock": 239,
+   "messages_segmented_stock": 244,
+   "messages_cf": 243,
+   "total_stock": 758,
+   "total_cf": 762,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0325
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "variant": "C",
+   "setup": 519,
+   "messages_stock": 239,
+   "messages_segmented_stock": 249,
+   "messages_cf": 244,
+   "total_stock": 758,
+   "total_cf": 763,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": 5,
+   "cf_total_vs_json_ratio": 1.0339
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "variant": "B_lexicon_only",
+   "setup": 519,
+   "messages_stock": 239,
+   "messages_segmented_stock": null,
+   "messages_cf": 244,
+   "total_stock": 758,
+   "total_cf": 763,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.66,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0339
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "variant": "B_refs_only",
+   "setup": 519,
+   "messages_stock": 239,
+   "messages_segmented_stock": null,
+   "messages_cf": 243,
+   "total_stock": 758,
+   "total_cf": 762,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.53,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0325
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "variant": "A",
+   "setup": 566,
+   "messages_stock": 304,
+   "messages_segmented_stock": 355,
+   "messages_cf": 353,
+   "total_stock": 870,
+   "total_cf": 919,
+   "saving_vs_stock_tokens": -49,
+   "saving_vs_stock_pct_of_total": -5.63,
+   "saving_vs_segmented_tokens": 2,
+   "cf_total_vs_json_ratio": 1.0837
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "variant": "B",
+   "setup": 566,
+   "messages_stock": 304,
+   "messages_segmented_stock": 309,
+   "messages_cf": 307,
+   "total_stock": 870,
+   "total_cf": 873,
+   "saving_vs_stock_tokens": -3,
+   "saving_vs_stock_pct_of_total": -0.34,
+   "saving_vs_segmented_tokens": 2,
+   "cf_total_vs_json_ratio": 1.0295
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "variant": "C",
+   "setup": 566,
+   "messages_stock": 304,
+   "messages_segmented_stock": 315,
+   "messages_cf": 307,
+   "total_stock": 870,
+   "total_cf": 873,
+   "saving_vs_stock_tokens": -3,
+   "saving_vs_stock_pct_of_total": -0.34,
+   "saving_vs_segmented_tokens": 8,
+   "cf_total_vs_json_ratio": 1.0295
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "variant": "B_lexicon_only",
+   "setup": 566,
+   "messages_stock": 304,
+   "messages_segmented_stock": null,
+   "messages_cf": 308,
+   "total_stock": 870,
+   "total_cf": 874,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.46,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0307
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "variant": "B_refs_only",
+   "setup": 566,
+   "messages_stock": 304,
+   "messages_segmented_stock": null,
+   "messages_cf": 308,
+   "total_stock": 870,
+   "total_cf": 874,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.46,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0307
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "variant": "A",
+   "setup": 571,
+   "messages_stock": 263,
+   "messages_segmented_stock": 301,
+   "messages_cf": 300,
+   "total_stock": 834,
+   "total_cf": 871,
+   "saving_vs_stock_tokens": -37,
+   "saving_vs_stock_pct_of_total": -4.44,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.078
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "variant": "B",
+   "setup": 571,
+   "messages_stock": 263,
+   "messages_segmented_stock": 263,
+   "messages_cf": 262,
+   "total_stock": 834,
+   "total_cf": 833,
+   "saving_vs_stock_tokens": 1,
+   "saving_vs_stock_pct_of_total": 0.12,
+   "saving_vs_segmented_tokens": 1,
+   "cf_total_vs_json_ratio": 1.0309
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "variant": "C",
+   "setup": 571,
+   "messages_stock": 263,
+   "messages_segmented_stock": 268,
+   "messages_cf": 261,
+   "total_stock": 834,
+   "total_cf": 832,
+   "saving_vs_stock_tokens": 2,
+   "saving_vs_stock_pct_of_total": 0.24,
+   "saving_vs_segmented_tokens": 7,
+   "cf_total_vs_json_ratio": 1.0297
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "variant": "B_lexicon_only",
+   "setup": 571,
+   "messages_stock": 263,
+   "messages_segmented_stock": null,
+   "messages_cf": 263,
+   "total_stock": 834,
+   "total_cf": 834,
+   "saving_vs_stock_tokens": 0,
+   "saving_vs_stock_pct_of_total": 0.0,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0322
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "variant": "B_refs_only",
+   "setup": 571,
+   "messages_stock": 263,
+   "messages_segmented_stock": null,
+   "messages_cf": 262,
+   "total_stock": 834,
+   "total_cf": 833,
+   "saving_vs_stock_tokens": 1,
+   "saving_vs_stock_pct_of_total": 0.12,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0309
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "variant": "A",
+   "setup": 562,
+   "messages_stock": 269,
+   "messages_segmented_stock": 312,
+   "messages_cf": 310,
+   "total_stock": 831,
+   "total_cf": 872,
+   "saving_vs_stock_tokens": -41,
+   "saving_vs_stock_pct_of_total": -4.93,
+   "saving_vs_segmented_tokens": 2,
+   "cf_total_vs_json_ratio": 1.0873
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "variant": "B",
+   "setup": 562,
+   "messages_stock": 269,
+   "messages_segmented_stock": 274,
+   "messages_cf": 272,
+   "total_stock": 831,
+   "total_cf": 834,
+   "saving_vs_stock_tokens": -3,
+   "saving_vs_stock_pct_of_total": -0.36,
+   "saving_vs_segmented_tokens": 2,
+   "cf_total_vs_json_ratio": 1.0399
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "variant": "C",
+   "setup": 562,
+   "messages_stock": 269,
+   "messages_segmented_stock": 280,
+   "messages_cf": 269,
+   "total_stock": 831,
+   "total_cf": 831,
+   "saving_vs_stock_tokens": 0,
+   "saving_vs_stock_pct_of_total": 0.0,
+   "saving_vs_segmented_tokens": 11,
+   "cf_total_vs_json_ratio": 1.0362
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "variant": "B_lexicon_only",
+   "setup": 562,
+   "messages_stock": 269,
+   "messages_segmented_stock": null,
+   "messages_cf": 273,
+   "total_stock": 831,
+   "total_cf": 835,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.48,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0411
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "variant": "B_refs_only",
+   "setup": 562,
+   "messages_stock": 269,
+   "messages_segmented_stock": null,
+   "messages_cf": 273,
+   "total_stock": 831,
+   "total_cf": 835,
+   "saving_vs_stock_tokens": -4,
+   "saving_vs_stock_pct_of_total": -0.48,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 1.0411
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "variant": "A",
+   "setup": 527,
+   "messages_stock": 1456,
+   "messages_segmented_stock": 1714,
+   "messages_cf": 1660,
+   "total_stock": 1983,
+   "total_cf": 2187,
+   "saving_vs_stock_tokens": -204,
+   "saving_vs_stock_pct_of_total": -10.29,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3926
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "variant": "B",
+   "setup": 527,
+   "messages_stock": 1456,
+   "messages_segmented_stock": 1462,
+   "messages_cf": 1408,
+   "total_stock": 1983,
+   "total_cf": 1935,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.42,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3474
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "variant": "C",
+   "setup": 527,
+   "messages_stock": 1456,
+   "messages_segmented_stock": 1468,
+   "messages_cf": 1358,
+   "total_stock": 1983,
+   "total_cf": 1885,
+   "saving_vs_stock_tokens": 98,
+   "saving_vs_stock_pct_of_total": 4.94,
+   "saving_vs_segmented_tokens": 110,
+   "cf_total_vs_json_ratio": 0.3384
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "variant": "B_lexicon_only",
+   "setup": 527,
+   "messages_stock": 1456,
+   "messages_segmented_stock": null,
+   "messages_cf": 1462,
+   "total_stock": 1983,
+   "total_cf": 1989,
+   "saving_vs_stock_tokens": -6,
+   "saving_vs_stock_pct_of_total": -0.3,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3571
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "variant": "B_refs_only",
+   "setup": 527,
+   "messages_stock": 1456,
+   "messages_segmented_stock": null,
+   "messages_cf": 1408,
+   "total_stock": 1983,
+   "total_cf": 1935,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.42,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3474
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "variant": "A",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": 1729,
+   "messages_cf": 1675,
+   "total_stock": 1987,
+   "total_cf": 2191,
+   "saving_vs_stock_tokens": -204,
+   "saving_vs_stock_pct_of_total": -10.27,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.389
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "variant": "B",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": 1477,
+   "messages_cf": 1423,
+   "total_stock": 1987,
+   "total_cf": 1939,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.42,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3443
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "variant": "C",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": 1483,
+   "messages_cf": 1373,
+   "total_stock": 1987,
+   "total_cf": 1889,
+   "saving_vs_stock_tokens": 98,
+   "saving_vs_stock_pct_of_total": 4.93,
+   "saving_vs_segmented_tokens": 110,
+   "cf_total_vs_json_ratio": 0.3354
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "variant": "B_lexicon_only",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": null,
+   "messages_cf": 1477,
+   "total_stock": 1987,
+   "total_cf": 1993,
+   "saving_vs_stock_tokens": -6,
+   "saving_vs_stock_pct_of_total": -0.3,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3539
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "variant": "B_refs_only",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": null,
+   "messages_cf": 1423,
+   "total_stock": 1987,
+   "total_cf": 1939,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.42,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3443
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "variant": "A",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": 1729,
+   "messages_cf": 1675,
+   "total_stock": 1987,
+   "total_cf": 2191,
+   "saving_vs_stock_tokens": -204,
+   "saving_vs_stock_pct_of_total": -10.27,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.389
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "variant": "B",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": 1477,
+   "messages_cf": 1423,
+   "total_stock": 1987,
+   "total_cf": 1939,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.42,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3443
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "variant": "C",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": 1483,
+   "messages_cf": 1373,
+   "total_stock": 1987,
+   "total_cf": 1889,
+   "saving_vs_stock_tokens": 98,
+   "saving_vs_stock_pct_of_total": 4.93,
+   "saving_vs_segmented_tokens": 110,
+   "cf_total_vs_json_ratio": 0.3354
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "variant": "B_lexicon_only",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": null,
+   "messages_cf": 1477,
+   "total_stock": 1987,
+   "total_cf": 1993,
+   "saving_vs_stock_tokens": -6,
+   "saving_vs_stock_pct_of_total": -0.3,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3539
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "variant": "B_refs_only",
+   "setup": 516,
+   "messages_stock": 1471,
+   "messages_segmented_stock": null,
+   "messages_cf": 1423,
+   "total_stock": 1987,
+   "total_cf": 1939,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.42,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3443
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "variant": "A",
+   "setup": 523,
+   "messages_stock": 1498,
+   "messages_segmented_stock": 1756,
+   "messages_cf": 1702,
+   "total_stock": 2021,
+   "total_cf": 2225,
+   "saving_vs_stock_tokens": -204,
+   "saving_vs_stock_pct_of_total": -10.09,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3932
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "variant": "B",
+   "setup": 523,
+   "messages_stock": 1498,
+   "messages_segmented_stock": 1504,
+   "messages_cf": 1450,
+   "total_stock": 2021,
+   "total_cf": 1973,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.38,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3486
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "variant": "C",
+   "setup": 523,
+   "messages_stock": 1498,
+   "messages_segmented_stock": 1510,
+   "messages_cf": 1400,
+   "total_stock": 2021,
+   "total_cf": 1923,
+   "saving_vs_stock_tokens": 98,
+   "saving_vs_stock_pct_of_total": 4.85,
+   "saving_vs_segmented_tokens": 110,
+   "cf_total_vs_json_ratio": 0.3398
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "variant": "B_lexicon_only",
+   "setup": 523,
+   "messages_stock": 1498,
+   "messages_segmented_stock": null,
+   "messages_cf": 1504,
+   "total_stock": 2021,
+   "total_cf": 2027,
+   "saving_vs_stock_tokens": -6,
+   "saving_vs_stock_pct_of_total": -0.3,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3582
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "variant": "B_refs_only",
+   "setup": 523,
+   "messages_stock": 1498,
+   "messages_segmented_stock": null,
+   "messages_cf": 1450,
+   "total_stock": 2021,
+   "total_cf": 1973,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.38,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3486
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "variant": "A",
+   "setup": 570,
+   "messages_stock": 1919,
+   "messages_segmented_stock": 2290,
+   "messages_cf": 2235,
+   "total_stock": 2489,
+   "total_cf": 2805,
+   "saving_vs_stock_tokens": -316,
+   "saving_vs_stock_pct_of_total": -12.7,
+   "saving_vs_segmented_tokens": 55,
+   "cf_total_vs_json_ratio": 0.4128
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "variant": "B",
+   "setup": 570,
+   "messages_stock": 1919,
+   "messages_segmented_stock": 1925,
+   "messages_cf": 1870,
+   "total_stock": 2489,
+   "total_cf": 2440,
+   "saving_vs_stock_tokens": 49,
+   "saving_vs_stock_pct_of_total": 1.97,
+   "saving_vs_segmented_tokens": 55,
+   "cf_total_vs_json_ratio": 0.3591
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "variant": "C",
+   "setup": 570,
+   "messages_stock": 1919,
+   "messages_segmented_stock": 1958,
+   "messages_cf": 1819,
+   "total_stock": 2489,
+   "total_cf": 2389,
+   "saving_vs_stock_tokens": 100,
+   "saving_vs_stock_pct_of_total": 4.02,
+   "saving_vs_segmented_tokens": 139,
+   "cf_total_vs_json_ratio": 0.3516
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "variant": "B_lexicon_only",
+   "setup": 570,
+   "messages_stock": 1919,
+   "messages_segmented_stock": null,
+   "messages_cf": 1924,
+   "total_stock": 2489,
+   "total_cf": 2494,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.2,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.367
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "variant": "B_refs_only",
+   "setup": 570,
+   "messages_stock": 1919,
+   "messages_segmented_stock": null,
+   "messages_cf": 1871,
+   "total_stock": 2489,
+   "total_cf": 2441,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 1.93,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3592
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "variant": "A",
+   "setup": 575,
+   "messages_stock": 1539,
+   "messages_segmented_stock": 1795,
+   "messages_cf": 1741,
+   "total_stock": 2114,
+   "total_cf": 2316,
+   "saving_vs_stock_tokens": -202,
+   "saving_vs_stock_pct_of_total": -9.56,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3712
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "variant": "B",
+   "setup": 575,
+   "messages_stock": 1539,
+   "messages_segmented_stock": 1539,
+   "messages_cf": 1485,
+   "total_stock": 2114,
+   "total_cf": 2060,
+   "saving_vs_stock_tokens": 54,
+   "saving_vs_stock_pct_of_total": 2.55,
+   "saving_vs_segmented_tokens": 54,
+   "cf_total_vs_json_ratio": 0.3301
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "variant": "C",
+   "setup": 575,
+   "messages_stock": 1539,
+   "messages_segmented_stock": 1545,
+   "messages_cf": 1407,
+   "total_stock": 2114,
+   "total_cf": 1982,
+   "saving_vs_stock_tokens": 132,
+   "saving_vs_stock_pct_of_total": 6.24,
+   "saving_vs_segmented_tokens": 138,
+   "cf_total_vs_json_ratio": 0.3176
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "variant": "B_lexicon_only",
+   "setup": 575,
+   "messages_stock": 1539,
+   "messages_segmented_stock": null,
+   "messages_cf": 1539,
+   "total_stock": 2114,
+   "total_cf": 2114,
+   "saving_vs_stock_tokens": 0,
+   "saving_vs_stock_pct_of_total": 0.0,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3388
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "variant": "B_refs_only",
+   "setup": 575,
+   "messages_stock": 1539,
+   "messages_segmented_stock": null,
+   "messages_cf": 1485,
+   "total_stock": 2114,
+   "total_cf": 2060,
+   "saving_vs_stock_tokens": 54,
+   "saving_vs_stock_pct_of_total": 2.55,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3301
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "variant": "A",
+   "setup": 564,
+   "messages_stock": 1532,
+   "messages_segmented_stock": 1794,
+   "messages_cf": 1739,
+   "total_stock": 2096,
+   "total_cf": 2303,
+   "saving_vs_stock_tokens": -207,
+   "saving_vs_stock_pct_of_total": -9.88,
+   "saving_vs_segmented_tokens": 55,
+   "cf_total_vs_json_ratio": 0.3704
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "variant": "B",
+   "setup": 564,
+   "messages_stock": 1532,
+   "messages_segmented_stock": 1538,
+   "messages_cf": 1483,
+   "total_stock": 2096,
+   "total_cf": 2047,
+   "saving_vs_stock_tokens": 49,
+   "saving_vs_stock_pct_of_total": 2.34,
+   "saving_vs_segmented_tokens": 55,
+   "cf_total_vs_json_ratio": 0.3292
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "variant": "C",
+   "setup": 564,
+   "messages_stock": 1532,
+   "messages_segmented_stock": 1571,
+   "messages_cf": 1403,
+   "total_stock": 2096,
+   "total_cf": 1967,
+   "saving_vs_stock_tokens": 129,
+   "saving_vs_stock_pct_of_total": 6.15,
+   "saving_vs_segmented_tokens": 168,
+   "cf_total_vs_json_ratio": 0.3163
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "variant": "B_lexicon_only",
+   "setup": 564,
+   "messages_stock": 1532,
+   "messages_segmented_stock": null,
+   "messages_cf": 1537,
+   "total_stock": 2096,
+   "total_cf": 2101,
+   "saving_vs_stock_tokens": -5,
+   "saving_vs_stock_pct_of_total": -0.24,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3379
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "variant": "B_refs_only",
+   "setup": 564,
+   "messages_stock": 1532,
+   "messages_segmented_stock": null,
+   "messages_cf": 1484,
+   "total_stock": 2096,
+   "total_cf": 2048,
+   "saving_vs_stock_tokens": 48,
+   "saving_vs_stock_pct_of_total": 2.29,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.3294
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "variant": "A",
+   "setup": 527,
+   "messages_stock": 7264,
+   "messages_segmented_stock": 8558,
+   "messages_cf": 8284,
+   "total_stock": 7791,
+   "total_cf": 8811,
+   "saving_vs_stock_tokens": -1020,
+   "saving_vs_stock_pct_of_total": -13.09,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.3092
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "variant": "B",
+   "setup": 527,
+   "messages_stock": 7264,
+   "messages_segmented_stock": 7294,
+   "messages_cf": 7020,
+   "total_stock": 7791,
+   "total_cf": 7547,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.13,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.2648
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "variant": "C",
+   "setup": 527,
+   "messages_stock": 7264,
+   "messages_segmented_stock": 7324,
+   "messages_cf": 6770,
+   "total_stock": 7791,
+   "total_cf": 7297,
+   "saving_vs_stock_tokens": 494,
+   "saving_vs_stock_pct_of_total": 6.34,
+   "saving_vs_segmented_tokens": 554,
+   "cf_total_vs_json_ratio": 0.2561
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "variant": "B_lexicon_only",
+   "setup": 527,
+   "messages_stock": 7264,
+   "messages_segmented_stock": null,
+   "messages_cf": 7294,
+   "total_stock": 7791,
+   "total_cf": 7821,
+   "saving_vs_stock_tokens": -30,
+   "saving_vs_stock_pct_of_total": -0.39,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2744
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "variant": "B_refs_only",
+   "setup": 527,
+   "messages_stock": 7264,
+   "messages_segmented_stock": null,
+   "messages_cf": 7020,
+   "total_stock": 7791,
+   "total_cf": 7547,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.13,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2648
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "variant": "A",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": 8633,
+   "messages_cf": 8359,
+   "total_stock": 7855,
+   "total_cf": 8875,
+   "saving_vs_stock_tokens": -1020,
+   "saving_vs_stock_pct_of_total": -12.99,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.3092
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "variant": "B",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": 7369,
+   "messages_cf": 7095,
+   "total_stock": 7855,
+   "total_cf": 7611,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.11,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.2652
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "variant": "C",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": 7399,
+   "messages_cf": 6845,
+   "total_stock": 7855,
+   "total_cf": 7361,
+   "saving_vs_stock_tokens": 494,
+   "saving_vs_stock_pct_of_total": 6.29,
+   "saving_vs_segmented_tokens": 554,
+   "cf_total_vs_json_ratio": 0.2565
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "variant": "B_lexicon_only",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": null,
+   "messages_cf": 7369,
+   "total_stock": 7855,
+   "total_cf": 7885,
+   "saving_vs_stock_tokens": -30,
+   "saving_vs_stock_pct_of_total": -0.38,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2747
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "variant": "B_refs_only",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": null,
+   "messages_cf": 7095,
+   "total_stock": 7855,
+   "total_cf": 7611,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.11,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2652
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "variant": "A",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": 8633,
+   "messages_cf": 8359,
+   "total_stock": 7855,
+   "total_cf": 8875,
+   "saving_vs_stock_tokens": -1020,
+   "saving_vs_stock_pct_of_total": -12.99,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.3092
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "variant": "B",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": 7369,
+   "messages_cf": 7095,
+   "total_stock": 7855,
+   "total_cf": 7611,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.11,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.2652
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "variant": "C",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": 7399,
+   "messages_cf": 6845,
+   "total_stock": 7855,
+   "total_cf": 7361,
+   "saving_vs_stock_tokens": 494,
+   "saving_vs_stock_pct_of_total": 6.29,
+   "saving_vs_segmented_tokens": 554,
+   "cf_total_vs_json_ratio": 0.2565
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "variant": "B_lexicon_only",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": null,
+   "messages_cf": 7369,
+   "total_stock": 7855,
+   "total_cf": 7885,
+   "saving_vs_stock_tokens": -30,
+   "saving_vs_stock_pct_of_total": -0.38,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2747
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "variant": "B_refs_only",
+   "setup": 516,
+   "messages_stock": 7339,
+   "messages_segmented_stock": null,
+   "messages_cf": 7095,
+   "total_stock": 7855,
+   "total_cf": 7611,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.11,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2652
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "variant": "A",
+   "setup": 523,
+   "messages_stock": 7474,
+   "messages_segmented_stock": 8768,
+   "messages_cf": 8494,
+   "total_stock": 7997,
+   "total_cf": 9017,
+   "saving_vs_stock_tokens": -1020,
+   "saving_vs_stock_pct_of_total": -12.75,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.3127
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "variant": "B",
+   "setup": 523,
+   "messages_stock": 7474,
+   "messages_segmented_stock": 7504,
+   "messages_cf": 7230,
+   "total_stock": 7997,
+   "total_cf": 7753,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.05,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.2689
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "variant": "C",
+   "setup": 523,
+   "messages_stock": 7474,
+   "messages_segmented_stock": 7534,
+   "messages_cf": 6980,
+   "total_stock": 7997,
+   "total_cf": 7503,
+   "saving_vs_stock_tokens": 494,
+   "saving_vs_stock_pct_of_total": 6.18,
+   "saving_vs_segmented_tokens": 554,
+   "cf_total_vs_json_ratio": 0.2602
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "variant": "B_lexicon_only",
+   "setup": 523,
+   "messages_stock": 7474,
+   "messages_segmented_stock": null,
+   "messages_cf": 7504,
+   "total_stock": 7997,
+   "total_cf": 8027,
+   "saving_vs_stock_tokens": -30,
+   "saving_vs_stock_pct_of_total": -0.38,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2784
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "variant": "B_refs_only",
+   "setup": 523,
+   "messages_stock": 7474,
+   "messages_segmented_stock": null,
+   "messages_cf": 7230,
+   "total_stock": 7997,
+   "total_cf": 7753,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 3.05,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2689
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "variant": "A",
+   "setup": 570,
+   "messages_stock": 9515,
+   "messages_segmented_stock": 11374,
+   "messages_cf": 11095,
+   "total_stock": 10085,
+   "total_cf": 11665,
+   "saving_vs_stock_tokens": -1580,
+   "saving_vs_stock_pct_of_total": -15.67,
+   "saving_vs_segmented_tokens": 279,
+   "cf_total_vs_json_ratio": 0.338
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "variant": "B",
+   "setup": 570,
+   "messages_stock": 9515,
+   "messages_segmented_stock": 9545,
+   "messages_cf": 9266,
+   "total_stock": 10085,
+   "total_cf": 9836,
+   "saving_vs_stock_tokens": 249,
+   "saving_vs_stock_pct_of_total": 2.47,
+   "saving_vs_segmented_tokens": 279,
+   "cf_total_vs_json_ratio": 0.285
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "variant": "C",
+   "setup": 570,
+   "messages_stock": 9515,
+   "messages_segmented_stock": 9710,
+   "messages_cf": 9011,
+   "total_stock": 10085,
+   "total_cf": 9581,
+   "saving_vs_stock_tokens": 504,
+   "saving_vs_stock_pct_of_total": 5.0,
+   "saving_vs_segmented_tokens": 699,
+   "cf_total_vs_json_ratio": 0.2776
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "variant": "B_lexicon_only",
+   "setup": 570,
+   "messages_stock": 9515,
+   "messages_segmented_stock": null,
+   "messages_cf": 9540,
+   "total_stock": 10085,
+   "total_cf": 10110,
+   "saving_vs_stock_tokens": -25,
+   "saving_vs_stock_pct_of_total": -0.25,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2929
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "variant": "B_refs_only",
+   "setup": 570,
+   "messages_stock": 9515,
+   "messages_segmented_stock": null,
+   "messages_cf": 9271,
+   "total_stock": 10085,
+   "total_cf": 9841,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 2.42,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2851
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "variant": "A",
+   "setup": 575,
+   "messages_stock": 7619,
+   "messages_segmented_stock": 8899,
+   "messages_cf": 8625,
+   "total_stock": 8194,
+   "total_cf": 9200,
+   "saving_vs_stock_tokens": -1006,
+   "saving_vs_stock_pct_of_total": -12.28,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.2898
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "variant": "B",
+   "setup": 575,
+   "messages_stock": 7619,
+   "messages_segmented_stock": 7619,
+   "messages_cf": 7345,
+   "total_stock": 8194,
+   "total_cf": 7920,
+   "saving_vs_stock_tokens": 274,
+   "saving_vs_stock_pct_of_total": 3.34,
+   "saving_vs_segmented_tokens": 274,
+   "cf_total_vs_json_ratio": 0.2495
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "variant": "C",
+   "setup": 575,
+   "messages_stock": 7619,
+   "messages_segmented_stock": 7649,
+   "messages_cf": 6955,
+   "total_stock": 8194,
+   "total_cf": 7530,
+   "saving_vs_stock_tokens": 664,
+   "saving_vs_stock_pct_of_total": 8.1,
+   "saving_vs_segmented_tokens": 694,
+   "cf_total_vs_json_ratio": 0.2372
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "variant": "B_lexicon_only",
+   "setup": 575,
+   "messages_stock": 7619,
+   "messages_segmented_stock": null,
+   "messages_cf": 7619,
+   "total_stock": 8194,
+   "total_cf": 8194,
+   "saving_vs_stock_tokens": 0,
+   "saving_vs_stock_pct_of_total": 0.0,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2581
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "variant": "B_refs_only",
+   "setup": 575,
+   "messages_stock": 7619,
+   "messages_segmented_stock": null,
+   "messages_cf": 7345,
+   "total_stock": 8194,
+   "total_cf": 7920,
+   "saving_vs_stock_tokens": 274,
+   "saving_vs_stock_pct_of_total": 3.34,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2495
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "variant": "A",
+   "setup": 564,
+   "messages_stock": 7584,
+   "messages_segmented_stock": 8894,
+   "messages_cf": 8615,
+   "total_stock": 8148,
+   "total_cf": 9179,
+   "saving_vs_stock_tokens": -1031,
+   "saving_vs_stock_pct_of_total": -12.65,
+   "saving_vs_segmented_tokens": 279,
+   "cf_total_vs_json_ratio": 0.2902
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "variant": "B",
+   "setup": 564,
+   "messages_stock": 7584,
+   "messages_segmented_stock": 7614,
+   "messages_cf": 7335,
+   "total_stock": 8148,
+   "total_cf": 7899,
+   "saving_vs_stock_tokens": 249,
+   "saving_vs_stock_pct_of_total": 3.06,
+   "saving_vs_segmented_tokens": 279,
+   "cf_total_vs_json_ratio": 0.2497
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "variant": "C",
+   "setup": 564,
+   "messages_stock": 7584,
+   "messages_segmented_stock": 7779,
+   "messages_cf": 6935,
+   "total_stock": 8148,
+   "total_cf": 7499,
+   "saving_vs_stock_tokens": 649,
+   "saving_vs_stock_pct_of_total": 7.97,
+   "saving_vs_segmented_tokens": 844,
+   "cf_total_vs_json_ratio": 0.2371
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "variant": "B_lexicon_only",
+   "setup": 564,
+   "messages_stock": 7584,
+   "messages_segmented_stock": null,
+   "messages_cf": 7609,
+   "total_stock": 8148,
+   "total_cf": 8173,
+   "saving_vs_stock_tokens": -25,
+   "saving_vs_stock_pct_of_total": -0.31,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2584
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "variant": "B_refs_only",
+   "setup": 564,
+   "messages_stock": 7584,
+   "messages_segmented_stock": null,
+   "messages_cf": 7340,
+   "total_stock": 8148,
+   "total_cf": 7904,
+   "saving_vs_stock_tokens": 244,
+   "saving_vs_stock_pct_of_total": 2.99,
+   "saving_vs_segmented_tokens": null,
+   "cf_total_vs_json_ratio": 0.2499
+  }
+ ],
+ "random_hex": [
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 761,
+   "total_random_hex": 769,
+   "delta": 8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "total_fixture_hex": 738,
+   "total_random_hex": 721,
+   "delta": -17
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "o200k_base",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 686,
+   "total_random_hex": 673,
+   "delta": -13
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 752,
+   "total_random_hex": 760,
+   "delta": 8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "total_fixture_hex": 737,
+   "total_random_hex": 720,
+   "delta": -17
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "cl100k_base",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 688,
+   "total_random_hex": 675,
+   "delta": -13
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 752,
+   "total_random_hex": 760,
+   "delta": 8
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 737,
+   "total_random_hex": 720,
+   "delta": -17
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "llama3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 688,
+   "total_random_hex": 675,
+   "delta": -13
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 758,
+   "total_random_hex": 869,
+   "delta": 111
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 738,
+   "total_random_hex": 872,
+   "delta": 134
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "qwen3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 689,
+   "total_random_hex": 827,
+   "delta": 138
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 870,
+   "total_random_hex": 928,
+   "delta": 58
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "total_fixture_hex": 848,
+   "total_random_hex": 909,
+   "delta": 61
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "mistral_nemo",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 780,
+   "total_random_hex": 845,
+   "delta": 65
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 834,
+   "total_random_hex": 930,
+   "delta": 96
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 808,
+   "total_random_hex": 911,
+   "delta": 103
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "gemma3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 765,
+   "total_random_hex": 868,
+   "delta": 103
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 831,
+   "total_random_hex": 826,
+   "delta": -5
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 802,
+   "total_random_hex": 757,
+   "delta": -45
+  },
+  {
+   "task": "lifecycle_11",
+   "tokenizer": "deepseek_v3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 737,
+   "total_random_hex": 696,
+   "delta": -41
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 1983,
+   "total_random_hex": 2477,
+   "delta": 494
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "total_fixture_hex": 5570,
+   "total_random_hex": 6018,
+   "delta": 448
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "o200k_base",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 5242,
+   "total_random_hex": 5670,
+   "delta": 428
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 1987,
+   "total_random_hex": 2481,
+   "delta": 494
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "total_fixture_hex": 5632,
+   "total_random_hex": 6080,
+   "delta": 448
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "cl100k_base",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 5284,
+   "total_random_hex": 5712,
+   "delta": 428
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 1987,
+   "total_random_hex": 2481,
+   "delta": 494
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 5632,
+   "total_random_hex": 6080,
+   "delta": 448
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "llama3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 5284,
+   "total_random_hex": 5712,
+   "delta": 428
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 2021,
+   "total_random_hex": 2942,
+   "delta": 921
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 5659,
+   "total_random_hex": 7434,
+   "delta": 1775
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "qwen3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 5311,
+   "total_random_hex": 7066,
+   "delta": 1755
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 2489,
+   "total_random_hex": 3006,
+   "delta": 517
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "total_fixture_hex": 6795,
+   "total_random_hex": 7713,
+   "delta": 918
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "mistral_nemo",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 6317,
+   "total_random_hex": 7215,
+   "delta": 898
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 2114,
+   "total_random_hex": 3020,
+   "delta": 906
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 6240,
+   "total_random_hex": 7577,
+   "delta": 1337
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "gemma3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 5976,
+   "total_random_hex": 7313,
+   "delta": 1337
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 2096,
+   "total_random_hex": 2577,
+   "delta": 481
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 6218,
+   "total_random_hex": 6259,
+   "delta": 41
+  },
+  {
+   "task": "lifecycle_40",
+   "tokenizer": "deepseek_v3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 5821,
+   "total_random_hex": 5842,
+   "delta": 21
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 7791,
+   "total_random_hex": 10445,
+   "delta": 2654
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "json_compact",
+   "total_fixture_hex": 28498,
+   "total_random_hex": 30738,
+   "delta": 2240
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "o200k_base",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 26754,
+   "total_random_hex": 28894,
+   "delta": 2140
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 7855,
+   "total_random_hex": 10509,
+   "delta": 2654
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "json_compact",
+   "total_fixture_hex": 28700,
+   "total_random_hex": 30940,
+   "delta": 2240
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "cl100k_base",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 26960,
+   "total_random_hex": 29100,
+   "delta": 2140
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 7855,
+   "total_random_hex": 10509,
+   "delta": 2654
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 28700,
+   "total_random_hex": 30940,
+   "delta": 2240
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "llama3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 26960,
+   "total_random_hex": 29100,
+   "delta": 2140
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 7997,
+   "total_random_hex": 12518,
+   "delta": 4521
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 28835,
+   "total_random_hex": 37710,
+   "delta": 8875
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "qwen3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 27095,
+   "total_random_hex": 35870,
+   "delta": 8775
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 10085,
+   "total_random_hex": 12642,
+   "delta": 2557
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "json_compact",
+   "total_fixture_hex": 34515,
+   "total_random_hex": 39105,
+   "delta": 4590
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "mistral_nemo",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 32125,
+   "total_random_hex": 36615,
+   "delta": 4490
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 8194,
+   "total_random_hex": 12700,
+   "delta": 4506
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 31744,
+   "total_random_hex": 38429,
+   "delta": 6685
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "gemma3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 30424,
+   "total_random_hex": 37109,
+   "delta": 6685
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "abios_refs",
+   "total_fixture_hex": 8148,
+   "total_random_hex": 10789,
+   "delta": 2641
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "json_compact",
+   "total_fixture_hex": 31630,
+   "total_random_hex": 31835,
+   "delta": 205
+  },
+  {
+   "task": "lifecycle_200",
+   "tokenizer": "deepseek_v3",
+   "encoding": "english_lossless",
+   "total_fixture_hex": 29645,
+   "total_random_hex": 29750,
+   "delta": 105
+  }
+ ],
+ "probes": [
+  {
+   "probe": "ref #1 (with leading space)",
+   "text": " #1",
+   "o200k_base": 2,
+   "cl100k_base": 2,
+   "llama3": 2,
+   "qwen3": 2,
+   "mistral_nemo": 2,
+   "gemma3": 2,
+   "deepseek_v3": 2
+  },
+  {
+   "probe": "ref #12",
+   "text": " #12",
+   "o200k_base": 2,
+   "cl100k_base": 2,
+   "llama3": 2,
+   "qwen3": 3,
+   "mistral_nemo": 3,
+   "gemma3": 3,
+   "deepseek_v3": 2
+  },
+  {
+   "probe": "ref #123",
+   "text": " #123",
+   "o200k_base": 2,
+   "cl100k_base": 2,
+   "llama3": 2,
+   "qwen3": 4,
+   "mistral_nemo": 4,
+   "gemma3": 4,
+   "deepseek_v3": 2
+  },
+  {
+   "probe": "ref #999",
+   "text": " #999",
+   "o200k_base": 2,
+   "cl100k_base": 2,
+   "llama3": 2,
+   "qwen3": 4,
+   "mistral_nemo": 4,
+   "gemma3": 4,
+   "deepseek_v3": 2
+  },
+  {
+   "probe": "handle ' t'",
+   "text": " t",
+   "o200k_base": 1,
+   "cl100k_base": 1,
+   "llama3": 1,
+   "qwen3": 1,
+   "mistral_nemo": 1,
+   "gemma3": 1,
+   "deepseek_v3": 1
+  },
+  {
+   "probe": "fixture revision (40 x 'a')",
+   "text": " aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "o200k_base": 7,
+   "cl100k_base": 7,
+   "llama3": 7,
+   "qwen3": 7,
+   "mistral_nemo": 20,
+   "gemma3": 7,
+   "deepseek_v3": 7
+  },
+  {
+   "probe": "fixture digest (64 x 'b')",
+   "text": " bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "o200k_base": 17,
+   "cl100k_base": 17,
+   "llama3": 17,
+   "qwen3": 17,
+   "mistral_nemo": 33,
+   "gemma3": 32,
+   "deepseek_v3": 32
+  },
+  {
+   "probe": "fixture id (16 x 'a1')",
+   "text": " a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
+   "o200k_base": 32,
+   "cl100k_base": 32,
+   "llama3": 32,
+   "qwen3": 32,
+   "mistral_nemo": 32,
+   "gemma3": 32,
+   "deepseek_v3": 32
+  },
+  {
+   "probe": "random sha1 hex (40)",
+   "text": " f5418ceab129a40982ebb69bd751d857e687bb17",
+   "o200k_base": 19,
+   "cl100k_base": 19,
+   "llama3": 19,
+   "qwen3": 34,
+   "mistral_nemo": 34,
+   "gemma3": 34,
+   "deepseek_v3": 19
+  },
+  {
+   "probe": "random sha256 hex (64)",
+   "text": " 897d90b46d09ad1abd597c12d9a5262e69802ae90a4212dee2badac2fe012fd0",
+   "o200k_base": 36,
+   "cl100k_base": 36,
+   "llama3": 36,
+   "qwen3": 54,
+   "mistral_nemo": 56,
+   "gemma3": 54,
+   "deepseek_v3": 37
+  },
+  {
+   "probe": "random uuid4-style hex (32)",
+   "text": " 22174ea59825167aac8ac93bc2dc7c96",
+   "o200k_base": 17,
+   "cl100k_base": 17,
+   "llama3": 17,
+   "qwen3": 27,
+   "mistral_nemo": 28,
+   "gemma3": 27,
+   "deepseek_v3": 18
+  },
+  {
+   "probe": "JSON-in-quotes opener ' \"[\\\"'",
+   "text": " \"[\\\"",
+   "o200k_base": 2,
+   "cl100k_base": 2,
+   "llama3": 2,
+   "qwen3": 2,
+   "mistral_nemo": 2,
+   "gemma3": 3,
+   "deepseek_v3": 3
+  },
+  {
+   "probe": "JSON-in-quotes closer '\\\"]\"'",
+   "text": "\\\"]\"",
+   "o200k_base": 2,
+   "cl100k_base": 2,
+   "llama3": 2,
+   "qwen3": 2,
+   "mistral_nemo": 3,
+   "gemma3": 2,
+   "deepseek_v3": 3
+  }
+ ]
+}

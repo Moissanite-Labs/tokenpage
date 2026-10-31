@@ -1,0 +1,436 @@
+task,encoding,unit,kind,occurrences,chars,ideal_tokens,tok_o200k_base,tok_cl100k_base,tok_llama3,tok_qwen3,tok_mistral_nemo,tok_gemma3,tok_deepseek_v3,tok_mean,excess_per_occ,excess_total,tokens_per_ideal
+lifecycle_11,abios_refs," ""[\""Round-trip lossless\"",\""Validator exit 0\""]""",quoted_json,1,49,6,13.0,14.0,14.0,14.0,15.0,14.0,17.0,14.43,8.43,8.4,2.4
+lifecycle_11,abios_refs, bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,hex_id,1,65,16,17.0,17.0,17.0,17.0,33.0,32.0,32.0,23.57,7.57,7.6,1.47
+lifecycle_11,abios_refs," ""[\""Reported by agent; not executed by forge.\""]""",quoted_json,1,50,7,13.0,14.0,14.0,14.0,14.0,15.0,15.0,14.14,7.14,7.1,2.02
+lifecycle_11,abios_refs," [""claim"",""work"",""artifact"",""evidence"",""submit""]",bare_json,1,48,5,12.0,12.0,12.0,12.0,12.0,11.0,11.0,11.71,6.71,6.7,2.34
+lifecycle_11,abios_refs," [""synbios/sym2p""]",bare_json,1,18,2,8.0,8.0,8.0,8.0,9.0,8.0,9.0,8.29,6.29,6.3,4.14
+lifecycle_11,abios_refs," ""Encode forge commands as SYM-2P v1 packets.""",quoted_prose,1,46,8,14.0,14.0,14.0,14.0,14.0,13.0,15.0,14.0,6.0,6.0,1.75
+lifecycle_11,abios_refs," ""python -m unittest discover -s tests -v""",quoted_prose,1,42,7,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,5.0,5.0,1.71
+lifecycle_11,abios_refs," ""Wire SYM-2P codec""",quoted_prose,1,20,4,8.5,8.5,8.5,8.5,8.5,8.0,9.5,8.57,4.57,4.6,2.14
+lifecycle_11,abios_refs," ""SYM-2P codec module""",quoted_prose,1,22,4,8.0,8.0,8.0,8.0,9.0,8.0,10.0,8.43,4.43,4.4,2.11
+lifecycle_11,abios_refs," ""https://example.invalid/commit""",quoted_prose,1,33,4,7.5,7.5,7.5,7.5,8.5,9.0,8.5,8.0,4.0,4.0,2.0
+lifecycle_11,abios_refs," ""https://example.invalid/commons""",quoted_prose,1,34,4,7.5,6.5,6.5,6.5,8.5,9.0,8.5,7.57,3.57,3.6,1.89
+lifecycle_11,abios_refs, 3.11,number,1,5,1,4.0,4.0,4.0,5.0,5.0,5.0,4.0,4.43,3.43,3.4,4.43
+lifecycle_11,abios_refs,"\""]"" [] """,structural_run,1,9,1,4.0,4.0,4.0,4.0,5.0,4.0,5.0,4.29,3.29,3.3,4.29
+lifecycle_11,abios_refs," ""Commons starter""",quoted_prose,1,18,2,4.0,5.0,5.0,5.0,5.0,4.0,5.0,4.71,2.71,2.7,2.36
+lifecycle_11,abios_refs," ""[\""",structural_run,2,5,1,2.0,2.0,2.0,2.0,2.0,3.0,3.0,2.29,1.29,2.6,2.29
+lifecycle_11,abios_refs,""" """,structural_run,3,3,1,1.83,1.83,1.83,1.83,1.83,1.83,1.83,1.83,0.83,2.5,1.83
+lifecycle_11,abios_refs,"\""]"" """,structural_run,1,6,1,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,2.5,2.5,3.5
+lifecycle_11,abios_refs," ""Implement forge packet codec.""",quoted_prose,1,32,4,6.0,6.0,6.0,6.0,7.0,6.0,7.0,6.29,2.29,2.3,1.57
+lifecycle_11,abios_refs," ""Agent-first forge pilot.""",quoted_prose,1,27,4,6.0,6.0,6.0,6.0,6.0,7.0,6.0,6.14,2.14,2.1,1.54
+lifecycle_11,abios_refs,Emk,tag+cmd,2,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0
+lifecycle_11,abios_refs,Etransition,tag+cmd,2,11,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0
+lifecycle_11,abios_refs," ""Unit tests passed locally.""",quoted_prose,1,29,4,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,2.0,2.0,1.5
+lifecycle_11,abios_refs," ""Independent human acceptance.""",quoted_prose,1,32,3,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,2.0,2.0,1.67
+lifecycle_11,abios_refs," ""Build agent""",quoted_prose,1,14,2,3.5,3.5,3.5,3.5,3.5,4.0,3.5,3.57,1.57,1.6,1.79
+lifecycle_11,abios_refs," ""Independent reviewer""",quoted_prose,1,23,2,3.5,3.5,3.5,3.5,3.5,4.0,3.5,3.57,1.57,1.6,1.79
+lifecycle_11,abios_refs, git_commit,enum_value,1,11,1,2.0,2.0,2.0,2.0,3.0,3.0,3.0,2.43,1.43,1.4,2.43
+lifecycle_11,abios_refs, in_review,enum_value,1,10,1,2.0,2.0,2.0,2.0,3.0,3.0,3.0,2.43,1.43,1.4,2.43
+lifecycle_11,abios_refs,Ecta,tag+cmd,1,4,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,1.3,2.29
+lifecycle_11,abios_refs, in_progress,enum_value,1,12,1,2.0,2.0,2.0,2.0,2.0,3.0,3.0,2.29,1.29,1.3,2.29
+lifecycle_11,abios_refs,Enew,tag+cmd,1,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs,Ecreate,tag+cmd,1,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs,Eclaim,tag+cmd,1,6,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs,Eadd,tag+cmd,1,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs,Etest,tag+cmd,1,5,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs, #1,content_ref,1,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs,Ecre,tag+cmd,1,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs,"""] """,structural_run,1,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,abios_refs,"""] ",structural_run,1,3,1,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,0.5,0.5,1.5
+lifecycle_11,abios_refs,"\"",\""",structural_run,1,5,1,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.14,0.14,0.1,1.14
+lifecycle_11,abios_refs, agent,enum_value,1,6,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, human,enum_value,1,6,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, [],bare_json,1,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, high,enum_value,1,5,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, p,session_handle,1,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, a,session_handle,1,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, t,session_handle,7,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, f,session_handle,2,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, test,enum_value,1,5,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, passed,enum_value,1,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, python,payload_prose,1,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs, approved,enum_value,1,9,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs," """,structural_run,7,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs," [""",structural_run,2,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs,""",""",structural_run,4,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_11,abios_refs,""" ",structural_run,5,2,1,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,-0.1,-0.5,0.9
+lifecycle_11,abios_refs, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,hex_id,3,41,10,7.0,7.0,7.0,7.0,20.0,7.0,7.0,8.86,-1.14,-3.4,0.89
+lifecycle_11,json_compact,"""b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2""",hex_id,7,34,8,32.69,32.69,32.69,32.69,32.69,32.79,32.69,32.7,24.7,172.9,4.09
+lifecycle_11,json_compact,"""e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5""",hex_id,2,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,49.3,4.08
+lifecycle_11,json_compact,"""a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1""",hex_id,1,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,24.7,4.08
+lifecycle_11,json_compact,"""c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3""",hex_id,1,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,24.7,4.08
+lifecycle_11,json_compact,"""bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb""",hex_id,2,66,16,16.67,16.67,16.67,16.67,32.67,32.67,32.67,23.52,7.52,15.0,1.47
+lifecycle_11,json_compact,"""task_id"":",key,7,10,1,2.98,2.98,2.98,2.98,3.0,4.0,3.0,3.13,2.13,14.9,3.13
+lifecycle_11,json_compact,"""action"":",key,11,9,1,2.17,2.17,2.17,2.17,2.17,2.17,2.17,2.17,1.17,12.8,2.17
+lifecycle_11,json_compact,"[""claim"",""work"",""artifact"",""evidence"",""submit""]",bare_json,1,47,5,11.17,11.0,11.0,11.0,11.67,10.0,10.67,10.93,5.93,5.9,2.19
+lifecycle_11,json_compact,"[""synbios/sym2p""]",bare_json,1,17,2,7.17,7.0,7.0,7.0,8.67,7.0,8.67,7.5,5.5,5.5,3.75
+lifecycle_11,json_compact,"""Encode forge commands as SYM-2P v1 packets.""",quoted_prose,1,45,8,12.83,12.83,12.83,12.83,13.67,12.67,14.67,13.19,5.19,5.2,1.65
+lifecycle_11,json_compact,"[""Round-trip lossless"",""Validator exit 0""]",bare_json,1,42,6,10.17,11.0,11.0,11.0,11.67,10.0,11.67,10.93,4.93,4.9,1.82
+lifecycle_11,json_compact,"""artifact_id"":",key,2,14,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,4.3,3.14
+lifecycle_11,json_compact,"""task.transition""",enum_value,2,17,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,4.2,3.1
+lifecycle_11,json_compact,"""kind"":",key,4,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,4.0,2.0
+lifecycle_11,json_compact,"""revision"":",key,3,11,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,3.9,2.29
+lifecycle_11,json_compact,"[""Reported by agent; not executed by forge.""]",bare_json,1,45,7,9.83,10.83,10.83,10.83,11.5,10.25,11.33,10.77,3.77,3.8,1.54
+lifecycle_11,json_compact,"""Wire SYM-2P codec""",quoted_prose,1,19,4,7.67,7.67,7.67,7.67,7.67,6.83,8.67,7.69,3.69,3.7,1.92
+lifecycle_11,json_compact,"""python -m unittest discover -s tests -v""",quoted_prose,1,41,7,10.67,10.67,10.67,10.67,10.67,10.67,10.67,10.67,3.67,3.7,1.52
+lifecycle_11,json_compact,"""principal.create""",enum_value,2,18,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,3.6,2.81
+lifecycle_11,json_compact,"""SYM-2P codec module""",quoted_prose,1,21,4,6.67,6.67,6.67,6.67,7.67,6.67,8.67,7.1,3.1,3.1,1.77
+lifecycle_11,json_compact,"""https://example.invalid/commit""",quoted_prose,1,32,4,6.67,6.67,6.67,6.67,7.67,7.83,7.67,7.12,3.12,3.1,1.78
+lifecycle_11,json_compact,"""name"":",key,3,7,1,1.97,1.97,1.97,1.97,2.0,2.0,2.0,1.98,0.98,3.0,1.98
+lifecycle_11,json_compact,"""status"":",key,3,9,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,3.0,2.0
+lifecycle_11,json_compact,"""https://example.invalid/commons""",quoted_prose,1,33,4,6.67,5.67,5.67,5.67,7.67,7.83,7.67,6.69,2.69,2.7,1.67
+lifecycle_11,json_compact,"""assumptions"":",key,1,14,1,3.83,3.83,3.83,3.83,4.33,2.83,3.33,3.69,2.69,2.7,3.69
+lifecycle_11,json_compact,"""artifact_digest"":",key,1,18,1,3.0,3.0,3.0,3.0,4.0,4.0,5.0,3.57,2.57,2.6,3.57
+lifecycle_11,json_compact,"""task.claim""",enum_value,1,12,1,2.67,3.67,3.67,3.67,3.67,3.67,3.67,3.52,2.52,2.5,3.52
+lifecycle_11,json_compact,"""evidence.add""",enum_value,1,14,1,3.67,3.67,3.67,3.67,3.67,3.67,2.67,3.52,2.52,2.5,3.52
+lifecycle_11,json_compact,"""principal_id"":",key,1,15,1,3.67,2.92,2.92,2.92,3.67,3.92,3.67,3.38,2.38,2.4,3.38
+lifecycle_11,json_compact,"""description"":",key,2,14,1,2.08,2.0,2.0,2.0,2.33,2.33,2.33,2.15,1.15,2.3,2.15
+lifecycle_11,json_compact,"""title"":",key,2,8,1,2.33,1.96,1.96,1.96,2.33,1.96,2.33,2.12,1.12,2.2,2.12
+lifecycle_11,json_compact,"""project_id"":",key,1,13,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,2.1,3.14
+lifecycle_11,json_compact,"""git_commit""",enum_value,1,12,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,2.1,3.1
+lifecycle_11,json_compact,"""tool_version"":",key,1,15,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,2.1,3.14
+lifecycle_11,json_compact,"""3.11""",quoted_prose,1,6,2,3.67,3.67,3.67,4.67,4.67,4.83,3.67,4.12,2.12,2.1,2.06
+lifecycle_11,json_compact,"""in_review""",enum_value,1,11,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,2.1,3.1
+lifecycle_11,json_compact,"""in_progress""",enum_value,1,13,1,2.67,2.67,2.67,2.67,2.67,3.67,3.67,2.95,1.95,2.0,2.95
+lifecycle_11,json_compact,"""summary"":",key,2,10,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0
+lifecycle_11,json_compact,"""project.create""",enum_value,1,16,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_11,json_compact,"""task.create""",enum_value,1,13,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_11,json_compact,"""grant.create""",enum_value,1,14,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_11,json_compact,"""artifact.add""",enum_value,1,14,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_11,json_compact,"""review.create""",enum_value,1,15,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_11,json_compact,"""Implement forge packet codec.""",quoted_prose,1,31,4,4.83,4.83,4.83,4.83,6.67,5.67,6.67,5.48,1.48,1.5,1.37
+lifecycle_11,json_compact,"""Commons starter""",quoted_prose,1,17,2,2.67,3.67,3.67,3.67,3.67,2.67,3.67,3.38,1.38,1.4,1.69
+lifecycle_11,json_compact,"""dependencies"":",key,1,15,1,2.5,1.92,1.92,1.92,3.0,1.65,4.0,2.41,1.41,1.4,2.41
+lifecycle_11,json_compact,"""capabilities"":",key,1,15,1,2.83,1.83,1.83,1.83,3.33,1.83,3.33,2.4,1.4,1.4,2.4
+lifecycle_11,json_compact,"""Agent-first forge pilot.""",quoted_prose,1,26,4,4.83,4.83,4.83,4.83,5.67,6.67,5.67,5.33,1.33,1.3,1.33
+lifecycle_11,json_compact,"""criteria"":",key,1,11,1,1.83,1.83,1.83,1.83,3.33,1.83,3.33,2.26,1.26,1.3,2.26
+lifecycle_11,json_compact,"""digest"":",key,1,9,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,1.3,2.29
+lifecycle_11,json_compact,"""command"":",key,1,10,1,2.0,2.0,2.0,2.0,2.67,2.67,2.0,2.19,1.19,1.2,2.19
+lifecycle_11,json_compact,"""Unit tests passed locally.""",quoted_prose,1,28,4,4.83,4.83,4.83,4.83,5.67,5.67,5.67,5.19,1.19,1.2,1.3
+lifecycle_11,json_compact,"""Independent human acceptance.""",quoted_prose,1,31,3,3.83,3.83,3.83,3.83,4.67,4.67,4.67,4.19,1.19,1.2,1.4
+lifecycle_11,json_compact,"""decision"":",key,1,11,1,1.92,1.92,1.92,1.92,3.0,2.0,2.0,2.1,1.1,1.1,2.1
+lifecycle_11,json_compact,"""repository"":",key,1,13,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,json_compact,"""priority"":",key,1,11,1,1.92,1.92,1.92,1.92,2.0,2.0,2.0,1.95,0.95,1.0,1.95
+lifecycle_11,json_compact,"""scope"":",key,1,8,1,1.83,1.83,1.83,1.83,2.33,1.83,2.33,1.98,0.98,1.0,1.98
+lifecycle_11,json_compact,"""uri"":",key,1,6,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,json_compact,"""tool"":",key,1,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,json_compact,"""comment"":",key,1,10,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_11,json_compact,"""passed""",enum_value,1,8,1,1.67,1.67,1.67,1.67,2.67,1.67,1.67,1.81,0.81,0.8,1.81
+lifecycle_11,json_compact,"""agent""",enum_value,1,7,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_11,json_compact,"""Build agent""",quoted_prose,1,13,2,2.67,2.67,2.67,2.67,2.67,2.83,2.67,2.69,0.69,0.7,1.35
+lifecycle_11,json_compact,"""human""",enum_value,1,7,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_11,json_compact,"""Independent reviewer""",quoted_prose,1,22,2,2.67,2.67,2.67,2.67,2.67,2.83,2.67,2.69,0.69,0.7,1.35
+lifecycle_11,json_compact,"""high""",enum_value,1,6,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_11,json_compact,"""test""",enum_value,1,6,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_11,json_compact,"""python""",quoted_prose,1,8,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_11,json_compact,"""approved""",enum_value,1,10,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_11,json_compact,[],bare_json,1,2,1,0.5,0.67,0.67,0.67,0.67,0.4,0.67,0.6,-0.4,-0.4,0.6
+lifecycle_11,json_compact,"""aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa""",hex_id,3,42,10,5.67,5.67,5.67,5.67,20.67,5.67,5.67,7.81,-2.19,-6.6,0.78
+lifecycle_200,abios_refs," ""python -m unittest discover -s tests -v""",quoted_prose,135,42,7,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,5.0,675.0,1.71
+lifecycle_200,abios_refs, 3.14,number,130,5,1,4.0,4.0,4.0,5.0,5.0,5.0,4.0,4.43,3.43,445.7,4.43
+lifecycle_200,abios_refs," ""[\""CI not executed in transcript.\""]""",quoted_json,75,39,5,10.0,10.0,10.0,10.0,10.0,11.0,11.0,10.29,5.29,396.4,2.06
+lifecycle_200,abios_refs,"\""]"" """,structural_run,135,6,1,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,2.5,337.5,3.5
+lifecycle_200,abios_refs," ""[\""Synthetic bench filler.\""]""",quoted_json,55,32,3,8.0,9.0,9.0,9.0,9.0,9.0,10.0,9.0,6.0,330.0,3.0
+lifecycle_200,abios_refs," ""[\""",structural_run,140,5,1,2.0,2.0,2.0,2.0,2.0,3.0,3.0,2.29,1.29,180.0,2.29
+lifecycle_200,abios_refs, #1,content_ref,144,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,144.0,2.0
+lifecycle_200,abios_refs,Etest,tag+cmd,135,5,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,135.0,2.0
+lifecycle_200,abios_refs," ""[\""Round-trip lossless\"",\""Validator exit 0\""]""",quoted_json,5,49,6,13.0,14.0,14.0,14.0,15.0,14.0,17.0,14.43,8.43,42.1,2.4
+lifecycle_200,abios_refs," ""[\""Reported by agent; not executed by forge.\""]""",quoted_json,5,50,7,13.0,14.0,14.0,14.0,14.0,15.0,15.0,14.14,7.14,35.7,2.02
+lifecycle_200,abios_refs," [""claim"",""work"",""artifact"",""evidence"",""submit""]",bare_json,5,48,5,12.0,12.0,12.0,12.0,12.0,11.0,11.0,11.71,6.71,33.6,2.34
+lifecycle_200,abios_refs," [""synbios/sym2p""]",bare_json,5,18,2,8.0,8.0,8.0,8.0,9.0,8.0,9.0,8.29,6.29,31.4,4.14
+lifecycle_200,abios_refs," ""Encode forge commands as SYM-2P v1 packets.""",quoted_prose,5,46,8,14.0,14.0,14.0,14.0,14.0,13.0,15.0,14.0,6.0,30.0,1.75
+lifecycle_200,abios_refs, #2,content_ref,30,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,30.0,2.0
+lifecycle_200,abios_refs," ""https://example.invalid/sym3""",quoted_prose,5,31,4,8.5,8.5,8.5,8.5,9.5,10.0,9.5,9.0,5.0,25.0,2.25
+lifecycle_200,abios_refs, #3,content_ref,25,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,25.0,2.0
+lifecycle_200,abios_refs, #4,content_ref,25,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,25.0,2.0
+lifecycle_200,abios_refs, #5,content_ref,25,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,25.0,2.0
+lifecycle_200,abios_refs, #6,content_ref,25,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,25.0,2.0
+lifecycle_200,abios_refs,""" ",structural_run,160,2,1,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,0.15,23.6,1.15
+lifecycle_200,abios_refs," ""Wire SYM-2P codec""",quoted_prose,5,20,4,8.5,8.5,8.5,8.5,8.5,8.0,9.5,8.57,4.57,22.9,2.14
+lifecycle_200,abios_refs," ""SYM-2P codec module""",quoted_prose,5,22,4,8.0,8.0,8.0,8.0,9.0,8.0,10.0,8.43,4.43,22.1,2.11
+lifecycle_200,abios_refs," ""https://example.invalid/commit""",quoted_prose,5,33,4,7.5,7.5,7.5,7.5,8.5,9.0,8.5,8.0,4.0,20.0,2.0
+lifecycle_200,abios_refs," ""https://example.invalid/commons""",quoted_prose,5,34,4,7.5,6.5,6.5,6.5,8.5,9.0,8.5,7.57,3.57,17.9,1.89
+lifecycle_200,abios_refs,""" """,structural_run,20,3,1,1.88,1.88,1.88,1.88,1.88,1.88,1.88,1.88,0.88,17.5,1.88
+lifecycle_200,abios_refs, 3.11,number,5,5,1,4.0,4.0,4.0,5.0,5.0,5.0,4.0,4.43,3.43,17.1,4.43
+lifecycle_200,abios_refs," ""SYM-3 bench harness""",quoted_prose,5,22,4,7.0,7.0,7.0,7.0,8.0,7.0,8.0,7.29,3.29,16.4,1.82
+lifecycle_200,abios_refs,"\""]"" [] """,structural_run,5,9,1,4.0,4.0,4.0,4.0,5.0,4.0,5.0,4.29,3.29,16.4,4.29
+lifecycle_200,abios_refs,Etransition,tag+cmd,15,11,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,15.0,2.0
+lifecycle_200,abios_refs," [""claim"",""work""]",bare_json,5,17,2,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,3.0,15.0,2.5
+lifecycle_200,abios_refs, git_commit,enum_value,10,11,1,2.0,2.0,2.0,2.0,3.0,3.0,3.0,2.43,1.43,14.3,2.43
+lifecycle_200,abios_refs, in_review,enum_value,10,10,1,2.0,2.0,2.0,2.0,3.0,3.0,3.0,2.43,1.43,14.3,2.43
+lifecycle_200,abios_refs," ""Commons starter""",quoted_prose,5,18,2,4.0,5.0,5.0,5.0,5.0,4.0,5.0,4.71,2.71,13.6,2.36
+lifecycle_200,abios_refs," ""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 2)""",quoted_prose,1,134,21,31.0,33.0,33.0,33.0,34.0,31.0,33.0,32.57,11.57,11.6,1.55
+lifecycle_200,abios_refs," ""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 3)""",quoted_prose,1,134,21,31.0,33.0,33.0,33.0,34.0,31.0,33.0,32.57,11.57,11.6,1.55
+lifecycle_200,abios_refs," ""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 4)""",quoted_prose,1,134,21,31.0,33.0,33.0,33.0,34.0,31.0,33.0,32.57,11.57,11.6,1.55
+lifecycle_200,abios_refs," ""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 5)""",quoted_prose,1,134,21,31.0,33.0,33.0,33.0,34.0,31.0,33.0,32.57,11.57,11.6,1.55
+lifecycle_200,abios_refs," ""Implement forge packet codec.""",quoted_prose,5,32,4,6.0,6.0,6.0,6.0,7.0,6.0,7.0,6.29,2.29,11.4,1.57
+lifecycle_200,abios_refs," ""Agent-first forge pilot.""",quoted_prose,5,27,4,6.0,6.0,6.0,6.0,6.0,7.0,6.0,6.14,2.14,10.7,1.54
+lifecycle_200,abios_refs,Emk,tag+cmd,10,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,10.0,2.0
+lifecycle_200,abios_refs,Ecreate,tag+cmd,10,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,10.0,2.0
+lifecycle_200,abios_refs,Eadd,tag+cmd,10,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,10.0,2.0
+lifecycle_200,abios_refs," ""Independent human acceptance.""",quoted_prose,5,32,3,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,2.0,10.0,1.67
+lifecycle_200,abios_refs," ""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields.""",quoted_prose,1,124,19,26.0,28.0,28.0,28.0,29.0,26.0,28.0,27.57,8.57,8.6,1.45
+lifecycle_200,abios_refs," ""Build agent""",quoted_prose,5,14,2,3.5,3.5,3.5,3.5,3.5,4.0,3.5,3.57,1.57,7.9,1.79
+lifecycle_200,abios_refs," ""Independent reviewer""",quoted_prose,5,23,2,3.5,3.5,3.5,3.5,3.5,4.0,3.5,3.57,1.57,7.9,1.79
+lifecycle_200,abios_refs, bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,hex_id,1,65,16,17.0,17.0,17.0,17.0,33.0,32.0,32.0,23.57,7.57,7.6,1.47
+lifecycle_200,abios_refs,Ecta,tag+cmd,5,4,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,6.4,2.29
+lifecycle_200,abios_refs, in_progress,enum_value,5,12,1,2.0,2.0,2.0,2.0,2.0,3.0,3.0,2.29,1.29,6.4,2.29
+lifecycle_200,abios_refs,Enew,tag+cmd,5,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,5.0,2.0
+lifecycle_200,abios_refs,Eclaim,tag+cmd,5,6,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,5.0,2.0
+lifecycle_200,abios_refs,Ecre,tag+cmd,5,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,5.0,2.0
+lifecycle_200,abios_refs," ""Unit tests passed locally. (cycle 2)""",quoted_prose,1,39,6,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,5.0,5.0,1.83
+lifecycle_200,abios_refs," ""Unit tests passed locally. (cycle 3)""",quoted_prose,1,39,6,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,5.0,5.0,1.83
+lifecycle_200,abios_refs," ""Unit tests passed locally. (cycle 4)""",quoted_prose,1,39,6,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,5.0,5.0,1.83
+lifecycle_200,abios_refs," ""Unit tests passed locally. (cycle 5)""",quoted_prose,1,39,6,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,5.0,5.0,1.83
+lifecycle_200,abios_refs,"""] """,structural_run,5,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,5.0,2.0
+lifecycle_200,abios_refs,"""] ",structural_run,10,3,1,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,0.5,5.0,1.5
+lifecycle_200,abios_refs," ""Unit tests passed locally.""",quoted_prose,1,29,4,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,2.0,2.0,1.5
+lifecycle_200,abios_refs,"\"",\""",structural_run,5,5,1,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.14,0.14,0.7,1.14
+lifecycle_200,abios_refs, agent,enum_value,5,6,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, human,enum_value,5,6,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, [],bare_json,5,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, high,enum_value,5,5,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, p,session_handle,5,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, a,session_handle,10,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, t,session_handle,180,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, f,session_handle,140,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, test,enum_value,135,5,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, passed,enum_value,110,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, python,payload_prose,135,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, approved,enum_value,5,9,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, failed,enum_value,25,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs," """,structural_run,45,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs," [""",structural_run,15,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs,""",""",structural_run,25,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_200,abios_refs, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,hex_id,150,41,10,7.0,7.0,7.0,7.0,20.0,7.0,7.0,8.86,-1.14,-171.4,0.89
+lifecycle_200,json_compact,"""b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2""",hex_id,180,34,8,32.67,32.67,32.67,32.67,32.67,32.7,32.67,32.67,24.67,4440.8,4.08
+lifecycle_200,json_compact,"""e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5""",hex_id,140,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,3453.3,4.08
+lifecycle_200,json_compact,"""bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb""",hex_id,145,66,16,16.67,16.67,16.67,16.67,32.67,32.67,32.67,23.52,7.52,1091.0,1.47
+lifecycle_200,json_compact,"""python -m unittest discover -s tests -v""",quoted_prose,135,41,7,10.67,10.67,10.67,10.67,10.67,10.67,10.67,10.67,3.67,495.0,1.52
+lifecycle_200,json_compact,"""task_id"":",key,180,10,1,2.98,2.93,2.93,2.93,3.0,4.0,3.0,3.11,2.11,380.1,3.11
+lifecycle_200,json_compact,"""assumptions"":",key,135,14,1,3.83,3.83,3.83,3.83,4.33,2.83,3.33,3.69,2.69,363.2,3.69
+lifecycle_200,json_compact,"""artifact_digest"":",key,135,18,1,3.0,3.0,3.0,3.0,4.0,4.0,5.0,3.57,2.57,347.1,3.57
+lifecycle_200,json_compact,"""evidence.add""",enum_value,135,14,1,3.67,3.67,3.67,3.67,3.67,3.67,2.67,3.52,2.52,340.7,3.52
+lifecycle_200,json_compact,"""artifact_id"":",key,140,14,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,300.0,3.14
+lifecycle_200,json_compact,"""tool_version"":",key,135,15,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,289.3,3.14
+lifecycle_200,json_compact,"""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 2)""",quoted_prose,26,133,21,30.67,31.83,31.83,31.83,33.67,30.67,32.67,31.88,10.88,282.9,1.52
+lifecycle_200,json_compact,"""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 3)""",quoted_prose,26,133,21,30.67,31.83,31.83,31.83,33.67,30.67,32.67,31.88,10.88,282.9,1.52
+lifecycle_200,json_compact,"""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 4)""",quoted_prose,26,133,21,30.67,31.83,31.83,31.83,33.67,30.67,32.67,31.88,10.88,282.9,1.52
+lifecycle_200,json_compact,"""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields. (cycle 5)""",quoted_prose,26,133,21,30.67,31.83,31.83,31.83,33.67,30.67,32.67,31.88,10.88,282.9,1.52
+lifecycle_200,json_compact,"""3.14""",quoted_prose,130,6,2,3.67,3.67,3.67,4.67,4.67,4.83,3.67,4.12,2.12,275.6,2.06
+lifecycle_200,json_compact,"""c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3""",hex_id,10,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,246.7,4.08
+lifecycle_200,json_compact,"""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields.""",quoted_prose,31,123,19,24.83,26.83,26.83,26.83,28.67,25.67,27.67,26.76,7.76,240.6,1.41
+lifecycle_200,json_compact,"""action"":",key,200,9,1,2.17,2.17,2.17,2.17,2.17,2.17,2.17,2.17,1.17,233.3,2.17
+lifecycle_200,json_compact,"""revision"":",key,150,11,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,192.9,2.29
+lifecycle_200,json_compact,"""command"":",key,135,10,1,2.0,2.0,2.0,2.0,2.67,2.67,2.0,2.19,1.19,160.7,2.19
+lifecycle_200,json_compact,"""kind"":",key,155,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,155.0,2.0
+lifecycle_200,json_compact,"""status"":",key,150,9,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,150.0,2.0
+lifecycle_200,json_compact,"""summary"":",key,145,10,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,145.0,2.0
+lifecycle_200,json_compact,"[""Synthetic bench filler.""]",bare_json,55,27,3,4.83,5.83,5.83,5.83,6.5,4.25,6.33,5.63,2.63,144.7,1.88
+lifecycle_200,json_compact,"[""CI not executed in transcript.""]",bare_json,75,34,5,6.83,6.83,6.83,6.83,7.5,6.25,7.33,6.92,1.92,143.7,1.38
+lifecycle_200,json_compact,"""tool"":",key,135,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,135.0,2.0
+lifecycle_200,json_compact,"""a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1""",hex_id,5,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,123.3,4.08
+lifecycle_200,json_compact,"""test""",enum_value,135,6,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,90.0,1.67
+lifecycle_200,json_compact,"""python""",quoted_prose,135,8,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,90.0,1.67
+lifecycle_200,json_compact,"""passed""",enum_value,110,8,1,1.67,1.67,1.67,1.67,2.67,1.67,1.67,1.81,0.81,89.0,1.81
+lifecycle_200,json_compact,"""task.transition""",enum_value,15,17,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,31.4,3.1
+lifecycle_200,json_compact,"[""claim"",""work"",""artifact"",""evidence"",""submit""]",bare_json,5,47,5,11.17,11.0,11.0,11.0,11.67,10.0,10.67,10.93,5.93,29.6,2.19
+lifecycle_200,json_compact,"[""synbios/sym2p""]",bare_json,5,17,2,7.17,7.0,7.0,7.0,8.67,7.0,8.67,7.5,5.5,27.5,3.75
+lifecycle_200,json_compact,"""Encode forge commands as SYM-2P v1 packets.""",quoted_prose,5,45,8,12.83,12.83,12.83,12.83,13.67,12.67,14.67,13.19,5.19,26.0,1.65
+lifecycle_200,json_compact,"[""Round-trip lossless"",""Validator exit 0""]",bare_json,5,42,6,10.17,11.0,11.0,11.0,11.67,10.0,11.67,10.93,4.93,24.6,1.82
+lifecycle_200,json_compact,"""principal_id"":",key,10,15,1,3.67,2.92,2.92,2.92,3.67,3.92,3.67,3.38,2.38,23.8,3.38
+lifecycle_200,json_compact,"""git_commit""",enum_value,10,12,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,21.0,3.1
+lifecycle_200,json_compact,"""in_review""",enum_value,10,11,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,21.0,3.1
+lifecycle_200,json_compact,"""https://example.invalid/sym3""",quoted_prose,5,30,4,7.67,7.67,7.67,7.67,8.67,8.83,8.67,8.12,4.12,20.6,2.03
+lifecycle_200,json_compact,"[""Reported by agent; not executed by forge.""]",bare_json,5,45,7,9.83,10.83,10.83,10.83,11.5,10.25,11.33,10.77,3.77,18.9,1.54
+lifecycle_200,json_compact,"""Wire SYM-2P codec""",quoted_prose,5,19,4,7.67,7.67,7.67,7.67,7.67,6.83,8.67,7.69,3.69,18.5,1.92
+lifecycle_200,json_compact,"""principal.create""",enum_value,10,18,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,18.1,2.81
+lifecycle_200,json_compact,"""grant.create""",enum_value,10,14,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,18.1,2.81
+lifecycle_200,json_compact,"""artifact.add""",enum_value,10,14,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,18.1,2.81
+lifecycle_200,json_compact,"""failed""",enum_value,25,8,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,16.7,1.67
+lifecycle_200,json_compact,"""title"":",key,15,8,1,2.22,1.97,1.97,1.97,2.22,1.97,2.22,2.08,1.08,16.2,2.08
+lifecycle_200,json_compact,"""https://example.invalid/commit""",quoted_prose,5,32,4,6.67,6.67,6.67,6.67,7.67,7.83,7.67,7.12,3.12,15.6,1.78
+lifecycle_200,json_compact,"""SYM-2P codec module""",quoted_prose,5,21,4,6.67,6.67,6.67,6.67,7.67,6.67,8.67,7.1,3.1,15.5,1.77
+lifecycle_200,json_compact,"""name"":",key,15,7,1,1.97,1.97,1.97,1.97,2.0,2.0,2.0,1.98,0.98,14.8,1.98
+lifecycle_200,json_compact,"""capabilities"":",key,10,15,1,2.83,1.83,1.83,1.83,3.33,1.83,3.33,2.4,1.4,14.0,2.4
+lifecycle_200,json_compact,"""https://example.invalid/commons""",quoted_prose,5,33,4,6.67,5.67,5.67,5.67,7.67,7.83,7.67,6.69,2.69,13.5,1.67
+lifecycle_200,json_compact,"""digest"":",key,10,9,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,12.9,2.29
+lifecycle_200,json_compact,"""task.claim""",enum_value,5,12,1,2.67,3.67,3.67,3.67,3.67,3.67,3.67,3.52,2.52,12.6,3.52
+lifecycle_200,json_compact,"""description"":",key,10,14,1,2.08,2.0,2.0,2.0,2.33,2.33,2.33,2.15,1.15,11.5,2.15
+lifecycle_200,json_compact,"[""claim"",""work""]",bare_json,5,16,2,4.17,4.0,4.0,4.0,4.67,4.0,4.67,4.21,2.21,11.1,2.11
+lifecycle_200,json_compact,"""project_id"":",key,5,13,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,10.7,3.14
+lifecycle_200,json_compact,"""3.11""",quoted_prose,5,6,2,3.67,3.67,3.67,4.67,4.67,4.83,3.67,4.12,2.12,10.6,2.06
+lifecycle_200,json_compact,"""uri"":",key,10,6,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,10.0,2.0
+lifecycle_200,json_compact,"""in_progress""",enum_value,5,13,1,2.67,2.67,2.67,2.67,2.67,3.67,3.67,2.95,1.95,9.8,2.95
+lifecycle_200,json_compact,"""SYM-3 bench harness""",quoted_prose,5,21,4,5.67,5.67,5.67,5.67,6.67,5.67,6.67,5.95,1.95,9.8,1.49
+lifecycle_200,json_compact,"""project.create""",enum_value,5,16,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,9.0,2.81
+lifecycle_200,json_compact,"""task.create""",enum_value,5,13,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,9.0,2.81
+lifecycle_200,json_compact,"""review.create""",enum_value,5,15,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,9.0,2.81
+lifecycle_200,json_compact,"""Implement forge packet codec.""",quoted_prose,5,31,4,4.83,4.83,4.83,4.83,6.67,5.67,6.67,5.48,1.48,7.4,1.37
+lifecycle_200,json_compact,"""dependencies"":",key,5,15,1,2.5,1.92,1.92,1.92,3.0,1.65,4.0,2.41,1.41,7.1,2.41
+lifecycle_200,json_compact,"""Commons starter""",quoted_prose,5,17,2,2.67,3.67,3.67,3.67,3.67,2.67,3.67,3.38,1.38,6.9,1.69
+lifecycle_200,json_compact,"""Agent-first forge pilot.""",quoted_prose,5,26,4,4.83,4.83,4.83,4.83,5.67,6.67,5.67,5.33,1.33,6.7,1.33
+lifecycle_200,json_compact,"""criteria"":",key,5,11,1,1.83,1.83,1.83,1.83,3.33,1.83,3.33,2.26,1.26,6.3,2.26
+lifecycle_200,json_compact,"""Independent human acceptance.""",quoted_prose,5,31,3,3.83,3.83,3.83,3.83,4.67,4.67,4.67,4.19,1.19,6.0,1.4
+lifecycle_200,json_compact,"""decision"":",key,5,11,1,1.92,1.92,1.92,1.92,3.0,2.0,2.0,2.1,1.1,5.5,2.1
+lifecycle_200,json_compact,"""repository"":",key,5,13,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,5.0,2.0
+lifecycle_200,json_compact,"""comment"":",key,5,10,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,5.0,2.0
+lifecycle_200,json_compact,"""scope"":",key,5,8,1,1.83,1.83,1.83,1.83,2.33,1.83,2.33,1.98,0.98,4.9,1.98
+lifecycle_200,json_compact,"""priority"":",key,5,11,1,1.92,1.92,1.92,1.92,2.0,2.0,2.0,1.95,0.95,4.8,1.95
+lifecycle_200,json_compact,"""Unit tests passed locally. (cycle 2)""",quoted_prose,1,38,6,10.67,9.83,9.83,9.83,10.67,10.67,10.67,10.31,4.31,4.3,1.72
+lifecycle_200,json_compact,"""Unit tests passed locally. (cycle 3)""",quoted_prose,1,38,6,10.67,9.83,9.83,9.83,10.67,10.67,10.67,10.31,4.31,4.3,1.72
+lifecycle_200,json_compact,"""Unit tests passed locally. (cycle 4)""",quoted_prose,1,38,6,10.67,9.83,9.83,9.83,10.67,10.67,10.67,10.31,4.31,4.3,1.72
+lifecycle_200,json_compact,"""Unit tests passed locally. (cycle 5)""",quoted_prose,1,38,6,10.67,9.83,9.83,9.83,10.67,10.67,10.67,10.31,4.31,4.3,1.72
+lifecycle_200,json_compact,"""Build agent""",quoted_prose,5,13,2,2.67,2.67,2.67,2.67,2.67,2.83,2.67,2.69,0.69,3.5,1.35
+lifecycle_200,json_compact,"""Independent reviewer""",quoted_prose,5,22,2,2.67,2.67,2.67,2.67,2.67,2.83,2.67,2.69,0.69,3.5,1.35
+lifecycle_200,json_compact,"""agent""",enum_value,5,7,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,3.3,1.67
+lifecycle_200,json_compact,"""human""",enum_value,5,7,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,3.3,1.67
+lifecycle_200,json_compact,"""high""",enum_value,5,6,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,3.3,1.67
+lifecycle_200,json_compact,"""approved""",enum_value,5,10,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,3.3,1.67
+lifecycle_200,json_compact,"""Unit tests passed locally.""",quoted_prose,1,28,4,4.83,4.83,4.83,4.83,5.67,5.67,5.67,5.19,1.19,1.2,1.3
+lifecycle_200,json_compact,[],bare_json,5,2,1,0.5,0.67,0.67,0.67,0.67,0.4,0.67,0.6,-0.4,-2.0,0.6
+lifecycle_200,json_compact,"""aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa""",hex_id,150,42,10,5.67,5.67,5.67,5.67,20.67,5.67,5.67,7.81,-2.19,-328.6,0.78
+lifecycle_40,abios_refs," ""python -m unittest discover -s tests -v""",quoted_prose,27,42,7,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,5.0,135.0,1.71
+lifecycle_40,abios_refs, 3.14,number,26,5,1,4.0,4.0,4.0,5.0,5.0,5.0,4.0,4.43,3.43,89.1,4.43
+lifecycle_40,abios_refs," ""[\""CI not executed in transcript.\""]""",quoted_json,15,39,5,10.0,10.0,10.0,10.0,10.0,11.0,11.0,10.29,5.29,79.3,2.06
+lifecycle_40,abios_refs,"\""]"" """,structural_run,27,6,1,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,2.5,67.5,3.5
+lifecycle_40,abios_refs," ""[\""Synthetic bench filler.\""]""",quoted_json,11,32,3,8.0,9.0,9.0,9.0,9.0,9.0,10.0,9.0,6.0,66.0,3.0
+lifecycle_40,abios_refs," ""[\""",structural_run,28,5,1,2.0,2.0,2.0,2.0,2.0,3.0,3.0,2.29,1.29,36.0,2.29
+lifecycle_40,abios_refs, #1,content_ref,28,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,28.0,2.0
+lifecycle_40,abios_refs,Etest,tag+cmd,27,5,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,27.0,2.0
+lifecycle_40,abios_refs, #2,content_ref,26,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,26.0,2.0
+lifecycle_40,abios_refs," ""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields.""",quoted_prose,1,124,19,26.0,28.0,28.0,28.0,29.0,26.0,28.0,27.57,8.57,8.6,1.45
+lifecycle_40,abios_refs," ""[\""Round-trip lossless\"",\""Validator exit 0\""]""",quoted_json,1,49,6,13.0,14.0,14.0,14.0,15.0,14.0,17.0,14.43,8.43,8.4,2.4
+lifecycle_40,abios_refs, bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,hex_id,1,65,16,17.0,17.0,17.0,17.0,33.0,32.0,32.0,23.57,7.57,7.6,1.47
+lifecycle_40,abios_refs," ""[\""Reported by agent; not executed by forge.\""]""",quoted_json,1,50,7,13.0,14.0,14.0,14.0,14.0,15.0,15.0,14.14,7.14,7.1,2.02
+lifecycle_40,abios_refs," [""claim"",""work"",""artifact"",""evidence"",""submit""]",bare_json,1,48,5,12.0,12.0,12.0,12.0,12.0,11.0,11.0,11.71,6.71,6.7,2.34
+lifecycle_40,abios_refs," [""synbios/sym2p""]",bare_json,1,18,2,8.0,8.0,8.0,8.0,9.0,8.0,9.0,8.29,6.29,6.3,4.14
+lifecycle_40,abios_refs," ""Encode forge commands as SYM-2P v1 packets.""",quoted_prose,1,46,8,14.0,14.0,14.0,14.0,14.0,13.0,15.0,14.0,6.0,6.0,1.75
+lifecycle_40,abios_refs," ""https://example.invalid/sym3""",quoted_prose,1,31,4,8.5,8.5,8.5,8.5,9.5,10.0,9.5,9.0,5.0,5.0,2.25
+lifecycle_40,abios_refs,""" ",structural_run,32,2,1,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,0.15,4.7,1.15
+lifecycle_40,abios_refs," ""Wire SYM-2P codec""",quoted_prose,1,20,4,8.5,8.5,8.5,8.5,8.5,8.0,9.5,8.57,4.57,4.6,2.14
+lifecycle_40,abios_refs," ""SYM-2P codec module""",quoted_prose,1,22,4,8.0,8.0,8.0,8.0,9.0,8.0,10.0,8.43,4.43,4.4,2.11
+lifecycle_40,abios_refs," ""https://example.invalid/commit""",quoted_prose,1,33,4,7.5,7.5,7.5,7.5,8.5,9.0,8.5,8.0,4.0,4.0,2.0
+lifecycle_40,abios_refs," ""https://example.invalid/commons""",quoted_prose,1,34,4,7.5,6.5,6.5,6.5,8.5,9.0,8.5,7.57,3.57,3.6,1.89
+lifecycle_40,abios_refs,""" """,structural_run,4,3,1,1.88,1.88,1.88,1.88,1.88,1.88,1.88,1.88,0.88,3.5,1.88
+lifecycle_40,abios_refs, 3.11,number,1,5,1,4.0,4.0,4.0,5.0,5.0,5.0,4.0,4.43,3.43,3.4,4.43
+lifecycle_40,abios_refs," ""SYM-3 bench harness""",quoted_prose,1,22,4,7.0,7.0,7.0,7.0,8.0,7.0,8.0,7.29,3.29,3.3,1.82
+lifecycle_40,abios_refs,"\""]"" [] """,structural_run,1,9,1,4.0,4.0,4.0,4.0,5.0,4.0,5.0,4.29,3.29,3.3,4.29
+lifecycle_40,abios_refs,Etransition,tag+cmd,3,11,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,3.0,2.0
+lifecycle_40,abios_refs," [""claim"",""work""]",bare_json,1,17,2,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,3.0,3.0,2.5
+lifecycle_40,abios_refs, git_commit,enum_value,2,11,1,2.0,2.0,2.0,2.0,3.0,3.0,3.0,2.43,1.43,2.9,2.43
+lifecycle_40,abios_refs, in_review,enum_value,2,10,1,2.0,2.0,2.0,2.0,3.0,3.0,3.0,2.43,1.43,2.9,2.43
+lifecycle_40,abios_refs," ""Commons starter""",quoted_prose,1,18,2,4.0,5.0,5.0,5.0,5.0,4.0,5.0,4.71,2.71,2.7,2.36
+lifecycle_40,abios_refs," ""Implement forge packet codec.""",quoted_prose,1,32,4,6.0,6.0,6.0,6.0,7.0,6.0,7.0,6.29,2.29,2.3,1.57
+lifecycle_40,abios_refs," ""Agent-first forge pilot.""",quoted_prose,1,27,4,6.0,6.0,6.0,6.0,6.0,7.0,6.0,6.14,2.14,2.1,1.54
+lifecycle_40,abios_refs,Emk,tag+cmd,2,3,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0
+lifecycle_40,abios_refs,Ecreate,tag+cmd,2,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0
+lifecycle_40,abios_refs,Eadd,tag+cmd,2,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0
+lifecycle_40,abios_refs," ""Unit tests passed locally.""",quoted_prose,1,29,4,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,2.0,2.0,1.5
+lifecycle_40,abios_refs," ""Independent human acceptance.""",quoted_prose,1,32,3,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,2.0,2.0,1.67
+lifecycle_40,abios_refs," ""Build agent""",quoted_prose,1,14,2,3.5,3.5,3.5,3.5,3.5,4.0,3.5,3.57,1.57,1.6,1.79
+lifecycle_40,abios_refs," ""Independent reviewer""",quoted_prose,1,23,2,3.5,3.5,3.5,3.5,3.5,4.0,3.5,3.57,1.57,1.6,1.79
+lifecycle_40,abios_refs,Ecta,tag+cmd,1,4,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,1.3,2.29
+lifecycle_40,abios_refs, in_progress,enum_value,1,12,1,2.0,2.0,2.0,2.0,2.0,3.0,3.0,2.29,1.29,1.3,2.29
+lifecycle_40,abios_refs,Enew,tag+cmd,1,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_40,abios_refs,Eclaim,tag+cmd,1,6,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_40,abios_refs,Ecre,tag+cmd,1,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_40,abios_refs,"""] """,structural_run,1,4,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_40,abios_refs,"""] ",structural_run,2,3,1,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,0.5,1.0,1.5
+lifecycle_40,abios_refs,"\"",\""",structural_run,1,5,1,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.14,0.14,0.1,1.14
+lifecycle_40,abios_refs, agent,enum_value,1,6,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, human,enum_value,1,6,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, [],bare_json,1,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, high,enum_value,1,5,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, p,session_handle,1,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, a,session_handle,2,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, t,session_handle,36,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, f,session_handle,28,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, test,enum_value,27,5,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, passed,enum_value,22,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, python,payload_prose,27,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, approved,enum_value,1,9,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, failed,enum_value,5,7,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs," """,structural_run,9,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs," [""",structural_run,3,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs,""",""",structural_run,5,3,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0
+lifecycle_40,abios_refs, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,hex_id,30,41,10,7.0,7.0,7.0,7.0,20.0,7.0,7.0,8.86,-1.14,-34.3,0.89
+lifecycle_40,json_compact,"""b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2""",hex_id,36,34,8,32.67,32.67,32.67,32.67,32.67,32.7,32.67,32.67,24.67,888.2,4.08
+lifecycle_40,json_compact,"""e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5""",hex_id,28,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,690.7,4.08
+lifecycle_40,json_compact,"""bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb""",hex_id,29,66,16,16.67,16.67,16.67,16.67,32.67,32.67,32.67,23.52,7.52,218.2,1.47
+lifecycle_40,json_compact,"""Acceptance criteria: round-trip all forge commands through SYM-3 encoders; bench must beat JSON on repeated large fields.""",quoted_prose,27,123,19,24.83,26.83,26.83,26.83,28.67,25.67,27.67,26.76,7.76,209.6,1.41
+lifecycle_40,json_compact,"""python -m unittest discover -s tests -v""",quoted_prose,27,41,7,10.67,10.67,10.67,10.67,10.67,10.67,10.67,10.67,3.67,99.0,1.52
+lifecycle_40,json_compact,"""task_id"":",key,36,10,1,2.93,2.93,2.93,2.93,3.0,4.0,3.0,3.1,2.1,75.8,3.1
+lifecycle_40,json_compact,"""assumptions"":",key,27,14,1,3.83,3.83,3.83,3.83,4.33,2.83,3.33,3.69,2.69,72.6,3.69
+lifecycle_40,json_compact,"""artifact_digest"":",key,27,18,1,3.0,3.0,3.0,3.0,4.0,4.0,5.0,3.57,2.57,69.4,3.57
+lifecycle_40,json_compact,"""evidence.add""",enum_value,27,14,1,3.67,3.67,3.67,3.67,3.67,3.67,2.67,3.52,2.52,68.1,3.52
+lifecycle_40,json_compact,"""artifact_id"":",key,28,14,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,60.0,3.14
+lifecycle_40,json_compact,"""tool_version"":",key,27,15,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,57.9,3.14
+lifecycle_40,json_compact,"""3.14""",quoted_prose,26,6,2,3.67,3.67,3.67,4.67,4.67,4.83,3.67,4.12,2.12,55.2,2.06
+lifecycle_40,json_compact,"""c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3""",hex_id,2,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,49.3,4.08
+lifecycle_40,json_compact,"""action"":",key,40,9,1,2.17,2.17,2.17,2.17,2.17,2.17,2.17,2.17,1.17,46.7,2.17
+lifecycle_40,json_compact,"""revision"":",key,30,11,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,38.6,2.29
+lifecycle_40,json_compact,"""command"":",key,27,10,1,2.0,2.0,2.0,2.0,2.67,2.67,2.0,2.19,1.19,32.1,2.19
+lifecycle_40,json_compact,"""kind"":",key,31,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,31.0,2.0
+lifecycle_40,json_compact,"""status"":",key,30,9,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,30.0,2.0
+lifecycle_40,json_compact,"""summary"":",key,29,10,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,29.0,2.0
+lifecycle_40,json_compact,"[""Synthetic bench filler.""]",bare_json,11,27,3,4.83,5.83,5.83,5.83,6.5,4.25,6.33,5.63,2.63,28.9,1.88
+lifecycle_40,json_compact,"[""CI not executed in transcript.""]",bare_json,15,34,5,6.83,6.83,6.83,6.83,7.5,6.25,7.33,6.92,1.92,28.7,1.38
+lifecycle_40,json_compact,"""tool"":",key,27,7,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,27.0,2.0
+lifecycle_40,json_compact,"""a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1""",hex_id,1,34,8,32.67,32.67,32.67,32.67,32.67,32.67,32.67,32.67,24.67,24.7,4.08
+lifecycle_40,json_compact,"""test""",enum_value,27,6,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,18.0,1.67
+lifecycle_40,json_compact,"""python""",quoted_prose,27,8,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,18.0,1.67
+lifecycle_40,json_compact,"""passed""",enum_value,22,8,1,1.67,1.67,1.67,1.67,2.67,1.67,1.67,1.81,0.81,17.8,1.81
+lifecycle_40,json_compact,"""task.transition""",enum_value,3,17,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,6.3,3.1
+lifecycle_40,json_compact,"[""claim"",""work"",""artifact"",""evidence"",""submit""]",bare_json,1,47,5,11.17,11.0,11.0,11.0,11.67,10.0,10.67,10.93,5.93,5.9,2.19
+lifecycle_40,json_compact,"[""synbios/sym2p""]",bare_json,1,17,2,7.17,7.0,7.0,7.0,8.67,7.0,8.67,7.5,5.5,5.5,3.75
+lifecycle_40,json_compact,"""Encode forge commands as SYM-2P v1 packets.""",quoted_prose,1,45,8,12.83,12.83,12.83,12.83,13.67,12.67,14.67,13.19,5.19,5.2,1.65
+lifecycle_40,json_compact,"[""Round-trip lossless"",""Validator exit 0""]",bare_json,1,42,6,10.17,11.0,11.0,11.0,11.67,10.0,11.67,10.93,4.93,4.9,1.82
+lifecycle_40,json_compact,"""principal_id"":",key,2,15,1,3.67,2.92,2.92,2.92,3.67,3.92,3.67,3.38,2.38,4.8,3.38
+lifecycle_40,json_compact,"""git_commit""",enum_value,2,12,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,4.2,3.1
+lifecycle_40,json_compact,"""in_review""",enum_value,2,11,1,2.67,2.67,2.67,2.67,3.67,3.67,3.67,3.1,2.1,4.2,3.1
+lifecycle_40,json_compact,"""https://example.invalid/sym3""",quoted_prose,1,30,4,7.67,7.67,7.67,7.67,8.67,8.83,8.67,8.12,4.12,4.1,2.03
+lifecycle_40,json_compact,"[""Reported by agent; not executed by forge.""]",bare_json,1,45,7,9.83,10.83,10.83,10.83,11.5,10.25,11.33,10.77,3.77,3.8,1.54
+lifecycle_40,json_compact,"""Wire SYM-2P codec""",quoted_prose,1,19,4,7.67,7.67,7.67,7.67,7.67,6.83,8.67,7.69,3.69,3.7,1.92
+lifecycle_40,json_compact,"""principal.create""",enum_value,2,18,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,3.6,2.81
+lifecycle_40,json_compact,"""grant.create""",enum_value,2,14,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,3.6,2.81
+lifecycle_40,json_compact,"""artifact.add""",enum_value,2,14,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,3.6,2.81
+lifecycle_40,json_compact,"""failed""",enum_value,5,8,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,3.3,1.67
+lifecycle_40,json_compact,"""title"":",key,3,8,1,2.22,1.97,1.97,1.97,2.22,1.97,2.22,2.08,1.08,3.2,2.08
+lifecycle_40,json_compact,"""SYM-2P codec module""",quoted_prose,1,21,4,6.67,6.67,6.67,6.67,7.67,6.67,8.67,7.1,3.1,3.1,1.77
+lifecycle_40,json_compact,"""https://example.invalid/commit""",quoted_prose,1,32,4,6.67,6.67,6.67,6.67,7.67,7.83,7.67,7.12,3.12,3.1,1.78
+lifecycle_40,json_compact,"""name"":",key,3,7,1,1.97,1.97,1.97,1.97,2.0,2.0,2.0,1.98,0.98,3.0,1.98
+lifecycle_40,json_compact,"""capabilities"":",key,2,15,1,2.83,1.83,1.83,1.83,3.33,1.83,3.33,2.4,1.4,2.8,2.4
+lifecycle_40,json_compact,"""https://example.invalid/commons""",quoted_prose,1,33,4,6.67,5.67,5.67,5.67,7.67,7.83,7.67,6.69,2.69,2.7,1.67
+lifecycle_40,json_compact,"""digest"":",key,2,9,1,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.29,1.29,2.6,2.29
+lifecycle_40,json_compact,"""task.claim""",enum_value,1,12,1,2.67,3.67,3.67,3.67,3.67,3.67,3.67,3.52,2.52,2.5,3.52
+lifecycle_40,json_compact,"""description"":",key,2,14,1,2.08,2.0,2.0,2.0,2.33,2.33,2.33,2.15,1.15,2.3,2.15
+lifecycle_40,json_compact,"[""claim"",""work""]",bare_json,1,16,2,4.17,4.0,4.0,4.0,4.67,4.0,4.67,4.21,2.21,2.2,2.11
+lifecycle_40,json_compact,"""project_id"":",key,1,13,1,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.14,2.14,2.1,3.14
+lifecycle_40,json_compact,"""3.11""",quoted_prose,1,6,2,3.67,3.67,3.67,4.67,4.67,4.83,3.67,4.12,2.12,2.1,2.06
+lifecycle_40,json_compact,"""in_progress""",enum_value,1,13,1,2.67,2.67,2.67,2.67,2.67,3.67,3.67,2.95,1.95,2.0,2.95
+lifecycle_40,json_compact,"""uri"":",key,2,6,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0
+lifecycle_40,json_compact,"""SYM-3 bench harness""",quoted_prose,1,21,4,5.67,5.67,5.67,5.67,6.67,5.67,6.67,5.95,1.95,2.0,1.49
+lifecycle_40,json_compact,"""project.create""",enum_value,1,16,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_40,json_compact,"""task.create""",enum_value,1,13,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_40,json_compact,"""review.create""",enum_value,1,15,1,2.67,2.67,2.67,2.67,2.67,3.67,2.67,2.81,1.81,1.8,2.81
+lifecycle_40,json_compact,"""Implement forge packet codec.""",quoted_prose,1,31,4,4.83,4.83,4.83,4.83,6.67,5.67,6.67,5.48,1.48,1.5,1.37
+lifecycle_40,json_compact,"""Commons starter""",quoted_prose,1,17,2,2.67,3.67,3.67,3.67,3.67,2.67,3.67,3.38,1.38,1.4,1.69
+lifecycle_40,json_compact,"""dependencies"":",key,1,15,1,2.5,1.92,1.92,1.92,3.0,1.65,4.0,2.41,1.41,1.4,2.41
+lifecycle_40,json_compact,"""Agent-first forge pilot.""",quoted_prose,1,26,4,4.83,4.83,4.83,4.83,5.67,6.67,5.67,5.33,1.33,1.3,1.33
+lifecycle_40,json_compact,"""criteria"":",key,1,11,1,1.83,1.83,1.83,1.83,3.33,1.83,3.33,2.26,1.26,1.3,2.26
+lifecycle_40,json_compact,"""Unit tests passed locally.""",quoted_prose,1,28,4,4.83,4.83,4.83,4.83,5.67,5.67,5.67,5.19,1.19,1.2,1.3
+lifecycle_40,json_compact,"""Independent human acceptance.""",quoted_prose,1,31,3,3.83,3.83,3.83,3.83,4.67,4.67,4.67,4.19,1.19,1.2,1.4
+lifecycle_40,json_compact,"""decision"":",key,1,11,1,1.92,1.92,1.92,1.92,3.0,2.0,2.0,2.1,1.1,1.1,2.1
+lifecycle_40,json_compact,"""repository"":",key,1,13,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_40,json_compact,"""priority"":",key,1,11,1,1.92,1.92,1.92,1.92,2.0,2.0,2.0,1.95,0.95,1.0,1.95
+lifecycle_40,json_compact,"""scope"":",key,1,8,1,1.83,1.83,1.83,1.83,2.33,1.83,2.33,1.98,0.98,1.0,1.98
+lifecycle_40,json_compact,"""comment"":",key,1,10,1,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0
+lifecycle_40,json_compact,"""agent""",enum_value,1,7,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_40,json_compact,"""Build agent""",quoted_prose,1,13,2,2.67,2.67,2.67,2.67,2.67,2.83,2.67,2.69,0.69,0.7,1.35
+lifecycle_40,json_compact,"""human""",enum_value,1,7,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_40,json_compact,"""Independent reviewer""",quoted_prose,1,22,2,2.67,2.67,2.67,2.67,2.67,2.83,2.67,2.69,0.69,0.7,1.35
+lifecycle_40,json_compact,"""high""",enum_value,1,6,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_40,json_compact,"""approved""",enum_value,1,10,1,1.67,1.67,1.67,1.67,1.67,1.67,1.67,1.67,0.67,0.7,1.67
+lifecycle_40,json_compact,[],bare_json,1,2,1,0.5,0.67,0.67,0.67,0.67,0.4,0.67,0.6,-0.4,-0.4,0.6
+lifecycle_40,json_compact,"""aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa""",hex_id,30,42,10,5.67,5.67,5.67,5.67,20.67,5.67,5.67,7.81,-2.19,-65.7,0.78
