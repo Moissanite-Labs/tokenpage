@@ -1,0 +1,24 @@
+{
+    "creators": [
+        {
+            "name": "Arifuddin, Ahraz"
+        }
+    ],
+    "title": "tokenpage",
+    "description": "<p>This repository is tokenizer research for agent-to-agent traffic. It asks what the tokenizer vocabulary should look like when most of the text is agents talking to agents.</p><p>It plans measurements of how current vocabularies tokenize that traffic, experiments on open-weight models, and reproducible benchmarks.</p><p>Directed by Ahraz Arifuddin</p><p>Researched and verified by different model families across Gemini, Claude, Grok, OpenAI, and Muse</p>",
+    "upload_type": "software",
+    "license": "MIT",
+    "keywords": [
+        "moissanite-labs",
+        "tokenizers",
+        "agent-communication"
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "https://github.com/Moissanite-Labs/tokenpage",
+            "relation": "isSupplementTo",
+            "scheme": "url",
+            "resource_type": "software"
+        }
+    ]
+}
