@@ -1,0 +1,7 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:37,  2.95it/s]Loading weights:  47%|████▋     | 135/290 [00:00<00:00, 389.30it/s]Loading weights:  72%|███████▏  | 208/290 [00:00<00:00, 487.97it/s]Loading weights:  97%|█████████▋| 281/290 [00:00<00:00, 445.11it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 393.77it/s]
+english mean_tokens 28.386666666666667 elapsed 41
+json mean_tokens 34.89833333333333 elapsed 65
+abios_refs mean_tokens 36.61833333333333 elapsed 103
+chinese mean_tokens 29.83 elapsed 128
+glyph_g1 mean_tokens 11.758333333333333 elapsed 141
+saved states_qwen0.5b.npz
