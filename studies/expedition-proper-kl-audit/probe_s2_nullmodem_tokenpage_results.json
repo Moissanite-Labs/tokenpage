@@ -1,0 +1,815 @@
+{
+  "part1_live_tokenpage_pr5_audit": {
+    "data_hygiene_finding_unpaired_english_rows": {
+      "extra_rows_msg_ge_24": 112,
+      "paired_common_messages_used": 24,
+      "truncated_msg_46_fields": [
+        "title",
+        "priority"
+      ]
+    },
+    "input_qa_sha256": "8cc8f1ce33be37a2d2ece4b5dab0722db5772460478551bb2007d319b0508334",
+    "issue9_proper_kl_floor_inversion": {
+      "g1_legend_delta_floored_PR5_bits": -1.9675,
+      "g1_legend_delta_proper_KL_emp_bits": 1.767,
+      "g1_legend_title_pos01_pred_vs_gold": [
+        19,
+        1
+      ],
+      "sign_inverted_by_nonproper_floor": true
+    },
+    "layerwise_representation_gauge_rotation_L4_to_L24": [
+      {
+        "formats": {
+          "abios_refs": {
+            "EN_transfer_centered_bits": 8.28,
+            "EN_transfer_raw_bits": 4.34,
+            "bits_per_token": 0.302,
+            "gauge_alignment_ratio_centered": 0.75,
+            "state_bits": 11.04
+          },
+          "chinese": {
+            "EN_transfer_centered_bits": 7.58,
+            "EN_transfer_raw_bits": 6.63,
+            "bits_per_token": 0.382,
+            "gauge_alignment_ratio_centered": 0.6661,
+            "state_bits": 11.38
+          },
+          "english": {
+            "EN_transfer_centered_bits": 11.28,
+            "EN_transfer_raw_bits": 11.28,
+            "bits_per_token": 0.397,
+            "gauge_alignment_ratio_centered": 1.0,
+            "state_bits": 11.28
+          },
+          "glyph_g1": {
+            "EN_transfer_centered_bits": 4.79,
+            "EN_transfer_raw_bits": 0.6,
+            "bits_per_token": 0.97,
+            "gauge_alignment_ratio_centered": 0.4202,
+            "state_bits": 11.4
+          },
+          "json": {
+            "EN_transfer_centered_bits": 9.7,
+            "EN_transfer_raw_bits": 5.41,
+            "bits_per_token": 0.327,
+            "gauge_alignment_ratio_centered": 0.8494,
+            "state_bits": 11.42
+          }
+        },
+        "layer": 4
+      },
+      {
+        "formats": {
+          "abios_refs": {
+            "EN_transfer_centered_bits": 6.55,
+            "EN_transfer_raw_bits": 3.14,
+            "bits_per_token": 0.3,
+            "gauge_alignment_ratio_centered": 0.596,
+            "state_bits": 10.99
+          },
+          "chinese": {
+            "EN_transfer_centered_bits": 8.63,
+            "EN_transfer_raw_bits": 7.0,
+            "bits_per_token": 0.381,
+            "gauge_alignment_ratio_centered": 0.7604,
+            "state_bits": 11.35
+          },
+          "english": {
+            "EN_transfer_centered_bits": 11.23,
+            "EN_transfer_raw_bits": 11.23,
+            "bits_per_token": 0.396,
+            "gauge_alignment_ratio_centered": 1.0,
+            "state_bits": 11.23
+          },
+          "glyph_g1": {
+            "EN_transfer_centered_bits": 3.88,
+            "EN_transfer_raw_bits": 0.0,
+            "bits_per_token": 0.966,
+            "gauge_alignment_ratio_centered": 0.3415,
+            "state_bits": 11.36
+          },
+          "json": {
+            "EN_transfer_centered_bits": 9.06,
+            "EN_transfer_raw_bits": 3.84,
+            "bits_per_token": 0.327,
+            "gauge_alignment_ratio_centered": 0.794,
+            "state_bits": 11.41
+          }
+        },
+        "layer": 8
+      },
+      {
+        "formats": {
+          "abios_refs": {
+            "EN_transfer_centered_bits": 5.1,
+            "EN_transfer_raw_bits": 2.27,
+            "bits_per_token": 0.3,
+            "gauge_alignment_ratio_centered": 0.4649,
+            "state_bits": 10.97
+          },
+          "chinese": {
+            "EN_transfer_centered_bits": 7.64,
+            "EN_transfer_raw_bits": 5.25,
+            "bits_per_token": 0.38,
+            "gauge_alignment_ratio_centered": 0.6743,
+            "state_bits": 11.33
+          },
+          "english": {
+            "EN_transfer_centered_bits": 11.19,
+            "EN_transfer_raw_bits": 11.19,
+            "bits_per_token": 0.394,
+            "gauge_alignment_ratio_centered": 1.0,
+            "state_bits": 11.19
+          },
+          "glyph_g1": {
+            "EN_transfer_centered_bits": 4.06,
+            "EN_transfer_raw_bits": 0.0,
+            "bits_per_token": 0.964,
+            "gauge_alignment_ratio_centered": 0.358,
+            "state_bits": 11.34
+          },
+          "json": {
+            "EN_transfer_centered_bits": 8.63,
+            "EN_transfer_raw_bits": 3.73,
+            "bits_per_token": 0.327,
+            "gauge_alignment_ratio_centered": 0.757,
+            "state_bits": 11.4
+          }
+        },
+        "layer": 12
+      },
+      {
+        "formats": {
+          "abios_refs": {
+            "EN_transfer_centered_bits": 5.9,
+            "EN_transfer_raw_bits": 2.32,
+            "bits_per_token": 0.299,
+            "gauge_alignment_ratio_centered": 0.5388,
+            "state_bits": 10.95
+          },
+          "chinese": {
+            "EN_transfer_centered_bits": 7.19,
+            "EN_transfer_raw_bits": 4.59,
+            "bits_per_token": 0.38,
+            "gauge_alignment_ratio_centered": 0.6346,
+            "state_bits": 11.33
+          },
+          "english": {
+            "EN_transfer_centered_bits": 11.21,
+            "EN_transfer_raw_bits": 11.21,
+            "bits_per_token": 0.395,
+            "gauge_alignment_ratio_centered": 1.0,
+            "state_bits": 11.21
+          },
+          "glyph_g1": {
+            "EN_transfer_centered_bits": 4.23,
+            "EN_transfer_raw_bits": 1.34,
+            "bits_per_token": 0.962,
+            "gauge_alignment_ratio_centered": 0.3737,
+            "state_bits": 11.32
+          },
+          "json": {
+            "EN_transfer_centered_bits": 8.33,
+            "EN_transfer_raw_bits": 3.08,
+            "bits_per_token": 0.326,
+            "gauge_alignment_ratio_centered": 0.7326,
+            "state_bits": 11.37
+          }
+        },
+        "layer": 16
+      },
+      {
+        "formats": {
+          "abios_refs": {
+            "EN_transfer_centered_bits": 7.8,
+            "EN_transfer_raw_bits": 4.86,
+            "bits_per_token": 0.302,
+            "gauge_alignment_ratio_centered": 0.7059,
+            "state_bits": 11.05
+          },
+          "chinese": {
+            "EN_transfer_centered_bits": 7.93,
+            "EN_transfer_raw_bits": 5.39,
+            "bits_per_token": 0.38,
+            "gauge_alignment_ratio_centered": 0.6999,
+            "state_bits": 11.33
+          },
+          "english": {
+            "EN_transfer_centered_bits": 11.22,
+            "EN_transfer_raw_bits": 11.22,
+            "bits_per_token": 0.395,
+            "gauge_alignment_ratio_centered": 1.0,
+            "state_bits": 11.22
+          },
+          "glyph_g1": {
+            "EN_transfer_centered_bits": 4.35,
+            "EN_transfer_raw_bits": 2.13,
+            "bits_per_token": 0.964,
+            "gauge_alignment_ratio_centered": 0.3836,
+            "state_bits": 11.34
+          },
+          "json": {
+            "EN_transfer_centered_bits": 8.3,
+            "EN_transfer_raw_bits": 3.89,
+            "bits_per_token": 0.326,
+            "gauge_alignment_ratio_centered": 0.7306,
+            "state_bits": 11.36
+          }
+        },
+        "layer": 20
+      },
+      {
+        "formats": {
+          "abios_refs": {
+            "EN_transfer_centered_bits": 7.31,
+            "EN_transfer_raw_bits": 1.2,
+            "bits_per_token": 0.3,
+            "gauge_alignment_ratio_centered": 0.6652,
+            "state_bits": 10.99
+          },
+          "chinese": {
+            "EN_transfer_centered_bits": 7.93,
+            "EN_transfer_raw_bits": 3.21,
+            "bits_per_token": 0.379,
+            "gauge_alignment_ratio_centered": 0.7018,
+            "state_bits": 11.3
+          },
+          "english": {
+            "EN_transfer_centered_bits": 11.21,
+            "EN_transfer_raw_bits": 11.21,
+            "bits_per_token": 0.395,
+            "gauge_alignment_ratio_centered": 1.0,
+            "state_bits": 11.21
+          },
+          "glyph_g1": {
+            "EN_transfer_centered_bits": 3.69,
+            "EN_transfer_raw_bits": 1.91,
+            "bits_per_token": 0.965,
+            "gauge_alignment_ratio_centered": 0.3251,
+            "state_bits": 11.35
+          },
+          "json": {
+            "EN_transfer_centered_bits": 7.3,
+            "EN_transfer_raw_bits": 2.72,
+            "bits_per_token": 0.324,
+            "gauge_alignment_ratio_centered": 0.6454,
+            "state_bits": 11.31
+          }
+        },
+        "layer": 24
+      }
+    ],
+    "paired_24msg_cells": {
+      "abios_refs_legend_False": {
+        "discrete_MI_bits_order_invariant": 9.7535,
+        "discrete_MI_bits_per_token": 0.2665,
+        "fields": {
+          "criteria": {
+            "CE_bits": 0.01,
+            "H_emp_bits": 2.2296,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 2.2296,
+            "gold_in_pos01_of_24": 6,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 6,
+            "proper_KL_skill_emp": 2.2195
+          },
+          "dependency": {
+            "CE_bits": 1.1198,
+            "H_emp_bits": 0.8709,
+            "above_majority": false,
+            "acc": 0.5,
+            "discrete_MI_bits": 0.1192,
+            "gold_in_pos01_of_24": 24,
+            "majority_baseline": 0.7083,
+            "pred_in_pos01_of_24": 24,
+            "proper_KL_skill_emp": -0.2489
+          },
+          "priority": {
+            "CE_bits": 0.0405,
+            "H_emp_bits": 1.9031,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 1.9031,
+            "gold_in_pos01_of_24": 8,
+            "majority_baseline": 0.3333,
+            "pred_in_pos01_of_24": 8,
+            "proper_KL_skill_emp": 1.8626
+          },
+          "scope": {
+            "CE_bits": 0.2462,
+            "H_emp_bits": 2.5069,
+            "above_majority": true,
+            "acc": 0.9583,
+            "discrete_MI_bits": 2.3444,
+            "gold_in_pos01_of_24": 9,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 8,
+            "proper_KL_skill_emp": 2.2607
+          },
+          "title": {
+            "CE_bits": 0.0058,
+            "H_emp_bits": 3.1573,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 3.1573,
+            "gold_in_pos01_of_24": 1,
+            "majority_baseline": 0.1667,
+            "pred_in_pos01_of_24": 1,
+            "proper_KL_skill_emp": 3.1514
+          }
+        },
+        "floored_unif_bits_pr5": 10.1893,
+        "mean_acc": 0.8917,
+        "mean_majority_baseline": 0.3417,
+        "proper_emp_bits_per_token": 0.2526,
+        "proper_unfloored_emp_bits": 9.2453,
+        "proper_unfloored_unif_bits": 10.0695,
+        "qwen_tokens_per_msg": 36.6,
+        "wilson_95_ci": [
+          0.8234,
+          0.9356
+        ]
+      },
+      "abios_refs_legend_True": {
+        "discrete_MI_bits_order_invariant": 9.3947,
+        "discrete_MI_bits_per_token": 0.2567,
+        "fields": {
+          "criteria": {
+            "CE_bits": 0.0012,
+            "H_emp_bits": 2.2296,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 2.2296,
+            "gold_in_pos01_of_24": 6,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 6,
+            "proper_KL_skill_emp": 2.2284
+          },
+          "dependency": {
+            "CE_bits": 1.2011,
+            "H_emp_bits": 0.8709,
+            "above_majority": false,
+            "acc": 0.7083,
+            "discrete_MI_bits": 0.0,
+            "gold_in_pos01_of_24": 24,
+            "majority_baseline": 0.7083,
+            "pred_in_pos01_of_24": 24,
+            "proper_KL_skill_emp": -0.3302
+          },
+          "priority": {
+            "CE_bits": 0.0005,
+            "H_emp_bits": 1.9031,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 1.9031,
+            "gold_in_pos01_of_24": 8,
+            "majority_baseline": 0.3333,
+            "pred_in_pos01_of_24": 8,
+            "proper_KL_skill_emp": 1.9027
+          },
+          "scope": {
+            "CE_bits": 0.3848,
+            "H_emp_bits": 2.5069,
+            "above_majority": true,
+            "acc": 0.875,
+            "discrete_MI_bits": 2.1047,
+            "gold_in_pos01_of_24": 9,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 6,
+            "proper_KL_skill_emp": 2.1221
+          },
+          "title": {
+            "CE_bits": 0.0033,
+            "H_emp_bits": 3.1573,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 3.1573,
+            "gold_in_pos01_of_24": 1,
+            "majority_baseline": 0.1667,
+            "pred_in_pos01_of_24": 1,
+            "proper_KL_skill_emp": 3.1539
+          }
+        },
+        "floored_unif_bits_pr5": 10.1021,
+        "mean_acc": 0.9167,
+        "mean_majority_baseline": 0.3417,
+        "proper_emp_bits_per_token": 0.248,
+        "proper_unfloored_emp_bits": 9.0769,
+        "proper_unfloored_unif_bits": 9.9011,
+        "qwen_tokens_per_msg": 36.6,
+        "wilson_95_ci": [
+          0.8534,
+          0.9541
+        ]
+      },
+      "chinese_legend_False": {
+        "discrete_MI_bits_order_invariant": 10.1777,
+        "discrete_MI_bits_per_token": 0.3415,
+        "fields": {
+          "criteria": {
+            "CE_bits": 0.0066,
+            "H_emp_bits": 2.2296,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 2.2296,
+            "gold_in_pos01_of_24": 6,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 6,
+            "proper_KL_skill_emp": 2.2229
+          },
+          "dependency": {
+            "CE_bits": 0.3558,
+            "H_emp_bits": 0.8709,
+            "above_majority": true,
+            "acc": 0.7917,
+            "discrete_MI_bits": 0.3809,
+            "gold_in_pos01_of_24": 24,
+            "majority_baseline": 0.7083,
+            "pred_in_pos01_of_24": 24,
+            "proper_KL_skill_emp": 0.515
+          },
+          "priority": {
+            "CE_bits": 0.0001,
+            "H_emp_bits": 1.9031,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 1.9031,
+            "gold_in_pos01_of_24": 8,
+            "majority_baseline": 0.3333,
+            "pred_in_pos01_of_24": 8,
+            "proper_KL_skill_emp": 1.903
+          },
+          "scope": {
+            "CE_bits": 0.0417,
+            "H_emp_bits": 2.5069,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 2.5069,
+            "gold_in_pos01_of_24": 9,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 9,
+            "proper_KL_skill_emp": 2.4652
+          },
+          "title": {
+            "CE_bits": 0.0011,
+            "H_emp_bits": 3.1573,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 3.1573,
+            "gold_in_pos01_of_24": 1,
+            "majority_baseline": 0.1667,
+            "pred_in_pos01_of_24": 1,
+            "proper_KL_skill_emp": 3.1562
+          }
+        },
+        "floored_unif_bits_pr5": 11.0864,
+        "mean_acc": 0.9583,
+        "mean_majority_baseline": 0.3417,
+        "proper_emp_bits_per_token": 0.3444,
+        "proper_unfloored_emp_bits": 10.2623,
+        "proper_unfloored_unif_bits": 11.0864,
+        "qwen_tokens_per_msg": 29.8,
+        "wilson_95_ci": [
+          0.9062,
+          0.9821
+        ]
+      },
+      "english_legend_False": {
+        "discrete_MI_bits_order_invariant": 9.7933,
+        "discrete_MI_bits_per_token": 0.3448,
+        "fields": {
+          "criteria": {
+            "CE_bits": 0.061,
+            "H_emp_bits": 2.2296,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 2.2296,
+            "gold_in_pos01_of_24": 6,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 6,
+            "proper_KL_skill_emp": 2.1686
+          },
+          "dependency": {
+            "CE_bits": 0.448,
+            "H_emp_bits": 0.8709,
+            "above_majority": true,
+            "acc": 0.75,
+            "discrete_MI_bits": 0.3315,
+            "gold_in_pos01_of_24": 24,
+            "majority_baseline": 0.7083,
+            "pred_in_pos01_of_24": 24,
+            "proper_KL_skill_emp": 0.4229
+          },
+          "priority": {
+            "CE_bits": 0.0002,
+            "H_emp_bits": 1.9031,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 1.9031,
+            "gold_in_pos01_of_24": 8,
+            "majority_baseline": 0.3333,
+            "pred_in_pos01_of_24": 8,
+            "proper_KL_skill_emp": 1.9029
+          },
+          "scope": {
+            "CE_bits": 0.2882,
+            "H_emp_bits": 2.5069,
+            "above_majority": true,
+            "acc": 0.9167,
+            "discrete_MI_bits": 2.1718,
+            "gold_in_pos01_of_24": 9,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 10,
+            "proper_KL_skill_emp": 2.2186
+          },
+          "title": {
+            "CE_bits": 0.0,
+            "H_emp_bits": 3.1573,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 3.1573,
+            "gold_in_pos01_of_24": 1,
+            "majority_baseline": 0.1667,
+            "pred_in_pos01_of_24": 1,
+            "proper_KL_skill_emp": 3.1572
+          }
+        },
+        "floored_unif_bits_pr5": 10.6944,
+        "mean_acc": 0.9333,
+        "mean_majority_baseline": 0.3417,
+        "proper_emp_bits_per_token": 0.3475,
+        "proper_unfloored_emp_bits": 9.8702,
+        "proper_unfloored_unif_bits": 10.6944,
+        "qwen_tokens_per_msg": 28.4,
+        "wilson_95_ci": [
+          0.8739,
+          0.9658
+        ]
+      },
+      "glyph_g1_legend_False": {
+        "discrete_MI_bits_order_invariant": 4.2924,
+        "discrete_MI_bits_per_token": 0.3638,
+        "fields": {
+          "criteria": {
+            "CE_bits": 7.957,
+            "H_emp_bits": 2.2296,
+            "above_majority": false,
+            "acc": 0.2083,
+            "discrete_MI_bits": 0.0888,
+            "gold_in_pos01_of_24": 6,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 22,
+            "proper_KL_skill_emp": -5.7274
+          },
+          "dependency": {
+            "CE_bits": 0.8281,
+            "H_emp_bits": 0.8709,
+            "above_majority": false,
+            "acc": 0.7083,
+            "discrete_MI_bits": 0.0,
+            "gold_in_pos01_of_24": 24,
+            "majority_baseline": 0.7083,
+            "pred_in_pos01_of_24": 24,
+            "proper_KL_skill_emp": 0.0428
+          },
+          "priority": {
+            "CE_bits": 3.6819,
+            "H_emp_bits": 1.9031,
+            "above_majority": true,
+            "acc": 0.5,
+            "discrete_MI_bits": 0.2679,
+            "gold_in_pos01_of_24": 8,
+            "majority_baseline": 0.3333,
+            "pred_in_pos01_of_24": 0,
+            "proper_KL_skill_emp": -1.7788
+          },
+          "scope": {
+            "CE_bits": 3.678,
+            "H_emp_bits": 2.5069,
+            "above_majority": true,
+            "acc": 0.5,
+            "discrete_MI_bits": 1.0658,
+            "gold_in_pos01_of_24": 9,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 7,
+            "proper_KL_skill_emp": -1.1711
+          },
+          "title": {
+            "CE_bits": 1.1743,
+            "H_emp_bits": 3.1573,
+            "above_majority": true,
+            "acc": 0.875,
+            "discrete_MI_bits": 2.8699,
+            "gold_in_pos01_of_24": 1,
+            "majority_baseline": 0.1667,
+            "pred_in_pos01_of_24": 1,
+            "proper_KL_skill_emp": 1.983
+          }
+        },
+        "floored_unif_bits_pr5": 2.5826,
+        "mean_acc": 0.5583,
+        "mean_majority_baseline": 0.3417,
+        "proper_emp_bits_per_token": -0.5637,
+        "proper_unfloored_emp_bits": -6.6515,
+        "proper_unfloored_unif_bits": -5.8273,
+        "qwen_tokens_per_msg": 11.8,
+        "wilson_95_ci": [
+          0.469,
+          0.644
+        ]
+      },
+      "glyph_g1_legend_True": {
+        "discrete_MI_bits_order_invariant": 4.3467,
+        "discrete_MI_bits_per_token": 0.3684,
+        "fields": {
+          "criteria": {
+            "CE_bits": 3.7022,
+            "H_emp_bits": 2.2296,
+            "above_majority": true,
+            "acc": 0.4167,
+            "discrete_MI_bits": 0.7084,
+            "gold_in_pos01_of_24": 6,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 17,
+            "proper_KL_skill_emp": -1.4726
+          },
+          "dependency": {
+            "CE_bits": 0.3849,
+            "H_emp_bits": 0.8709,
+            "above_majority": true,
+            "acc": 0.9167,
+            "discrete_MI_bits": 0.5843,
+            "gold_in_pos01_of_24": 24,
+            "majority_baseline": 0.7083,
+            "pred_in_pos01_of_24": 24,
+            "proper_KL_skill_emp": 0.486
+          },
+          "priority": {
+            "CE_bits": 2.4517,
+            "H_emp_bits": 1.9031,
+            "above_majority": true,
+            "acc": 0.5833,
+            "discrete_MI_bits": 0.5409,
+            "gold_in_pos01_of_24": 8,
+            "majority_baseline": 0.3333,
+            "pred_in_pos01_of_24": 1,
+            "proper_KL_skill_emp": -0.5486
+          },
+          "scope": {
+            "CE_bits": 2.7904,
+            "H_emp_bits": 2.5069,
+            "above_majority": true,
+            "acc": 0.5417,
+            "discrete_MI_bits": 1.0844,
+            "gold_in_pos01_of_24": 9,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 2,
+            "proper_KL_skill_emp": -0.2835
+          },
+          "title": {
+            "CE_bits": 6.223,
+            "H_emp_bits": 3.1573,
+            "above_majority": true,
+            "acc": 0.25,
+            "discrete_MI_bits": 1.4288,
+            "gold_in_pos01_of_24": 1,
+            "majority_baseline": 0.1667,
+            "pred_in_pos01_of_24": 19,
+            "proper_KL_skill_emp": -3.0658
+          }
+        },
+        "floored_unif_bits_pr5": 0.6151,
+        "mean_acc": 0.5417,
+        "mean_majority_baseline": 0.3417,
+        "proper_emp_bits_per_token": -0.4139,
+        "proper_unfloored_emp_bits": -4.8845,
+        "proper_unfloored_unif_bits": -4.0603,
+        "qwen_tokens_per_msg": 11.8,
+        "wilson_95_ci": [
+          0.4526,
+          0.6281
+        ]
+      },
+      "json_legend_False": {
+        "discrete_MI_bits_order_invariant": 10.6677,
+        "discrete_MI_bits_per_token": 0.3057,
+        "fields": {
+          "criteria": {
+            "CE_bits": 0.0033,
+            "H_emp_bits": 2.2296,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 2.2296,
+            "gold_in_pos01_of_24": 6,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 6,
+            "proper_KL_skill_emp": 2.2263
+          },
+          "dependency": {
+            "CE_bits": 0.0064,
+            "H_emp_bits": 0.8709,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 0.8709,
+            "gold_in_pos01_of_24": 24,
+            "majority_baseline": 0.7083,
+            "pred_in_pos01_of_24": 24,
+            "proper_KL_skill_emp": 0.8645
+          },
+          "priority": {
+            "CE_bits": 0.0,
+            "H_emp_bits": 1.9031,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 1.9031,
+            "gold_in_pos01_of_24": 8,
+            "majority_baseline": 0.3333,
+            "pred_in_pos01_of_24": 8,
+            "proper_KL_skill_emp": 1.9031
+          },
+          "scope": {
+            "CE_bits": 0.0017,
+            "H_emp_bits": 2.5069,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 2.5069,
+            "gold_in_pos01_of_24": 9,
+            "majority_baseline": 0.25,
+            "pred_in_pos01_of_24": 9,
+            "proper_KL_skill_emp": 2.5052
+          },
+          "title": {
+            "CE_bits": 0.0001,
+            "H_emp_bits": 3.1573,
+            "above_majority": true,
+            "acc": 1.0,
+            "discrete_MI_bits": 3.1573,
+            "gold_in_pos01_of_24": 1,
+            "majority_baseline": 0.1667,
+            "pred_in_pos01_of_24": 1,
+            "proper_KL_skill_emp": 3.1572
+          }
+        },
+        "floored_unif_bits_pr5": 11.4803,
+        "mean_acc": 1.0,
+        "mean_majority_baseline": 0.3417,
+        "proper_emp_bits_per_token": 0.3053,
+        "proper_unfloored_emp_bits": 10.6561,
+        "proper_unfloored_unif_bits": 11.4803,
+        "qwen_tokens_per_msg": 34.9,
+        "wilson_95_ci": [
+          0.969,
+          1.0
+        ]
+      }
+    }
+  },
+  "part2_exact_nullmodem_theorems": {
+    "exact_arithmetic": "100% pure fractions.Fraction / Q(i) (zero floats)",
+    "theorem_NM1_gauge_invariant_subtext": {
+      "gram_subtext_code_exact_O4Q_residual": "0",
+      "neg_ctrl_nonorthogonal_shear_gram_drift_sq": "9873/256",
+      "pgl2_cross_ratio_exact_residual": "0",
+      "pgl2_cross_ratio_exact_value": "33/98",
+      "raw_coordinate_drift_sq_under_O4Q": "117"
+    },
+    "theorem_NM2_zeno_context_hash_channel": {
+      "context_anchored_IX_IY_zeno_rate_exact": "11/50",
+      "modular_flow_commutator_exact_zero": true,
+      "neg_ctrl_entangling_hash_ZX_corrupts_audit_IZ": "50",
+      "neg_ctrl_local_hash_IZ_degradation_factor": 227.45454545454547,
+      "readable_audit_pointer_IZ_drift_exact": "0"
+    },
+    "theorem_NM3_adapter_bregman_latch_bound": {
+      "euclidean_pythagoras_residual": "0",
+      "euclidean_pythagorean_inflation": "10/7",
+      "euclidean_r_adapt_sq": "52/7",
+      "euclidean_r_star_sq": "6",
+      "nonlinear_cubic_bregman_D_p_qadapt": "2081/4",
+      "nonlinear_cubic_bregman_D_p_qstar": "33/4",
+      "nonlinear_cubic_bregman_D_qstar_qadapt": "512",
+      "nonlinear_cubic_bregman_pythagoras_residual": "0"
+    }
+  },
+  "probe": "probe_s2_nullmodem_tokenpage_channel",
+  "r3_negative_controls": {
+    "all_r3_rejected": true,
+    "exceptions": {
+      "GaussQ_bool": "TypeError",
+      "GaussQ_div0": "ZeroDivisionError",
+      "GaussQ_float": "TypeError",
+      "exact_frac_bool": "TypeError",
+      "exact_frac_float": "TypeError",
+      "exact_frac_str": "TypeError",
+      "matinv_ragged": "ValueError",
+      "matinv_singular": "ValueError"
+    }
+  },
+  "targets_upstream": [
+    "Moissanite-Labs/tokenpage PR #5 & Issue #9 (Study 02: Qwen2.5-1.5B QA + Qwen2.5-0.5B L4..L24)",
+    "Moissanite-Labs/nullmodem CHARTER Q2/Q4/Q5 & PR #3 (RAM==WIRE==HASH)"
+  ]
+}
