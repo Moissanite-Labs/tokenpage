@@ -1,0 +1,10 @@
+probe: standardize -> PCA(128, fit on train fold) -> L2 logistic C=0.05; 5-fold CV
+layer=8  N=600  H_total=11.492 bits/message  per-field H=[np.float64(3.585), np.float64(2.0), np.float64(2.585), np.float64(2.322), np.float64(1.0)]
+
+| format | qwen tokens/msg | probe acc (title,pri,scope,crit,dep) | bits recovered (state probe) | bits/token (state) | bits recovered (bag-of-tokens) | EN->fmt transfer bits (raw) | EN->fmt transfer bits (centered) | transfer acc centered |
+|---|---|---|---|---|---|---|---|---|
+| english | 28.4 | 1.00, 1.00, 1.00, 1.00, 1.00 | 11.23 | 0.396 | 11.22 | 11.23 | 11.23 | 1.00, 1.00, 1.00, 1.00, 1.00 |
+| json | 34.9 | 1.00, 1.00, 1.00, 1.00, 1.00 | 11.41 | 0.327 | 11.26 | 3.84 | 9.06 | 1.00, 0.99, 0.99, 1.00, 0.73 |
+| abios_refs | 36.6 | 1.00, 1.00, 1.00, 1.00, 1.00 | 10.99 | 0.300 | 11.27 | 3.14 | 6.55 | 0.87, 0.56, 0.57, 0.70, 1.00 |
+| chinese | 29.8 | 1.00, 1.00, 1.00, 1.00, 1.00 | 11.35 | 0.381 | 11.24 | 7.00 | 8.63 | 0.97, 0.92, 0.79, 0.91, 0.90 |
+| glyph_g1 | 11.8 | 1.00, 1.00, 1.00, 1.00, 1.00 | 11.36 | 0.966 | 11.17 | 0.00 | 3.88 | 1.00, 0.43, 0.43, 0.22, 0.94 |
